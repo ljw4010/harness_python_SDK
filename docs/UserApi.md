@@ -1,4 +1,4 @@
-# swagger_client.UserApi
+# harness_python_sdk.UserApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -29,19 +29,19 @@ Add user(s) to scope
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AddUsersDTO() # AddUsersDTO | 
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.AddUsersDTO() # AddUsersDTO | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -89,20 +89,20 @@ Updates the User password
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.PasswordChange() # PasswordChange |  (optional)
+body = harness_python_sdk.PasswordChange() # PasswordChange |  (optional)
 
 try:
     # Change user password
@@ -145,18 +145,18 @@ Check whether the user is last admin at scope or not
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 user_id = 'user_id_example' # str | User identifier (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -205,18 +205,18 @@ Disables two-factor-auth for an user in an account
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -259,20 +259,20 @@ Enables two-factor-auth for an user in an account
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.TwoFactorAuthSettingsInfo() # TwoFactorAuthSettingsInfo |  (optional)
+body = harness_python_sdk.TwoFactorAuthSettingsInfo() # TwoFactorAuthSettingsInfo |  (optional)
 
 try:
     # Enable two factor authentication
@@ -315,18 +315,18 @@ Returns the user metadata along with rolesAssignments by userId and scope
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 user_id = 'user_id_example' # str | user Identifier
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -375,26 +375,26 @@ List of all the user's metadata along with rolesAssignments who have access to g
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.ACLAggregateFilter() # ACLAggregateFilter |  (optional)
+body = harness_python_sdk.ACLAggregateFilter() # ACLAggregateFilter |  (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 search_term = 'search_term_example' # str | Search term (optional)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -445,18 +445,18 @@ Gets current logged in User information
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -499,18 +499,18 @@ Gets two factor authentication settings information of the current logged in use
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 auth_mechanism = 'auth_mechanism_example' # str | This is the authentication mechanism for the logged-in User. Two-Factor Authentication settings will be fetched for this mechanism.
 
@@ -555,25 +555,25 @@ Get list of user's for a given scope
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.UserFilter() # UserFilter |  (optional)
+body = harness_python_sdk.UserFilter() # UserFilter |  (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -623,18 +623,18 @@ Remove user as the collaborator from the scope
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 user_id = 'user_id_example' # str | user Identifier
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -683,18 +683,18 @@ Reset Two-Factor authorization.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 user_id = 'user_id_example' # str | 
 account_identifier = 'account_identifier_example' # str | 
 
@@ -739,18 +739,18 @@ unlock user in a given scope
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 user_id = 'user_id_example' # str | user Identifier
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -799,20 +799,20 @@ Updates the User information
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.UserInfo() # UserInfo |  (optional)
+body = harness_python_sdk.UserInfo() # UserInfo |  (optional)
 
 try:
     # Update User
@@ -855,21 +855,21 @@ Updates the User information
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 user_id = 'user_id_example' # str | User Identifier
-body = swagger_client.UserInfoUpdateDTO() # UserInfoUpdateDTO |  (optional)
+body = harness_python_sdk.UserInfoUpdateDTO() # UserInfoUpdateDTO |  (optional)
 
 try:
     # Update User

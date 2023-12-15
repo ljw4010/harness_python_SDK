@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.onetime_end_time_based_spec import OnetimeEndTimeBasedSpec  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.onetime_end_time_based_spec import OnetimeEndTimeBasedSpec  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestOnetimeEndTimeBasedSpec(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestOnetimeEndTimeBasedSpec(unittest.TestCase):
     def testOnetimeEndTimeBasedSpec(self):
         """Test OnetimeEndTimeBasedSpec"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.onetime_end_time_based_spec.OnetimeEndTimeBasedSpec()  # noqa: E501
+        # model = harness_python_sdk.models.onetime_end_time_based_spec.OnetimeEndTimeBasedSpec()  # noqa: E501
         pass
 
 

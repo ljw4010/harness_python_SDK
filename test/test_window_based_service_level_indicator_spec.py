@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.window_based_service_level_indicator_spec import WindowBasedServiceLevelIndicatorSpec  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.window_based_service_level_indicator_spec import WindowBasedServiceLevelIndicatorSpec  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestWindowBasedServiceLevelIndicatorSpec(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestWindowBasedServiceLevelIndicatorSpec(unittest.TestCase):
     def testWindowBasedServiceLevelIndicatorSpec(self):
         """Test WindowBasedServiceLevelIndicatorSpec"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.window_based_service_level_indicator_spec.WindowBasedServiceLevelIndicatorSpec()  # noqa: E501
+        # model = harness_python_sdk.models.window_based_service_level_indicator_spec.WindowBasedServiceLevelIndicatorSpec()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# swagger_client.OrganizationApi
+# harness_python_sdk.OrganizationApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -26,19 +26,19 @@ Creates a new organization.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CreateOrganizationRequest() # CreateOrganizationRequest | Post the necessary fields for the API to create an organization.
+api_instance = harness_python_sdk.OrganizationApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CreateOrganizationRequest() # CreateOrganizationRequest | Post the necessary fields for the API to create an organization.
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
 try:
@@ -82,18 +82,18 @@ Deletes the information of the organization with the matching organization ident
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrganizationApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization identifier
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
@@ -138,18 +138,18 @@ Deletes Organization for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrganizationApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Organization Identifier for the Entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 if_match = 'if_match_example' # str | Version number of the Organization (optional)
@@ -196,18 +196,18 @@ Retrieves the information of the organization with the matching organization ide
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrganizationApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization identifier
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
@@ -252,18 +252,18 @@ Lists Organization details using an Account and Organization ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrganizationApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Organization Identifier for the Entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
@@ -308,24 +308,24 @@ List all Organizations matching the given search criteria.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrganizationApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifiers = ['identifiers_example'] # list[str] | This is the list of Org Key IDs. Details specific to these IDs would be fetched. (optional)
 search_term = 'search_term_example' # str | This would be used to filter Organizations. Any Organization having the specified string in its Name, ID and Tag would be filtered. (optional)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -374,18 +374,18 @@ Retrieves the information of the organizations.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrganizationApi(harness_python_sdk.ApiClient(configuration))
 org = ['org_example'] # list[str] | Identifier field of the organizations the resource is scoped to (optional)
 search_term = 'search_term_example' # str | This would be used to filter resources having attributes matching with search term. (optional)
 page = 0 # int | Pagination page number strategy: Specify the page number within the paginated collection related to the number of items in each page  (optional) (default to 0)
@@ -440,19 +440,19 @@ Creates a new Organization.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
-body = swagger_client.OrganizationRequest() # OrganizationRequest | Details of the Organization to create
+api_instance = harness_python_sdk.OrganizationApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.OrganizationRequest() # OrganizationRequest | Details of the Organization to create
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -496,19 +496,19 @@ Updates Organization settings.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
-body = swagger_client.OrganizationRequest() # OrganizationRequest | This is the updated Organization. Please provide values for all fields, not just the fields you are updating
+api_instance = harness_python_sdk.OrganizationApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.OrganizationRequest() # OrganizationRequest | This is the updated Organization. Please provide values for all fields, not just the fields you are updating
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Organization Identifier for the Entity.
 if_match = 'if_match_example' # str | Version number of the Organization (optional)
@@ -556,19 +556,19 @@ Updates the information of the organization with the matching organization ident
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UpdateOrganizationRequest() # UpdateOrganizationRequest | Put the necessary fields for the API to update a organization.
+api_instance = harness_python_sdk.OrganizationApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.UpdateOrganizationRequest() # UpdateOrganizationRequest | Put the necessary fields for the API to update a organization.
 org = 'org_example' # str | Organization identifier
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 

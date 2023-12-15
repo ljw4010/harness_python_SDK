@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.yaml_diff_record import YamlDiffRecord  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.yaml_diff_record import YamlDiffRecord  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestYamlDiffRecord(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestYamlDiffRecord(unittest.TestCase):
     def testYamlDiffRecord(self):
         """Test YamlDiffRecord"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.yaml_diff_record.YamlDiffRecord()  # noqa: E501
+        # model = harness_python_sdk.models.yaml_diff_record.YamlDiffRecord()  # noqa: E501
         pass
 
 

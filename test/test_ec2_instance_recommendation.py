@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.ec2_instance_recommendation import EC2InstanceRecommendation  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.ec2_instance_recommendation import EC2InstanceRecommendation  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestEC2InstanceRecommendation(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestEC2InstanceRecommendation(unittest.TestCase):
     def testEC2InstanceRecommendation(self):
         """Test EC2InstanceRecommendation"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.ec2_instance_recommendation.EC2InstanceRecommendation()  # noqa: E501
+        # model = harness_python_sdk.models.ec2_instance_recommendation.EC2InstanceRecommendation()  # noqa: E501
         pass
 
 

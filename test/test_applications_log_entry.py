@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.applications_log_entry import ApplicationsLogEntry  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.applications_log_entry import ApplicationsLogEntry  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestApplicationsLogEntry(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestApplicationsLogEntry(unittest.TestCase):
     def testApplicationsLogEntry(self):
         """Test ApplicationsLogEntry"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.applications_log_entry.ApplicationsLogEntry()  # noqa: E501
+        # model = harness_python_sdk.models.applications_log_entry.ApplicationsLogEntry()  # noqa: E501
         pass
 
 

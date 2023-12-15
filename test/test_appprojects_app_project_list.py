@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.appprojects_app_project_list import AppprojectsAppProjectList  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.appprojects_app_project_list import AppprojectsAppProjectList  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAppprojectsAppProjectList(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAppprojectsAppProjectList(unittest.TestCase):
     def testAppprojectsAppProjectList(self):
         """Test AppprojectsAppProjectList"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.appprojects_app_project_list.AppprojectsAppProjectList()  # noqa: E501
+        # model = harness_python_sdk.models.appprojects_app_project_list.AppprojectsAppProjectList()  # noqa: E501
         pass
 
 

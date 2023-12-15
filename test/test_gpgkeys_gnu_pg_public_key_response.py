@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.gpgkeys_gnu_pg_public_key_response import GpgkeysGnuPGPublicKeyResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.gpgkeys_gnu_pg_public_key_response import GpgkeysGnuPGPublicKeyResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestGpgkeysGnuPGPublicKeyResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGpgkeysGnuPGPublicKeyResponse(unittest.TestCase):
     def testGpgkeysGnuPGPublicKeyResponse(self):
         """Test GpgkeysGnuPGPublicKeyResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.gpgkeys_gnu_pg_public_key_response.GpgkeysGnuPGPublicKeyResponse()  # noqa: E501
+        # model = harness_python_sdk.models.gpgkeys_gnu_pg_public_key_response.GpgkeysGnuPGPublicKeyResponse()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.error_tracking_health_source import ErrorTrackingHealthSource  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.error_tracking_health_source import ErrorTrackingHealthSource  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestErrorTrackingHealthSource(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestErrorTrackingHealthSource(unittest.TestCase):
     def testErrorTrackingHealthSource(self):
         """Test ErrorTrackingHealthSource"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.error_tracking_health_source.ErrorTrackingHealthSource()  # noqa: E501
+        # model = harness_python_sdk.models.error_tracking_health_source.ErrorTrackingHealthSource()  # noqa: E501
         pass
 
 

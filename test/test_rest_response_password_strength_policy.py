@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.rest_response_password_strength_policy import RestResponsePasswordStrengthPolicy  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.rest_response_password_strength_policy import RestResponsePasswordStrengthPolicy  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestRestResponsePasswordStrengthPolicy(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRestResponsePasswordStrengthPolicy(unittest.TestCase):
     def testRestResponsePasswordStrengthPolicy(self):
         """Test RestResponsePasswordStrengthPolicy"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.rest_response_password_strength_policy.RestResponsePasswordStrengthPolicy()  # noqa: E501
+        # model = harness_python_sdk.models.rest_response_password_strength_policy.RestResponsePasswordStrengthPolicy()  # noqa: E501
         pass
 
 

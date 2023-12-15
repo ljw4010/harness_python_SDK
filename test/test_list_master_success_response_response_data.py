@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.list_master_success_response_response_data import ListMasterSuccessResponseResponseData  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.list_master_success_response_response_data import ListMasterSuccessResponseResponseData  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestListMasterSuccessResponseResponseData(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestListMasterSuccessResponseResponseData(unittest.TestCase):
     def testListMasterSuccessResponseResponseData(self):
         """Test ListMasterSuccessResponseResponseData"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.list_master_success_response_response_data.ListMasterSuccessResponseResponseData()  # noqa: E501
+        # model = harness_python_sdk.models.list_master_success_response_response_data.ListMasterSuccessResponseResponseData()  # noqa: E501
         pass
 
 

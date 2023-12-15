@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.servicev1_reconciler_filter import Servicev1ReconcilerFilter  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.servicev1_reconciler_filter import Servicev1ReconcilerFilter  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestServicev1ReconcilerFilter(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestServicev1ReconcilerFilter(unittest.TestCase):
     def testServicev1ReconcilerFilter(self):
         """Test Servicev1ReconcilerFilter"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.servicev1_reconciler_filter.Servicev1ReconcilerFilter()  # noqa: E501
+        # model = harness_python_sdk.models.servicev1_reconciler_filter.Servicev1ReconcilerFilter()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# swagger_client.DelegateSetupResourceApi
+# harness_python_sdk.DelegateSetupResourceApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -20,18 +20,18 @@ Deletes a Delegate by its identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateSetupResourceApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.DelegateSetupResourceApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 delegate_identifier = 'delegate_identifier_example' # str | Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -78,19 +78,19 @@ Generates helm values yaml file from the data specified in request body (Delegat
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateSetupResourceApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DelegateSetupDetails() # DelegateSetupDetails | Delegate setup details, containing data to populate yaml file values.
+api_instance = harness_python_sdk.DelegateSetupResourceApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.DelegateSetupDetails() # DelegateSetupDetails | Delegate setup details, containing data to populate yaml file values.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -135,18 +135,18 @@ Generates delegate terraform example module file from the account
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateSetupResourceApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.DelegateSetupResourceApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -190,20 +190,20 @@ Lists all delegates in NG filtered by provided conditions
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateSetupResourceApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.DelegateSetupResourceApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.DelegateFilterPropertiesDTO() # DelegateFilterPropertiesDTO | Details of the Delegate filter properties to be applied (optional)
+body = harness_python_sdk.DelegateFilterPropertiesDTO() # DelegateFilterPropertiesDTO | Details of the Delegate filter properties to be applied (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 
@@ -248,18 +248,18 @@ Overrides delegate image tag for account
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateSetupResourceApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.DelegateSetupResourceApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 delegate_tag = 'delegate_tag_example' # str | 
 valid_till_next_release = false # bool |  (optional) (default to false)
@@ -306,18 +306,18 @@ Gets the latest supported delegate version. The version has YY.MM.XXXXX format. 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateSetupResourceApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.DelegateSetupResourceApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:

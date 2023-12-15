@@ -1,4 +1,4 @@
-# swagger_client.TargetGroupsApi
+# harness_python_sdk.TargetGroupsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -23,18 +23,18 @@ Creates a Target Group in the given Project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetGroupsApi(harness_python_sdk.ApiClient(configuration))
 body = NULL # object | 
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
@@ -80,18 +80,18 @@ Deletes a Target Group for the given ID
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetGroupsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
@@ -141,18 +141,18 @@ Returns Target Group details for the given account
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetGroupsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
 environment_identifier = 'environment_identifier_example' # str | Environment Identifier
@@ -213,18 +213,18 @@ Returns the list of Feature Flags that the Target Group can be added to.  This l
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetGroupsApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
@@ -285,18 +285,18 @@ Returns Target Group details for the given ID
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetGroupsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
@@ -347,18 +347,18 @@ Returns the details of a Feature Flag in a Target Group for the given identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetGroupsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
@@ -409,24 +409,24 @@ Updates a Target Group for the given identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetGroupsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetGroupsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
 project_identifier = 'project_identifier_example' # str | The Project identifier
 environment_identifier = 'environment_identifier_example' # str | Environment Identifier
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
-body = swagger_client.GitSyncPatchOperation() # GitSyncPatchOperation |  (optional)
+body = harness_python_sdk.GitSyncPatchOperation() # GitSyncPatchOperation |  (optional)
 
 try:
     # Updates a Target Group

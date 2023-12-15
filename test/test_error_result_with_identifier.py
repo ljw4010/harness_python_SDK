@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.error_result_with_identifier import ErrorResultWithIdentifier  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.error_result_with_identifier import ErrorResultWithIdentifier  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestErrorResultWithIdentifier(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestErrorResultWithIdentifier(unittest.TestCase):
     def testErrorResultWithIdentifier(self):
         """Test ErrorResultWithIdentifier"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.error_result_with_identifier.ErrorResultWithIdentifier()  # noqa: E501
+        # model = harness_python_sdk.models.error_result_with_identifier.ErrorResultWithIdentifier()  # noqa: E501
         pass
 
 

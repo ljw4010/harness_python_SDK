@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dto_role_assignment_delete_response_dto import ResponseDTORoleAssignmentDeleteResponseDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dto_role_assignment_delete_response_dto import ResponseDTORoleAssignmentDeleteResponseDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTORoleAssignmentDeleteResponseDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTORoleAssignmentDeleteResponseDTO(unittest.TestCase):
     def testResponseDTORoleAssignmentDeleteResponseDTO(self):
         """Test ResponseDTORoleAssignmentDeleteResponseDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dto_role_assignment_delete_response_dto.ResponseDTORoleAssignmentDeleteResponseDTO()  # noqa: E501
+        # model = harness_python_sdk.models.response_dto_role_assignment_delete_response_dto.ResponseDTORoleAssignmentDeleteResponseDTO()  # noqa: E501
         pass
 
 

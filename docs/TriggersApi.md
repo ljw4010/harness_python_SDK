@@ -1,4 +1,4 @@
-# swagger_client.TriggersApi
+# harness_python_sdk.TriggersApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -22,18 +22,18 @@ Creates Trigger for triggering target pipeline identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersApi(harness_python_sdk.ApiClient(configuration))
 body = '{   \"summary\" : \"Sample Create Trigger YAML\",   \"description\" : \"Sample Triggers YAML\",   \"value\" : \"trigger:\\n  name: Trigger\\n  identifier: Trigger\\n  enabled: true\\n  orgIdentifier: default\\n  projectIdentifier: Terraform_Provider\\n  pipelineIdentifier: Terraform_NG_Acc_Tests_With_Notifications\\n  source:\\n    type: Scheduled\\n    spec:\\n      type: Cron\\n      spec:\\n        expression: 0 8,20 * * *\\n  inputYaml: |\\n    pipeline:\\n      identifier: Terraform_NG_Acc_Tests_With_Notifications\\n      properties:\\n        ci:\\n          codebase:\\n            build:\\n              type: branch\\n              spec:\\n                branch: main\" }' # str | Triggers YAML
 account_identifier = 'account_identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str | 
@@ -86,18 +86,18 @@ Deletes Trigger by identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str | 
 project_identifier = 'project_identifier_example' # str | 
@@ -148,23 +148,23 @@ Gets the paginated list of triggers for accountIdentifier, orgIdentifier, projec
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str | 
 project_identifier = 'project_identifier_example' # str | 
 target_identifier = 'target_identifier_example' # str | Identifier of the target pipeline
-body = swagger_client.TriggerFilterProperties() # TriggerFilterProperties | This contains details of Trigger filters based on Trigger Types and Trigger Names  (optional)
+body = harness_python_sdk.TriggerFilterProperties() # TriggerFilterProperties | This contains details of Trigger filters based on Trigger Types and Trigger Names  (optional)
 filter = 'filter_example' # str |  (optional)
 page = 0 # int |  (optional) (default to 0)
 size = 25 # int |  (optional) (default to 25)
@@ -218,18 +218,18 @@ Gets the trigger by accountIdentifier, orgIdentifier, projectIdentifier, targetI
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str | 
 project_identifier = 'project_identifier_example' # str | 
@@ -280,18 +280,18 @@ Lists all the Triggers for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -332,18 +332,18 @@ Fetches Trigger details for a specific accountIdentifier, orgIdentifier, project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str | 
 project_identifier = 'project_identifier_example' # str | 
@@ -394,18 +394,18 @@ Get event history for a trigger
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str | 
 project_identifier = 'project_identifier_example' # str | 
@@ -462,18 +462,18 @@ Updates trigger for pipeline with target pipeline identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersApi(harness_python_sdk.ApiClient(configuration))
 body = '{   \"summary\" : \"Sample Update Trigger YAML\",   \"description\" : \"Sample Triggers YAML\",   \"value\" : \"trigger:\\n  name: Trigger\\n  identifier: Trigger\\n  enabled: true\\n  orgIdentifier: default\\n  projectIdentifier: Terraform_Provider\\n  pipelineIdentifier: Terraform_NG_Acc_Tests_With_Notifications\\n  source:\\n    type: Scheduled\\n    spec:\\n      type: Cron\\n      spec:\\n        expression: 0 8,20 * * *\\n  inputYaml: |\\n    pipeline:\\n      identifier: Terraform_NG_Acc_Tests_With_Notifications\\n      properties:\\n        ci:\\n          codebase:\\n            build:\\n              type: branch\\n              spec:\\n                branch: main\" }' # str | Triggers YAML
 account_identifier = 'account_identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str | 

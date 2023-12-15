@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.budget_scope import BudgetScope  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.budget_scope import BudgetScope  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestBudgetScope(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestBudgetScope(unittest.TestCase):
     def testBudgetScope(self):
         """Test BudgetScope"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.budget_scope.BudgetScope()  # noqa: E501
+        # model = harness_python_sdk.models.budget_scope.BudgetScope()  # noqa: E501
         pass
 
 

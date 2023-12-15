@@ -1,4 +1,4 @@
-# swagger_client.OrgTemplateApi
+# harness_python_sdk.OrgTemplateApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -24,20 +24,20 @@ Creates a Template in the Organization scope.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgTemplateApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgTemplateApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization Identifier
-body = swagger_client.TemplateCreateRequestBody() # TemplateCreateRequestBody | Templates Create Request Body (optional)
+body = harness_python_sdk.TemplateCreateRequestBody() # TemplateCreateRequestBody | Templates Create Request Body (optional)
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
 try:
@@ -82,18 +82,18 @@ Deletes particular version of Template at Organization scope.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgTemplateApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgTemplateApi(harness_python_sdk.ApiClient(configuration))
 template = 'template_example' # str | Template Identifier
 org = 'org_example' # str | Organization Identifier
 version = 'version_example' # str | Version Label for Template
@@ -145,18 +145,18 @@ Retrieves particular version of Template at Organization scope.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgTemplateApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgTemplateApi(harness_python_sdk.ApiClient(configuration))
 template = 'template_example' # str | Template Identifier
 org = 'org_example' # str | Organization Identifier
 version = 'version_example' # str | Version Label for Template
@@ -219,18 +219,18 @@ Retrieves stable version of Template at Organization scope.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgTemplateApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgTemplateApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization Identifier
 template = 'template_example' # str | Template Identifier
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
@@ -291,18 +291,18 @@ Retrieves list of Template with meta-data at Organization scope.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgTemplateApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgTemplateApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization Identifier
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 page = 0 # int | Pagination page number strategy: Specify the page number within the paginated collection related to the number of items in each page  (optional) (default to 0)
@@ -371,21 +371,21 @@ Import template at org level
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgTemplateApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgTemplateApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization Identifier
 template = 'template_example' # str | Template Identifier
-body = swagger_client.TemplateImportRequestBody() # TemplateImportRequestBody |  (optional)
+body = harness_python_sdk.TemplateImportRequestBody() # TemplateImportRequestBody |  (optional)
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
 try:
@@ -431,22 +431,22 @@ Updates particular version of Template at Organization scope.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgTemplateApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgTemplateApi(harness_python_sdk.ApiClient(configuration))
 template = 'template_example' # str | Template Identifier
 org = 'org_example' # str | Organization Identifier
 version = 'version_example' # str | Version Label for Template
-body = swagger_client.TemplateUpdateRequestBody() # TemplateUpdateRequestBody | Templates Update Request Body (optional)
+body = harness_python_sdk.TemplateUpdateRequestBody() # TemplateUpdateRequestBody | Templates Update Request Body (optional)
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
 try:
@@ -493,22 +493,22 @@ Updates the stable version of Template at Organization scope.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgTemplateApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgTemplateApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization Identifier
 template = 'template_example' # str | Template Identifier
 version = 'version_example' # str | Version Label for Template
-body = swagger_client.GitFindDetails() # GitFindDetails | Templates Fetch Request Body (optional)
+body = harness_python_sdk.GitFindDetails() # GitFindDetails | Templates Fetch Request Body (optional)
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
 try:

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.change_summary_dto import ChangeSummaryDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.change_summary_dto import ChangeSummaryDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestChangeSummaryDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestChangeSummaryDTO(unittest.TestCase):
     def testChangeSummaryDTO(self):
         """Test ChangeSummaryDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.change_summary_dto.ChangeSummaryDTO()  # noqa: E501
+        # model = harness_python_sdk.models.change_summary_dto.ChangeSummaryDTO()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# swagger_client.OrgSecretApi
+# harness_python_sdk.OrgSecretApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -22,19 +22,19 @@ Creates a new secret
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgSecretApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SecretRequest() # SecretRequest | 
+api_instance = harness_python_sdk.OrgSecretApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.SecretRequest() # SecretRequest | 
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 private_secret = false # bool | This would be used to define secret as private. (optional) (default to false)
@@ -82,18 +82,18 @@ Deletes the information of the secret with the matching secret identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgSecretApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgSecretApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
 secret = 'secret_example' # str | Identifier field of the secret
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
@@ -140,18 +140,18 @@ Retrieves the information of the secret.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgSecretApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgSecretApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
 secret = 'secret_example' # str | Identifier field of the secret
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
@@ -198,18 +198,18 @@ Retrieves the information of the secrets.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgSecretApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgSecretApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
 secret = ['secret_example'] # list[str] | Identifier field of secrets (optional)
 type = ['type_example'] # list[str] | Secret types on which the filter will be applied (optional)
@@ -270,19 +270,19 @@ Updates the information of the secret with the matching secret identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgSecretApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SecretRequest() # SecretRequest | 
+api_instance = harness_python_sdk.OrgSecretApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.SecretRequest() # SecretRequest | 
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
 secret = 'secret_example' # str | Identifier field of the secret
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
@@ -330,20 +330,20 @@ Validates if the secret at the secretManager path can be referenced
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgSecretApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgSecretApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
-body = swagger_client.SecretRequest() # SecretRequest | Details of the secret reference (optional)
+body = harness_python_sdk.SecretRequest() # SecretRequest | Details of the secret reference (optional)
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
 try:

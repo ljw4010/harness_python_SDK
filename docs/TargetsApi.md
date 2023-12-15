@@ -1,4 +1,4 @@
-# swagger_client.TargetsApi
+# harness_python_sdk.TargetsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -24,19 +24,19 @@ Create Targets for the given identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Target() # Target | 
+api_instance = harness_python_sdk.TargetsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Target() # Target | 
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
 
@@ -81,18 +81,18 @@ Deletes a Target for the given identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetsApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
@@ -142,18 +142,18 @@ Returns all the Targets for the given Account ID
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
 project_identifier = 'project_identifier_example' # str | The Project identifier
@@ -214,18 +214,18 @@ Returns details of a Target for the given identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetsApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
@@ -276,18 +276,18 @@ Returns the Target Groups that the specified Target belongs to.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetsApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
@@ -338,19 +338,19 @@ Modifies a Target for the given account identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Target() # Target | 
+api_instance = harness_python_sdk.TargetsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Target() # Target | 
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
 project_identifier = 'project_identifier_example' # str | The Project identifier
@@ -402,24 +402,24 @@ Updates a Target for the given identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
 project_identifier = 'project_identifier_example' # str | The Project identifier
 environment_identifier = 'environment_identifier_example' # str | Environment Identifier
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
-body = swagger_client.GitSyncPatchOperation() # GitSyncPatchOperation |  (optional)
+body = harness_python_sdk.GitSyncPatchOperation() # GitSyncPatchOperation |  (optional)
 
 try:
     # Updates a Target
@@ -466,18 +466,18 @@ Add targets by uploading a CSV file
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TargetsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TargetsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier
 project_identifier = 'project_identifier_example' # str | The Project identifier

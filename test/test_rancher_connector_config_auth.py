@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.rancher_connector_config_auth import RancherConnectorConfigAuth  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.rancher_connector_config_auth import RancherConnectorConfigAuth  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestRancherConnectorConfigAuth(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRancherConnectorConfigAuth(unittest.TestCase):
     def testRancherConnectorConfigAuth(self):
         """Test RancherConnectorConfigAuth"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.rancher_connector_config_auth.RancherConnectorConfigAuth()  # noqa: E501
+        # model = harness_python_sdk.models.rancher_connector_config_auth.RancherConnectorConfigAuth()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# swagger_client.RoleAssignmentsApi
+# harness_python_sdk.RoleAssignmentsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -26,18 +26,18 @@ Bulk delete role assignments by identifiers
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RoleAssignmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RoleAssignmentsApi(harness_python_sdk.ApiClient(configuration))
 body = ['body_example'] # list[str] | List of role assigment identifiers to be deleted
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -86,18 +86,18 @@ Delete an existing role assignment by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RoleAssignmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RoleAssignmentsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Identifier for role assignment
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -146,23 +146,23 @@ List role assignments in the scope according to the given filter
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RoleAssignmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RoleAssignmentsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.RoleAssignmentFilterV2() # RoleAssignmentFilterV2 |  (optional)
+body = harness_python_sdk.RoleAssignmentFilterV2() # RoleAssignmentFilterV2 |  (optional)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -214,23 +214,23 @@ List role assignments in the scope according to the given filter
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RoleAssignmentsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.RoleAssignmentFilter() # RoleAssignmentFilter | Filter role assignments based on multiple parameters.
+api_instance = harness_python_sdk.RoleAssignmentsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.RoleAssignmentFilter() # RoleAssignmentFilter | Filter role assignments based on multiple parameters.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -282,18 +282,18 @@ Get an existing role assignment by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RoleAssignmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RoleAssignmentsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Identifier for role assignment
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -342,19 +342,19 @@ List role assignments in the scope according to the given filter with added meta
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RoleAssignmentsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.RoleAssignmentFilter() # RoleAssignmentFilter | Filter role assignments based on multiple parameters.
+api_instance = harness_python_sdk.RoleAssignmentsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.RoleAssignmentFilter() # RoleAssignmentFilter | Filter role assignments based on multiple parameters.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -402,22 +402,22 @@ List role assignments in the given scope
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RoleAssignmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RoleAssignmentsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -468,19 +468,19 @@ Creates role assignment within the specified scope.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RoleAssignmentsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AuthzRoleAssignment() # AuthzRoleAssignment | These are details for the role assignment to create.
+api_instance = harness_python_sdk.RoleAssignmentsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.AuthzRoleAssignment() # AuthzRoleAssignment | These are details for the role assignment to create.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -528,19 +528,19 @@ Create multiple role assignments in a scope. Returns all successfully created ro
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RoleAssignmentsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.RoleAssignmentCreateRequest() # RoleAssignmentCreateRequest | List of role assignments to create
+api_instance = harness_python_sdk.RoleAssignmentsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.RoleAssignmentCreateRequest() # RoleAssignmentCreateRequest | List of role assignments to create
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -588,19 +588,19 @@ Check whether a proposed role assignment is valid.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RoleAssignmentsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.RoleAssignmentValidationRequest() # RoleAssignmentValidationRequest | This is the details of the role assignment for validation.
+api_instance = harness_python_sdk.RoleAssignmentsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.RoleAssignmentValidationRequest() # RoleAssignmentValidationRequest | This is the details of the role assignment for validation.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)

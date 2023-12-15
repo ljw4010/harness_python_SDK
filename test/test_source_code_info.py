@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.source_code_info import SourceCodeInfo  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.source_code_info import SourceCodeInfo  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestSourceCodeInfo(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSourceCodeInfo(unittest.TestCase):
     def testSourceCodeInfo(self):
         """Test SourceCodeInfo"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.source_code_info.SourceCodeInfo()  # noqa: E501
+        # model = harness_python_sdk.models.source_code_info.SourceCodeInfo()  # noqa: E501
         pass
 
 

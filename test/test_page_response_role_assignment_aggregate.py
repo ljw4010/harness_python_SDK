@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.page_response_role_assignment_aggregate import PageResponseRoleAssignmentAggregate  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.page_response_role_assignment_aggregate import PageResponseRoleAssignmentAggregate  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestPageResponseRoleAssignmentAggregate(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPageResponseRoleAssignmentAggregate(unittest.TestCase):
     def testPageResponseRoleAssignmentAggregate(self):
         """Test PageResponseRoleAssignmentAggregate"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.page_response_role_assignment_aggregate.PageResponseRoleAssignmentAggregate()  # noqa: E501
+        # model = harness_python_sdk.models.page_response_role_assignment_aggregate.PageResponseRoleAssignmentAggregate()  # noqa: E501
         pass
 
 

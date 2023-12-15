@@ -1,4 +1,4 @@
-# swagger_client.InfrastructuresApi
+# harness_python_sdk.InfrastructuresApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -19,19 +19,19 @@ Create an Infrastructure in an Environment
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.InfrastructuresApi(swagger_client.ApiClient(configuration))
-body = swagger_client.InfrastructureRequest() # InfrastructureRequest | Details of the Infrastructure to be created
+api_instance = harness_python_sdk.InfrastructuresApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.InfrastructureRequest() # InfrastructureRequest | Details of the Infrastructure to be created
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -73,18 +73,18 @@ Delete an Infrastructure by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.InfrastructuresApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.InfrastructuresApi(harness_python_sdk.ApiClient(configuration))
 infra_identifier = 'infra_identifier_example' # str | Infrastructure Identifier for the entity
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 environment_identifier = 'environment_identifier_example' # str | Environment Identifier for the Entity.
@@ -135,18 +135,18 @@ Gets an Infrastructure by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.InfrastructuresApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.InfrastructuresApi(harness_python_sdk.ApiClient(configuration))
 infra_identifier = 'infra_identifier_example' # str | Infrastructure Identifier for the entity
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 environment_identifier = 'environment_identifier_example' # str | envId
@@ -197,18 +197,18 @@ Gets Infrastructure list
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.InfrastructuresApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.InfrastructuresApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 environment_identifier = 'environment_identifier_example' # str | Environment Identifier for the Entity.
 page = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
@@ -273,19 +273,19 @@ Update an Infrastructure by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.InfrastructuresApi(swagger_client.ApiClient(configuration))
-body = swagger_client.InfrastructureRequest() # InfrastructureRequest | Details of the Infrastructure to be updated
+api_instance = harness_python_sdk.InfrastructuresApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.InfrastructureRequest() # InfrastructureRequest | Details of the Infrastructure to be updated
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:

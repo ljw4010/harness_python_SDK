@@ -1,4 +1,4 @@
-# swagger_client.SettingApi
+# harness_python_sdk.SettingApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -17,18 +17,18 @@ Get a setting value by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SettingApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SettingApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | This is the Identifier of the Entity
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -75,18 +75,18 @@ Get list of settings under the specified category
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SettingApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SettingApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 category = 'category_example' # str | Category of the Setting.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -137,20 +137,20 @@ Update settings
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SettingApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SettingApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = [swagger_client.SettingRequestDTO()] # list[SettingRequestDTO] | List of update requests for settings (optional)
+body = [harness_python_sdk.SettingRequestDTO()] # list[SettingRequestDTO] | List of update requests for settings (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 

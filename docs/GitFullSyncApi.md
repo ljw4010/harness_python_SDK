@@ -1,4 +1,4 @@
-# swagger_client.GitFullSyncApi
+# harness_python_sdk.GitFullSyncApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -19,20 +19,20 @@ Create Configuration for Git Full Sync for the provided scope
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.GitFullSyncApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.GitFullSyncApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.GitFullSyncConfigRequest() # GitFullSyncConfigRequest | Details of the Git Full sync Configuration (optional)
+body = harness_python_sdk.GitFullSyncConfigRequest() # GitFullSyncConfigRequest | Details of the Git Full sync Configuration (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 
@@ -77,18 +77,18 @@ Fetch Configuration for Git Full Sync for the provided scope
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.GitFullSyncApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.GitFullSyncApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -133,25 +133,25 @@ List files in full sync along with their status
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.GitFullSyncApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.GitFullSyncApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.GitFullSyncEntityInfoFilter() # GitFullSyncEntityInfoFilter | Entity Type and Sync Status (optional)
+body = harness_python_sdk.GitFullSyncEntityInfoFilter() # GitFullSyncEntityInfoFilter | Entity Type and Sync Status (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 search_term = 'search_term_example' # str | Search Term. (optional)
 
@@ -201,18 +201,18 @@ Trigger Full Sync
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.GitFullSyncApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.GitFullSyncApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -257,20 +257,20 @@ Update Configuration for Git Full Sync for the provided scope
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.GitFullSyncApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.GitFullSyncApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.GitFullSyncConfigRequest() # GitFullSyncConfigRequest | Details of the Git Full sync Configuration (optional)
+body = harness_python_sdk.GitFullSyncConfigRequest() # GitFullSyncConfigRequest | Details of the Git Full sync Configuration (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 

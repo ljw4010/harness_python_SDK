@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.splunk_health_source_query_dto import SplunkHealthSourceQueryDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.splunk_health_source_query_dto import SplunkHealthSourceQueryDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestSplunkHealthSourceQueryDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSplunkHealthSourceQueryDTO(unittest.TestCase):
     def testSplunkHealthSourceQueryDTO(self):
         """Test SplunkHealthSourceQueryDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.splunk_health_source_query_dto.SplunkHealthSourceQueryDTO()  # noqa: E501
+        # model = harness_python_sdk.models.splunk_health_source_query_dto.SplunkHealthSourceQueryDTO()  # noqa: E501
         pass
 
 

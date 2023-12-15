@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.node_recommendation_dto import NodeRecommendationDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.node_recommendation_dto import NodeRecommendationDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestNodeRecommendationDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestNodeRecommendationDTO(unittest.TestCase):
     def testNodeRecommendationDTO(self):
         """Test NodeRecommendationDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.node_recommendation_dto.NodeRecommendationDTO()  # noqa: E501
+        # model = harness_python_sdk.models.node_recommendation_dto.NodeRecommendationDTO()  # noqa: E501
         pass
 
 

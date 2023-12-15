@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.tgt_password_spec_dto import TGTPasswordSpecDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.tgt_password_spec_dto import TGTPasswordSpecDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestTGTPasswordSpecDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTGTPasswordSpecDTO(unittest.TestCase):
     def testTGTPasswordSpecDTO(self):
         """Test TGTPasswordSpecDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.tgt_password_spec_dto.TGTPasswordSpecDTO()  # noqa: E501
+        # model = harness_python_sdk.models.tgt_password_spec_dto.TGTPasswordSpecDTO()  # noqa: E501
         pass
 
 

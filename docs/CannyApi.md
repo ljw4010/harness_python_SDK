@@ -1,4 +1,4 @@
-# swagger_client.CannyApi
+# harness_python_sdk.CannyApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -16,20 +16,20 @@ create Canny Post for given user
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CannyApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CannyApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.CannyPostBody() # CannyPostBody |  (optional)
+body = harness_python_sdk.CannyPostBody() # CannyPostBody |  (optional)
 
 try:
     # create Canny Post for given user
@@ -70,18 +70,18 @@ Get a list of boards available on Canny
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CannyApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CannyApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:

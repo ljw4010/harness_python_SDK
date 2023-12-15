@@ -1,4 +1,4 @@
-# swagger_client.HarnessResourceGroupApi
+# harness_python_sdk.HarnessResourceGroupApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -22,19 +22,19 @@ Create a resource group
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.HarnessResourceGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ResourceGroupV2Request() # ResourceGroupV2Request | This contains the details required to create a Resource Group
+api_instance = harness_python_sdk.HarnessResourceGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ResourceGroupV2Request() # ResourceGroupV2Request | This contains the details required to create a Resource Group
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -82,18 +82,18 @@ Delete a resource group
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.HarnessResourceGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.HarnessResourceGroupApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Identifier for the Entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -142,23 +142,23 @@ This fetches a filtered list of Resource Groups
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.HarnessResourceGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ResourceGroupFilter() # ResourceGroupFilter | Filter Resource Groups based on multiple parameters
+api_instance = harness_python_sdk.HarnessResourceGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ResourceGroupFilter() # ResourceGroupFilter | Filter Resource Groups based on multiple parameters
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -206,25 +206,25 @@ Get list of resource groups
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.HarnessResourceGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.HarnessResourceGroupApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 search_term = 'search_term_example' # str | Details of all the resource groups having this string in their name or identifier will be returned. (optional)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -274,18 +274,18 @@ Get a resource group by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.HarnessResourceGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.HarnessResourceGroupApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Identifier for the Entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -334,19 +334,19 @@ Update a resource group
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.HarnessResourceGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ResourceGroupV2Request() # ResourceGroupV2Request | This contains the details required to create a Resource Group
+api_instance = harness_python_sdk.HarnessResourceGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ResourceGroupV2Request() # ResourceGroupV2Request | This contains the details required to create a Resource Group
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)

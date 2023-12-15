@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.edge_layout_list import EdgeLayoutList  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.edge_layout_list import EdgeLayoutList  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestEdgeLayoutList(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestEdgeLayoutList(unittest.TestCase):
     def testEdgeLayoutList(self):
         """Test EdgeLayoutList"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.edge_layout_list.EdgeLayoutList()  # noqa: E501
+        # model = harness_python_sdk.models.edge_layout_list.EdgeLayoutList()  # noqa: E501
         pass
 
 

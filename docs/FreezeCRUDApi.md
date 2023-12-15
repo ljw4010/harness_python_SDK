@@ -1,4 +1,4 @@
-# swagger_client.FreezeCRUDApi
+# harness_python_sdk.FreezeCRUDApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -24,18 +24,18 @@ Create a Freeze
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FreezeCRUDApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FreezeCRUDApi(harness_python_sdk.ApiClient(configuration))
 body = '{   \"summary\" : \"Sample Create Freeze YAML\",   \"description\" : \"Sample Freeze YAML\",   \"value\" : \"freeze:\\n  name: Sample Freeze\\n  identifier: Sample_Freeze\\n  entityConfigs:\\n    - name: Rule 1\\n      entities:\\n        - type: Service\\n          filterType: All\\n        - type: EnvType\\n          filterType: All\\n  status: Disabled\\n  orgIdentifier: org1\\n  projectIdentifier: Project1\\n  windows:\\n    - timeZone: Asia/Calcutta\\n      startTime: 2023-02-20 11:28 AM\\n      duration: 30m\" }' # str | Freeze YAML
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -82,18 +82,18 @@ Create Global Freeze
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FreezeCRUDApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FreezeCRUDApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | Freeze YAML
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -140,18 +140,18 @@ Delete a Freeze
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FreezeCRUDApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FreezeCRUDApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 freeze_identifier = 'freeze_identifier_example' # str | Freeze Identifier.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -197,18 +197,18 @@ Delete many Freezes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FreezeCRUDApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FreezeCRUDApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 body = ['body_example'] # list[str] | List of Freeze Identifiers (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -255,18 +255,18 @@ Get a Freeze
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FreezeCRUDApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FreezeCRUDApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 freeze_identifier = 'freeze_identifier_example' # str | Freeze Identifier.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -313,20 +313,20 @@ Gets Freeze list
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FreezeCRUDApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FreezeCRUDApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.FreezeFilterPropertiesDTO() # FreezeFilterPropertiesDTO | This contains details of Freeze filters (optional)
+body = harness_python_sdk.FreezeFilterPropertiesDTO() # FreezeFilterPropertiesDTO | This contains details of Freeze filters (optional)
 page = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 size = 10 # int | Results per page (optional) (default to 10)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -375,18 +375,18 @@ Get list of freeze acted on a frozen execution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FreezeCRUDApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FreezeCRUDApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -433,18 +433,18 @@ Get Global Freeze Yaml
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FreezeCRUDApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FreezeCRUDApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -489,18 +489,18 @@ Updates a Freeze
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FreezeCRUDApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FreezeCRUDApi(harness_python_sdk.ApiClient(configuration))
 body = '{   \"summary\" : \"Sample Update Freeze YAML\",   \"description\" : \"Sample Freeze YAML\",   \"value\" : \"freeze:\\n  name: Sample Freeze\\n  identifier: Sample_Freeze\\n  entityConfigs:\\n    - name: Rule 1\\n      entities:\\n        - type: Service\\n          filterType: All\\n        - type: EnvType\\n          filterType: All\\n  status: Disabled\\n  orgIdentifier: org1\\n  projectIdentifier: project1\\n  windows:\\n    - timeZone: Asia/Calcutta\\n      startTime: 2023-02-20 11:28 AM\\n      duration: 33m\\n  description: \\\"\\\"\" }' # str | Freeze YAML
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 freeze_identifier = 'freeze_identifier_example' # str | Freeze Identifier.
@@ -549,18 +549,18 @@ Update the status of Freeze to active or inactive
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FreezeCRUDApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FreezeCRUDApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 status = 'status_example' # str | Freeze YAML
 body = ['body_example'] # list[str] | Comma seperated List of Freeze Identifiers (optional)

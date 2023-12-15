@@ -1,4 +1,4 @@
-# swagger_client.CloudCostPerspectivesApi
+# harness_python_sdk.CloudCostPerspectivesApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -23,19 +23,19 @@ Create a Perspective. You can set the clone parameter as true to clone a Perspec
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CEView() # CEView | Request body containing Perspective's CEView object
+api_instance = harness_python_sdk.CloudCostPerspectivesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CEView() # CEView | Request body containing Perspective's CEView object
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 clone = true # bool | Set the clone parameter as true to clone a Perspective.
 
@@ -81,18 +81,18 @@ Delete a Perspective for the given Perspective ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostPerspectivesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 perspective_id = 'perspective_id_example' # str | Unique identifier for the Perspective
 
@@ -137,18 +137,18 @@ Return details of all the Perspectives for the given account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostPerspectivesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 page_size = 20 # int | Number of perspectives to be shown (default to 20)
 page_no = 0 # int | Number of records to be skipped (default to 0)
@@ -203,18 +203,18 @@ Get last period cost for a Perspective
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostPerspectivesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 perspective_id = 'perspective_id_example' # str | The Perspective identifier for which we want the cost
 start_time = 789 # int | The Start time (timestamp in millis) for the current period
@@ -263,18 +263,18 @@ Get last twelve month cost for a Perspective
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostPerspectivesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 perspective_id = 'perspective_id_example' # str | The Perspective identifier for which we want the cost
 start_time = 789 # int | The Start time (timestamp in millis) for the current period
@@ -327,18 +327,18 @@ Fetch details of a Perspective for the given Perspective ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostPerspectivesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 perspective_id = 'perspective_id_example' # str | Unique identifier for the Perspective
 
@@ -383,19 +383,19 @@ Update a Perspective. It accepts a CEView object and upserts it using the uuid m
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CEView() # CEView | Perspective's CEView object
+api_instance = harness_python_sdk.CloudCostPerspectivesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CEView() # CEView | Perspective's CEView object
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.app_d_metric_definitions import AppDMetricDefinitions  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.app_d_metric_definitions import AppDMetricDefinitions  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAppDMetricDefinitions(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAppDMetricDefinitions(unittest.TestCase):
     def testAppDMetricDefinitions(self):
         """Test AppDMetricDefinitions"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.app_d_metric_definitions.AppDMetricDefinitions()  # noqa: E501
+        # model = harness_python_sdk.models.app_d_metric_definitions.AppDMetricDefinitions()  # noqa: E501
         pass
 
 

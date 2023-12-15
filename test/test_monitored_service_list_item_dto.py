@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.monitored_service_list_item_dto import MonitoredServiceListItemDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.monitored_service_list_item_dto import MonitoredServiceListItemDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestMonitoredServiceListItemDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestMonitoredServiceListItemDTO(unittest.TestCase):
     def testMonitoredServiceListItemDTO(self):
         """Test MonitoredServiceListItemDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.monitored_service_list_item_dto.MonitoredServiceListItemDTO()  # noqa: E501
+        # model = harness_python_sdk.models.monitored_service_list_item_dto.MonitoredServiceListItemDTO()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dto_set_k8s_command_flag_type import ResponseDTOSetK8sCommandFlagType  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dto_set_k8s_command_flag_type import ResponseDTOSetK8sCommandFlagType  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTOSetK8sCommandFlagType(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTOSetK8sCommandFlagType(unittest.TestCase):
     def testResponseDTOSetK8sCommandFlagType(self):
         """Test ResponseDTOSetK8sCommandFlagType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dto_set_k8s_command_flag_type.ResponseDTOSetK8sCommandFlagType()  # noqa: E501
+        # model = harness_python_sdk.models.response_dto_set_k8s_command_flag_type.ResponseDTOSetK8sCommandFlagType()  # noqa: E501
         pass
 
 

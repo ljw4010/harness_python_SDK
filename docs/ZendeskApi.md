@@ -1,4 +1,4 @@
-# swagger_client.ZendeskApi
+# harness_python_sdk.ZendeskApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -16,23 +16,23 @@ create zendesk ticket for given user
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ZendeskApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ZendeskApi(harness_python_sdk.ApiClient(configuration))
 email_id = 'email_id_example' # str | emailId for user creating ticket
 ticket_type = 'ticket_type_example' # str | type of the ticket 
 priority = 'priority_example' # str | priority of the ticket
 subject = 'subject_example' # str | subject of the ticket
-body = swagger_client.ApiZendeskBody() # ApiZendeskBody |  (optional)
+body = harness_python_sdk.ApiZendeskBody() # ApiZendeskBody |  (optional)
 
 try:
     # create zendesk ticket for given user
@@ -76,18 +76,18 @@ get short live token for Coveo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ZendeskApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ZendeskApi(harness_python_sdk.ApiClient(configuration))
 
 try:
     # get short live token for Coveo

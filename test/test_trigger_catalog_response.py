@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.trigger_catalog_response import TriggerCatalogResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.trigger_catalog_response import TriggerCatalogResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestTriggerCatalogResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTriggerCatalogResponse(unittest.TestCase):
     def testTriggerCatalogResponse(self):
         """Test TriggerCatalogResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.trigger_catalog_response.TriggerCatalogResponse()  # noqa: E501
+        # model = harness_python_sdk.models.trigger_catalog_response.TriggerCatalogResponse()  # noqa: E501
         pass
 
 

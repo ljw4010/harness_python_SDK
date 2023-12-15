@@ -1,4 +1,4 @@
-# swagger_client.TemplatesApi
+# harness_python_sdk.TemplatesApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -25,18 +25,18 @@ Create a Template
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TemplatesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TemplatesApi(harness_python_sdk.ApiClient(configuration))
 body = '{   \"summary\" : \"Sample Create Template YAML\",   \"description\" : \"Sample Template YAML\",   \"value\" : \"template:\\n  name: pipelineTemplate\\n  identifier: pipelineTemplate\\n  versionLabel: v1\\n  type: Pipeline\\n  projectIdentifier: TemplateDemo\\n  orgIdentifier: default\\n  tags: {}\\n  spec:\\n    stages:\\n      - stage:\\n          name: stage1\\n          identifier: stage1\\n          description: \\\"\\\"\\n          type: Deployment\\n          spec:\\n            deploymentType: Kubernetes\\n            service:\\n              serviceRef: <+input>\\n              serviceInputs: <+input>\\n            environment:\\n              environmentRef: <+input>\\n              deployToAll: false\\n              environmentInputs: <+input>\\n              infrastructureDefinitions: <+input>\\n            execution:\\n              steps:\\n                - step:\\n                    type: ShellScript\\n                    name: Shell Script_1\\n                    identifier: ShellScript_1\\n                    spec:\\n                      shell: Bash\\n                      onDelegate: true\\n                      source:\\n                        type: Inline\\n                        spec:\\n                          script: <+input>\\n                      environmentVariables: []\\n                      outputVariables: []\\n                    timeout: 10m\\n              rollbackSteps: []\\n          tags: {}\\n          failureStrategies:\\n            - onFailure:\\n                errors:\\n                  - AllErrors\\n                action:\\n                  type: StageRollback\\n\" }' # str | Template YAML
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -109,18 +109,18 @@ Delete Template Version
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TemplatesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TemplatesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 template_identifier = 'template_identifier_example' # str | Template Identifier for the entity
 version_label = 'version_label_example' # str | Version Label
@@ -189,19 +189,19 @@ Returns YAML with updated Template Inputs for a given YAML
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TemplatesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.RefreshRequestDTO() # RefreshRequestDTO | YAML
+api_instance = harness_python_sdk.TemplatesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.RefreshRequestDTO() # RefreshRequestDTO | YAML
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 load_from_cache = 'false' # str |  (optional) (default to false)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -255,18 +255,18 @@ Get Template
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TemplatesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TemplatesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 template_identifier = 'template_identifier_example' # str | Template Identifier for the entity
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -327,18 +327,18 @@ Gets Template Input Set YAML
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TemplatesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TemplatesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 template_identifier = 'template_identifier_example' # str | Template Identifier for the entity
 version_label = 'version_label_example' # str | Template Label
@@ -395,21 +395,21 @@ Gets all metadata of template list
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TemplatesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TemplatesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 template_list_type = 'template_list_type_example' # str | Template List Type
-body = swagger_client.TemplateFilterProperties() # TemplateFilterProperties | This contains details of Template filters based on Template Types and Template Names  (optional)
+body = harness_python_sdk.TemplateFilterProperties() # TemplateFilterProperties | This contains details of Template filters based on Template Types and Template Names  (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 page = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
@@ -469,18 +469,18 @@ Move Template YAML from inline to remote
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TemplatesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TemplatesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 template_identifier = 'template_identifier_example' # str | Template Identifier for the entity
 version_label = 'version_label_example' # str | Version Label
@@ -547,18 +547,18 @@ Validates the Template Inputs in a pipeline's YAML specification. If the Templat
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TemplatesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TemplatesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 template_identifier = 'template_identifier_example' # str | Template Identifier for the entity
 version_label = 'version_label_example' # str | Template version
@@ -615,18 +615,18 @@ Update Template Version
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TemplatesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TemplatesApi(harness_python_sdk.ApiClient(configuration))
 body = '{   \"summary\" : \"Sample Update Template YAML\",   \"description\" : \"Sample Template YAML\",   \"value\" : \"template:\\n  name: pipelineTemplate\\n  identifier: pipelineTemplate\\n  versionLabel: v1\\n  type: Pipeline\\n  projectIdentifier: TemplateDemo\\n  orgIdentifier: default\\n  tags: {}\\n  spec:\\n    stages:\\n      - stage:\\n          name: stage1\\n          identifier: stage1\\n          description: \\\"\\\"\\n          type: Deployment\\n          spec:\\n            deploymentType: Kubernetes\\n            service:\\n              serviceRef: <+input>\\n              serviceInputs: <+input>\\n            environment:\\n              environmentRef: <+input>\\n              deployToAll: false\\n              environmentInputs: <+input>\\n              infrastructureDefinitions: <+input>\\n            execution:\\n              steps:\\n                - step:\\n                    type: ShellScript\\n                    name: Shell Script_1\\n                    identifier: ShellScript_1\\n                    spec:\\n                      shell: Bash\\n                      onDelegate: true\\n                      source:\\n                        type: Inline\\n                        spec:\\n                          script: <+input>\\n                      environmentVariables: []\\n                      outputVariables: []\\n                    timeout: 10m\\n              rollbackSteps: []\\n          tags: {}\\n          failureStrategies:\\n            - onFailure:\\n                errors:\\n                  - AllErrors\\n                action:\\n                  type: StageRollback\\n\" }' # str | Template YAML
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 template_identifier = 'template_identifier_example' # str | Template Identifier for the entity
@@ -703,22 +703,22 @@ Update git metadata details for a remote template
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TemplatesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TemplatesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 template_identifier = 'template_identifier_example' # str | Template Identifier for the entity
 version_label = 'version_label_example' # str | Version Label
-body = swagger_client.TemplateUpdateGitDetailsRequest() # TemplateUpdateGitDetailsRequest | This contains details of Git Entity like Git Branch info to be updated (optional)
+body = harness_python_sdk.TemplateUpdateGitDetailsRequest() # TemplateUpdateGitDetailsRequest | This contains details of Git Entity like Git Branch info to be updated (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 
@@ -765,18 +765,18 @@ Update Stable Template Version
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TemplatesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TemplatesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 template_identifier = 'template_identifier_example' # str | Template Identifier for the entity
 version_label = 'version_label_example' # str | Version Label

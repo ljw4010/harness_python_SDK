@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.authz_resource_filter import AuthzResourceFilter  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.authz_resource_filter import AuthzResourceFilter  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAuthzResourceFilter(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAuthzResourceFilter(unittest.TestCase):
     def testAuthzResourceFilter(self):
         """Test AuthzResourceFilter"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.authz_resource_filter.AuthzResourceFilter()  # noqa: E501
+        # model = harness_python_sdk.models.authz_resource_filter.AuthzResourceFilter()  # noqa: E501
         pass
 
 

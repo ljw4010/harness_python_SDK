@@ -1,4 +1,4 @@
-# swagger_client.AuditFiltersApi
+# harness_python_sdk.AuditFiltersApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -19,18 +19,18 @@ Delete a Filter of type Audit by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuditFiltersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuditFiltersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Filter Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -77,18 +77,18 @@ Gets a Filter of type Audit by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuditFiltersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuditFiltersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Filter Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -135,18 +135,18 @@ Get the list of Filters of type Audit satisfying the criteria (if any) in the re
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuditFiltersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuditFiltersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 page_index = 0 # int | Page number of navigation. If left empty, default value of 0 is assumed (optional) (default to 0)
 page_size = 100 # int | Number of entries per page. If left empty, default value of 100 is assumed (optional) (default to 100)
@@ -195,19 +195,19 @@ Creates a Filter
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuditFiltersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Filter() # Filter | Details of the Filter to create
+api_instance = harness_python_sdk.AuditFiltersApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Filter() # Filter | Details of the Filter to create
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -249,19 +249,19 @@ Updates the Filter of type Audit
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuditFiltersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Filter() # Filter | This is the updated Filter. This should have all the fields not just the updated ones
+api_instance = harness_python_sdk.AuditFiltersApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Filter() # Filter | This is the updated Filter. This should have all the fields not just the updated ones
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:

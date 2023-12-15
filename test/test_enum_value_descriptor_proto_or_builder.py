@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.enum_value_descriptor_proto_or_builder import EnumValueDescriptorProtoOrBuilder  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.enum_value_descriptor_proto_or_builder import EnumValueDescriptorProtoOrBuilder  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestEnumValueDescriptorProtoOrBuilder(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestEnumValueDescriptorProtoOrBuilder(unittest.TestCase):
     def testEnumValueDescriptorProtoOrBuilder(self):
         """Test EnumValueDescriptorProtoOrBuilder"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.enum_value_descriptor_proto_or_builder.EnumValueDescriptorProtoOrBuilder()  # noqa: E501
+        # model = harness_python_sdk.models.enum_value_descriptor_proto_or_builder.EnumValueDescriptorProtoOrBuilder()  # noqa: E501
         pass
 
 

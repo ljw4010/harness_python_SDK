@@ -1,4 +1,4 @@
-# swagger_client.EnvironmentsApi
+# harness_python_sdk.EnvironmentsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -24,20 +24,20 @@ Create an Environment
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.EnvironmentRequest() # EnvironmentRequest | Details of the Environment to be created (optional)
+body = harness_python_sdk.EnvironmentRequest() # EnvironmentRequest | Details of the Environment to be created (optional)
 
 try:
     # Create an Environment
@@ -78,18 +78,18 @@ Delete an Environment by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentsApi(harness_python_sdk.ApiClient(configuration))
 environment_identifier = 'environment_identifier_example' # str | Environment Identifier for the entity
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 if_match = 'if_match_example' # str |  (optional)
@@ -140,18 +140,18 @@ Delete a ServiceOverride entity
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -200,18 +200,18 @@ Gets Environment Access list
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 page = 0 # int | page (optional) (default to 0)
 size = 100 # int | size (optional) (default to 100)
@@ -268,18 +268,18 @@ Gets Environment list for a project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 page = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 size = 100 # int | Results per page (optional) (default to 100)
@@ -334,18 +334,18 @@ Gets an Environment by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentsApi(harness_python_sdk.ApiClient(configuration))
 environment_identifier = 'environment_identifier_example' # str | Environment Identifier for the entity
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -394,18 +394,18 @@ Gets Service Overrides list
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 environment_identifier = 'environment_identifier_example' # str | Environment Identifier for the Entity.
 page = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
@@ -460,20 +460,20 @@ Update an Environment by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.EnvironmentRequest() # EnvironmentRequest | Details of the Environment to be updated (optional)
+body = harness_python_sdk.EnvironmentRequest() # EnvironmentRequest | Details of the Environment to be updated (optional)
 if_match = 'if_match_example' # str |  (optional)
 
 try:
@@ -516,20 +516,20 @@ Upsert an Environment by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.EnvironmentRequest() # EnvironmentRequest | Details of the Environment to be updated (optional)
+body = harness_python_sdk.EnvironmentRequest() # EnvironmentRequest | Details of the Environment to be updated (optional)
 if_match = 'if_match_example' # str |  (optional)
 
 try:
@@ -572,20 +572,20 @@ upsert a Service Override for an Environment
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.ServiceOverrideRequest() # ServiceOverrideRequest | Details of the Service Override to be upserted (optional)
+body = harness_python_sdk.ServiceOverrideRequest() # ServiceOverrideRequest | Details of the Service Override to be upserted (optional)
 
 try:
     # upsert a Service Override for an Environment

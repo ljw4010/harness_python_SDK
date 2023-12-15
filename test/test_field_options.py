@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.field_options import FieldOptions  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.field_options import FieldOptions  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestFieldOptions(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestFieldOptions(unittest.TestCase):
     def testFieldOptions(self):
         """Test FieldOptions"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.field_options.FieldOptions()  # noqa: E501
+        # model = harness_python_sdk.models.field_options.FieldOptions()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.bamboo_authentication_dto import BambooAuthenticationDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.bamboo_authentication_dto import BambooAuthenticationDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestBambooAuthenticationDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestBambooAuthenticationDTO(unittest.TestCase):
     def testBambooAuthenticationDTO(self):
         """Test BambooAuthenticationDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.bamboo_authentication_dto.BambooAuthenticationDTO()  # noqa: E501
+        # model = harness_python_sdk.models.bamboo_authentication_dto.BambooAuthenticationDTO()  # noqa: E501
         pass
 
 

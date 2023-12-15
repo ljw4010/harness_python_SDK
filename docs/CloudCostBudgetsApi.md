@@ -1,4 +1,4 @@
-# swagger_client.CloudCostBudgetsApi
+# harness_python_sdk.CloudCostBudgetsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -24,18 +24,18 @@ Clone a Cloud Cost Budget using the given Budget ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostBudgetsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostBudgetsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 id = 'id_example' # str | Unique identifier for the budget
 clone_name = 'clone_name_example' # str | Name of the new budget
@@ -82,19 +82,19 @@ Create a Budget to set and receive alerts when your costs exceed (or are forecas
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostBudgetsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Budget() # Budget | Budget definition
+api_instance = harness_python_sdk.CloudCostBudgetsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Budget() # Budget | Budget definition
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -138,18 +138,18 @@ Delete a Cloud Cost Budget for the given Budget ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostBudgetsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostBudgetsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 id = 'id_example' # str | Unique identifier for the budget
 
@@ -194,18 +194,18 @@ Fetch details of a Cloud Cost Budget for the given Budget ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostBudgetsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostBudgetsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 id = 'id_example' # str | Unique identifier for the budget
 
@@ -250,18 +250,18 @@ Fetch the cost details of a Cloud Cost Budget for the given Budget ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostBudgetsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostBudgetsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 id = 'id_example' # str | Unique identifier for the Budget
 breakdown = 'breakdown_example' # str | MONTHLY/YEARLY breakdown. The default value is YEARLY (optional)
@@ -308,18 +308,18 @@ List all the Cloud Cost Budgets.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostBudgetsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostBudgetsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 budget_sort_type = 'budget_sort_type_example' # str | Budget List Sort Type (optional)
 sort_order = 'sort_order_example' # str | Budget List Sort Order (optional)
@@ -366,18 +366,18 @@ List all the Cloud Cost Budgets associated for the given Perspective ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostBudgetsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostBudgetsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 perspective_id = 'perspective_id_example' # str | Unique identifier for the Perspective
 
@@ -422,19 +422,19 @@ Update an existing Cloud Cost Budget for the given Budget ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostBudgetsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Budget() # Budget | The Budget object
+api_instance = harness_python_sdk.CloudCostBudgetsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Budget() # Budget | The Budget object
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 id = 'id_example' # str | Unique identifier for the budget
 

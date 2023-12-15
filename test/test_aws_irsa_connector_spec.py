@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.aws_irsa_connector_spec import AwsIRSAConnectorSpec  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.aws_irsa_connector_spec import AwsIRSAConnectorSpec  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAwsIRSAConnectorSpec(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAwsIRSAConnectorSpec(unittest.TestCase):
     def testAwsIRSAConnectorSpec(self):
         """Test AwsIRSAConnectorSpec"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.aws_irsa_connector_spec.AwsIRSAConnectorSpec()  # noqa: E501
+        # model = harness_python_sdk.models.aws_irsa_connector_spec.AwsIRSAConnectorSpec()  # noqa: E501
         pass
 
 

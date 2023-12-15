@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.pipeline_execution_notes import PipelineExecutionNotes  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.pipeline_execution_notes import PipelineExecutionNotes  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestPipelineExecutionNotes(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPipelineExecutionNotes(unittest.TestCase):
     def testPipelineExecutionNotes(self):
         """Test PipelineExecutionNotes"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.pipeline_execution_notes.PipelineExecutionNotes()  # noqa: E501
+        # model = harness_python_sdk.models.pipeline_execution_notes.PipelineExecutionNotes()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.microservice_version_info import MicroserviceVersionInfo  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.microservice_version_info import MicroserviceVersionInfo  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestMicroserviceVersionInfo(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestMicroserviceVersionInfo(unittest.TestCase):
     def testMicroserviceVersionInfo(self):
         """Test MicroserviceVersionInfo"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.microservice_version_info.MicroserviceVersionInfo()  # noqa: E501
+        # model = harness_python_sdk.models.microservice_version_info.MicroserviceVersionInfo()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.method_descriptor_proto_or_builder import MethodDescriptorProtoOrBuilder  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.method_descriptor_proto_or_builder import MethodDescriptorProtoOrBuilder  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestMethodDescriptorProtoOrBuilder(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestMethodDescriptorProtoOrBuilder(unittest.TestCase):
     def testMethodDescriptorProtoOrBuilder(self):
         """Test MethodDescriptorProtoOrBuilder"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.method_descriptor_proto_or_builder.MethodDescriptorProtoOrBuilder()  # noqa: E501
+        # model = harness_python_sdk.models.method_descriptor_proto_or_builder.MethodDescriptorProtoOrBuilder()  # noqa: E501
         pass
 
 

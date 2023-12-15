@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.aws_sm_credential_spec_assume_iam import AwsSMCredentialSpecAssumeIAM  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.aws_sm_credential_spec_assume_iam import AwsSMCredentialSpecAssumeIAM  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAwsSMCredentialSpecAssumeIAM(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAwsSMCredentialSpecAssumeIAM(unittest.TestCase):
     def testAwsSMCredentialSpecAssumeIAM(self):
         """Test AwsSMCredentialSpecAssumeIAM"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.aws_sm_credential_spec_assume_iam.AwsSMCredentialSpecAssumeIAM()  # noqa: E501
+        # model = harness_python_sdk.models.aws_sm_credential_spec_assume_iam.AwsSMCredentialSpecAssumeIAM()  # noqa: E501
         pass
 
 

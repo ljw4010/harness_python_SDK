@@ -1,4 +1,4 @@
-# swagger_client.FilterApi
+# harness_python_sdk.FilterApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -36,18 +36,18 @@ Deletes a filter for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Filter Identifier
 type = 'type_example' # str | Type of Filter
@@ -98,18 +98,18 @@ Lists Filters for the given criteria.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 type = 'type_example' # str | Type of Filter
 page_index = 0 # int | Page number of navigation. If left empty, default value of 0 is assumed. (optional) (default to 0)
@@ -162,18 +162,18 @@ Returns the settings of a filter for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Filter Identifier
 type = 'type_example' # str | Type of Filter
@@ -224,19 +224,19 @@ Creates a Filter.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Filter() # Filter | Details of the Connector to create
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Filter() # Filter | Details of the Connector to create
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -280,19 +280,19 @@ Updates the filter for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Filter() # Filter | This is the updated Filter. This should have all the fields not just the updated ones
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Filter() # Filter | This is the updated Filter. This should have all the fields not just the updated ones
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -336,18 +336,18 @@ Deletes a filter for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Filter Identifier
 type = 'type_example' # str | Type of Filter
@@ -398,18 +398,18 @@ Lists Filters for the given criteria.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 type = 'type_example' # str | Type of Filter
 page_index = 0 # int | Page number of navigation. If left empty, default value of 0 is assumed. (optional) (default to 0)
@@ -462,18 +462,18 @@ Returns the settings of a filter for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Filter Identifier
 type = 'type_example' # str | Type of Filter
@@ -524,18 +524,18 @@ Deletes a filter for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Filter Identifier
 type = 'type_example' # str | Type of Filter
@@ -586,18 +586,18 @@ Lists Filters for the given criteria.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 type = 'type_example' # str | Type of Filter
 page_index = 0 # int | Page number of navigation. If left empty, default value of 0 is assumed. (optional) (default to 0)
@@ -650,18 +650,18 @@ Returns the settings of a filter for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Filter Identifier
 type = 'type_example' # str | Type of Filter
@@ -712,19 +712,19 @@ Creates a Filter.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Filter() # Filter | Details of the Connector to create
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Filter() # Filter | Details of the Connector to create
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -768,19 +768,19 @@ Updates the filter for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Filter() # Filter | This is the updated Filter. This should have all the fields not just the updated ones
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Filter() # Filter | This is the updated Filter. This should have all the fields not just the updated ones
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -824,19 +824,19 @@ Creates a Filter.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Filter() # Filter | Details of the Connector to create
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Filter() # Filter | Details of the Connector to create
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -880,18 +880,18 @@ Deletes a filter for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Filter Identifier
 type = 'type_example' # str | Type of Filter
@@ -942,18 +942,18 @@ Lists Filters for the given criteria.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 type = 'type_example' # str | Type of Filter
 page_index = 0 # int | Page number of navigation. If left empty, default value of 0 is assumed. (optional) (default to 0)
@@ -1006,18 +1006,18 @@ Returns the settings of a filter for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Filter Identifier
 type = 'type_example' # str | Type of Filter
@@ -1068,19 +1068,19 @@ Creates a Filter.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Filter() # Filter | Details of the Connector to create
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Filter() # Filter | Details of the Connector to create
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -1124,19 +1124,19 @@ Updates the filter for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Filter() # Filter | This is the updated Filter. This should have all the fields not just the updated ones
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Filter() # Filter | This is the updated Filter. This should have all the fields not just the updated ones
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -1180,19 +1180,19 @@ Updates the filter for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Filter() # Filter | This is the updated Filter. This should have all the fields not just the updated ones
+api_instance = harness_python_sdk.FilterApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Filter() # Filter | This is the updated Filter. This should have all the fields not just the updated ones
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:

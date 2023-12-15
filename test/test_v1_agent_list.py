@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.v1_agent_list import V1AgentList  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.v1_agent_list import V1AgentList  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestV1AgentList(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestV1AgentList(unittest.TestCase):
     def testV1AgentList(self):
         """Test V1AgentList"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.v1_agent_list.V1AgentList()  # noqa: E501
+        # model = harness_python_sdk.models.v1_agent_list.V1AgentList()  # noqa: E501
         pass
 
 

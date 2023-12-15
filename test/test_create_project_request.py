@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.create_project_request import CreateProjectRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.create_project_request import CreateProjectRequest  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestCreateProjectRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCreateProjectRequest(unittest.TestCase):
     def testCreateProjectRequest(self):
         """Test CreateProjectRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.create_project_request.CreateProjectRequest()  # noqa: E501
+        # model = harness_python_sdk.models.create_project_request.CreateProjectRequest()  # noqa: E501
         pass
 
 

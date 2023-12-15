@@ -1,4 +1,4 @@
-# swagger_client.DelegateGroupTagsResourceApi
+# harness_python_sdk.DelegateGroupTagsResourceApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -19,19 +19,19 @@ Add given list of tags to the Delegate group
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateGroupTagsResourceApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DelegateGroupTags() # DelegateGroupTags | Set of tags
+api_instance = harness_python_sdk.DelegateGroupTagsResourceApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.DelegateGroupTags() # DelegateGroupTags | Set of tags
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 group_identifier = 'group_identifier_example' # str | Delegate Group Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -79,18 +79,18 @@ Deletes all tags from the Delegate group
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateGroupTagsResourceApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.DelegateGroupTagsResourceApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 group_identifier = 'group_identifier_example' # str | Delegate Group Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -137,19 +137,19 @@ List delegate groups that are having mentioned tags.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateGroupTagsResourceApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DelegateGroupTags() # DelegateGroupTags | Set of tags
+api_instance = harness_python_sdk.DelegateGroupTagsResourceApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.DelegateGroupTags() # DelegateGroupTags | Set of tags
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -195,18 +195,18 @@ Retrieves list of tags attached with Delegate group
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateGroupTagsResourceApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.DelegateGroupTagsResourceApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 group_identifier = 'group_identifier_example' # str | Delegate Group Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -253,19 +253,19 @@ Clears all existing tags with delegate group and attach given set of tags to del
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateGroupTagsResourceApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DelegateGroupTags() # DelegateGroupTags | Set of tags
+api_instance = harness_python_sdk.DelegateGroupTagsResourceApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.DelegateGroupTags() # DelegateGroupTags | Set of tags
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 group_identifier = 'group_identifier_example' # str | Delegate Group Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)

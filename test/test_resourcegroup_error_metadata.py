@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.resourcegroup_error_metadata import ResourcegroupErrorMetadata  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.resourcegroup_error_metadata import ResourcegroupErrorMetadata  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResourcegroupErrorMetadata(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResourcegroupErrorMetadata(unittest.TestCase):
     def testResourcegroupErrorMetadata(self):
         """Test ResourcegroupErrorMetadata"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.resourcegroup_error_metadata.ResourcegroupErrorMetadata()  # noqa: E501
+        # model = harness_python_sdk.models.resourcegroup_error_metadata.ResourcegroupErrorMetadata()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.stream_result_of_applications_log_entry import StreamResultOfApplicationsLogEntry  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.stream_result_of_applications_log_entry import StreamResultOfApplicationsLogEntry  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestStreamResultOfApplicationsLogEntry(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestStreamResultOfApplicationsLogEntry(unittest.TestCase):
     def testStreamResultOfApplicationsLogEntry(self):
         """Test StreamResultOfApplicationsLogEntry"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.stream_result_of_applications_log_entry.StreamResultOfApplicationsLogEntry()  # noqa: E501
+        # model = harness_python_sdk.models.stream_result_of_applications_log_entry.StreamResultOfApplicationsLogEntry()  # noqa: E501
         pass
 
 

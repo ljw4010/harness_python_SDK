@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.pipeline_create_response_body import PipelineCreateResponseBody  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.pipeline_create_response_body import PipelineCreateResponseBody  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestPipelineCreateResponseBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPipelineCreateResponseBody(unittest.TestCase):
     def testPipelineCreateResponseBody(self):
         """Test PipelineCreateResponseBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.pipeline_create_response_body.PipelineCreateResponseBody()  # noqa: E501
+        # model = harness_python_sdk.models.pipeline_create_response_body.PipelineCreateResponseBody()  # noqa: E501
         pass
 
 

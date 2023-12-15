@@ -1,4 +1,4 @@
-# swagger_client.EnvironmentGroupApi
+# harness_python_sdk.EnvironmentGroupApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -19,18 +19,18 @@ Delete en Environment Group by Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentGroupApi(harness_python_sdk.ApiClient(configuration))
 env_group_identifier = 'env_group_identifier_example' # str | Environment Group Identifier for the entity
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 if_match = 'if_match_example' # str |  (optional)
@@ -93,18 +93,18 @@ Gets an Environment Group by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentGroupApi(harness_python_sdk.ApiClient(configuration))
 env_group_identifier = 'env_group_identifier_example' # str | Environment Group Identifier for the entity
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -159,20 +159,20 @@ Gets Environment Group list
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.EnvironmentGroupApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.FilterProperties() # FilterProperties | This is the body for the filter properties for listing Environment Groups (optional)
+body = harness_python_sdk.FilterProperties() # FilterProperties | This is the body for the filter properties for listing Environment Groups (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 env_group_identifiers = ['env_group_identifiers_example'] # list[str] |  (optional)
@@ -237,19 +237,19 @@ Create an Environment Group
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.EnvironmentGroupRequest() # EnvironmentGroupRequest | Details of the Environment Group to be created
+api_instance = harness_python_sdk.EnvironmentGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.EnvironmentGroupRequest() # EnvironmentGroupRequest | Details of the Environment Group to be created
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 branch = 'branch_example' # str | Name of the branch. (optional)
 repo_identifier = 'repo_identifier_example' # str | Git Sync Config Id. (optional)
@@ -297,19 +297,19 @@ Update an Environment Group by Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EnvironmentGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.EnvironmentGroupRequest() # EnvironmentGroupRequest | Details of the Environment Group to be updated
+api_instance = harness_python_sdk.EnvironmentGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.EnvironmentGroupRequest() # EnvironmentGroupRequest | Details of the Environment Group to be updated
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 env_group_identifier = 'env_group_identifier_example' # str | Environment Group Identifier for the entity
 if_match = 'if_match_example' # str |  (optional)

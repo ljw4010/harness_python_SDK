@@ -1,4 +1,4 @@
-# swagger_client.MonitoredServicesApi
+# harness_python_sdk.MonitoredServicesApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -46,18 +46,18 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -104,18 +104,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -164,18 +164,18 @@ Delete monitored service data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -222,18 +222,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -276,18 +276,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -334,18 +334,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | 
 org_identifier = 'org_identifier_example' # str | 
 project_identifier = 'project_identifier_example' # str | 
@@ -388,18 +388,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -446,18 +446,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -502,18 +502,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -566,18 +566,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -632,18 +632,18 @@ Get monitored service data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | 
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -690,18 +690,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -752,18 +752,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -808,18 +808,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 service_identifier = 'service_identifier_example' # str | 
 environment_identifier = 'environment_identifier_example' # str | 
@@ -866,18 +866,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -924,18 +924,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -994,18 +994,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -1050,18 +1050,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | 
 start_time = 789 # int | 
@@ -1110,18 +1110,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 secondary_event_type = 'secondary_event_type_example' # str | 
 identifiers = ['identifiers_example'] # list[str] | 
@@ -1164,18 +1164,18 @@ Get notification rules for MonitoredService
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -1226,18 +1226,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -1288,18 +1288,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | 
 org_identifier = 'org_identifier_example' # str | 
 project_identifier = 'project_identifier_example' # str | 
@@ -1342,18 +1342,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -1400,18 +1400,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -1470,19 +1470,19 @@ Saves monitored service data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.MonitoredService() # MonitoredService | 
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.MonitoredService() # MonitoredService | 
 account_id = 'account_id_example' # str | 
 
 try:
@@ -1524,18 +1524,18 @@ Saves monitored service from template input
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | Template input yaml for the monitored service creation from given template
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -1582,18 +1582,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | 
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -1638,18 +1638,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -1696,19 +1696,19 @@ Updates monitored service data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.MonitoredService() # MonitoredService | 
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.MonitoredService() # MonitoredService | 
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Identifier for the Entity.
 
@@ -1752,18 +1752,18 @@ Update monitored service from yaml or template
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | Template input yaml for the monitored service creation from given template
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -1812,18 +1812,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | 
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -1870,18 +1870,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MonitoredServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.MonitoredServicesApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.

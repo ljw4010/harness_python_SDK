@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dto_user_aggregate import ResponseDTOUserAggregate  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dto_user_aggregate import ResponseDTOUserAggregate  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTOUserAggregate(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTOUserAggregate(unittest.TestCase):
     def testResponseDTOUserAggregate(self):
         """Test ResponseDTOUserAggregate"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dto_user_aggregate.ResponseDTOUserAggregate()  # noqa: E501
+        # model = harness_python_sdk.models.response_dto_user_aggregate.ResponseDTOUserAggregate()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# swagger_client.SrmNotificationApi
+# harness_python_sdk.SrmNotificationApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -19,18 +19,18 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SrmNotificationApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SrmNotificationApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -75,18 +75,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SrmNotificationApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SrmNotificationApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -131,18 +131,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SrmNotificationApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SrmNotificationApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 page_number = 56 # int | 
 page_size = 56 # int | 
@@ -191,20 +191,20 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SrmNotificationApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SrmNotificationApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | 
-body = swagger_client.NotificationRule() # NotificationRule |  (optional)
+body = harness_python_sdk.NotificationRule() # NotificationRule |  (optional)
 
 try:
     api_instance.save_notification_rule_data(account_id, body=body)
@@ -243,21 +243,21 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SrmNotificationApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SrmNotificationApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | 
-body = swagger_client.NotificationRule() # NotificationRule |  (optional)
+body = harness_python_sdk.NotificationRule() # NotificationRule |  (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 

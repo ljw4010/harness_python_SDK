@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.update_git_x_webhook_request import UpdateGitXWebhookRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.update_git_x_webhook_request import UpdateGitXWebhookRequest  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestUpdateGitXWebhookRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestUpdateGitXWebhookRequest(unittest.TestCase):
     def testUpdateGitXWebhookRequest(self):
         """Test UpdateGitXWebhookRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.update_git_x_webhook_request.UpdateGitXWebhookRequest()  # noqa: E501
+        # model = harness_python_sdk.models.update_git_x_webhook_request.UpdateGitXWebhookRequest()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# swagger_client.ConnectorsApi
+# harness_python_sdk.ConnectorsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -31,19 +31,19 @@ Creates a new Harness Connector.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Connector2() # Connector2 | Details of the Connector to create
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Connector2() # Connector2 | Details of the Connector to create
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 branch = 'branch_example' # str | Name of the branch. (optional)
 repo_identifier = 'repo_identifier_example' # str | Git Sync Config Id. (optional)
@@ -107,18 +107,18 @@ Deletes a Connector for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Connector ID
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -181,18 +181,18 @@ Returns all the configured field values for the given Connector type, which can 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 connector_type = 'connector_type_example' # str | Connector type
 
@@ -235,19 +235,19 @@ Fetches the list of CMC K8S Connectors corresponding to the request's filter cri
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ConnectorFilterProperties() # ConnectorFilterProperties | Details of the filters applied
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ConnectorFilterProperties() # ConnectorFilterProperties | Details of the filters applied
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 search_term = 'search_term_example' # str | This would be used to filter Connectors. Any Connector having the specified string in its Name, ID and Tag would be filtered. (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -260,7 +260,7 @@ get_default_from_other_repo = true # bool | if true, return all the default enti
 get_distinct_from_branches = true # bool | This when set to true along with GitSync enabled for the Connector, you can get one connector entity from each identifier. The connector entity can belong to any branch (optional)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -315,18 +315,18 @@ Get the Template URL of connector
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
 events_enabled = true # bool | Specify whether or not to enable events (optional)
 cur_enabled = true # bool | Specify whether or not to enable CUR (optional)
 optimization_enabled = true # bool | Specify whether or not to enable optimization (optional)
@@ -373,18 +373,18 @@ Returns the Connector's details for the given Account and Connector ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Connector Identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -439,18 +439,18 @@ Lists all the Connectors for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -493,18 +493,18 @@ Lists all the Connectors matching the specified filters.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 page_index = 0 # int | Page number of navigation. By default, it is set to 0. (optional) (default to 0)
 page_size = 100 # int | Number of entries per page.The default number of entries per page is 100, while the maximum number allowed is 1000. (optional) (default to 100)
@@ -569,19 +569,19 @@ Fetches the list of Connectors corresponding to the request's filter criteria.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ConnectorFilterProperties() # ConnectorFilterProperties | Details of the filters applied
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ConnectorFilterProperties() # ConnectorFilterProperties | Details of the filters applied
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 search_term = 'search_term_example' # str | This would be used to filter Connectors. Any Connector having the specified string in its Name, ID and Tag would be filtered. (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -596,7 +596,7 @@ version = 'version_example' # str |  (optional)
 only_favorites = false # bool |  (optional) (default to false)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -653,18 +653,18 @@ Gets the connector's statistics by Account Identifier, Project Identifier and Or
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -717,18 +717,18 @@ Tests if a Harness Connector can successfully connect Harness to a third-party t
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Connector ID
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -783,18 +783,18 @@ Tests if a Git Repo Connector can successfully connect Harness to a Git provider
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Connector ID
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -845,18 +845,18 @@ Lists all Connectors for an Account by Fully Qualified Name (FQN).
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
 body = ['body_example'] # list[str] | A list of connectors' FQNs as strings. A maximum of 1000 characters is allowed.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
@@ -901,19 +901,19 @@ Updates a Connector for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Connector2() # Connector2 | This is the updated Connector. Please provide values for all fields, not just the fields you are updating
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Connector2() # Connector2 | This is the updated Connector. Please provide values for all fields, not just the fields you are updating
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 branch = 'branch_example' # str | Name of the branch. (optional)
 repo_identifier = 'repo_identifier_example' # str | Git Sync Config Id. (optional)
@@ -977,18 +977,18 @@ Tests if a Connector can successfully connect Harness to a third-party tool usin
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ConnectorsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ConnectorsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)

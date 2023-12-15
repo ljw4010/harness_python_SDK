@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.audit_request_metadata import AuditRequestMetadata  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.audit_request_metadata import AuditRequestMetadata  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAuditRequestMetadata(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAuditRequestMetadata(unittest.TestCase):
     def testAuditRequestMetadata(self):
         """Test AuditRequestMetadata"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.audit_request_metadata.AuditRequestMetadata()  # noqa: E501
+        # model = harness_python_sdk.models.audit_request_metadata.AuditRequestMetadata()  # noqa: E501
         pass
 
 

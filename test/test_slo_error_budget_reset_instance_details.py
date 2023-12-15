@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.slo_error_budget_reset_instance_details import SLOErrorBudgetResetInstanceDetails  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.slo_error_budget_reset_instance_details import SLOErrorBudgetResetInstanceDetails  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestSLOErrorBudgetResetInstanceDetails(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSLOErrorBudgetResetInstanceDetails(unittest.TestCase):
     def testSLOErrorBudgetResetInstanceDetails(self):
         """Test SLOErrorBudgetResetInstanceDetails"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.slo_error_budget_reset_instance_details.SLOErrorBudgetResetInstanceDetails()  # noqa: E501
+        # model = harness_python_sdk.models.slo_error_budget_reset_instance_details.SLOErrorBudgetResetInstanceDetails()  # noqa: E501
         pass
 
 

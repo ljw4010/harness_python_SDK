@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.feature_response_metadata_details_pipeline_metadata import FeatureResponseMetadataDetailsPipelineMetadata  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.feature_response_metadata_details_pipeline_metadata import FeatureResponseMetadataDetailsPipelineMetadata  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestFeatureResponseMetadataDetailsPipelineMetadata(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestFeatureResponseMetadataDetailsPipelineMetadata(unittest.TestCase):
     def testFeatureResponseMetadataDetailsPipelineMetadata(self):
         """Test FeatureResponseMetadataDetailsPipelineMetadata"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.feature_response_metadata_details_pipeline_metadata.FeatureResponseMetadataDetailsPipelineMetadata()  # noqa: E501
+        # model = harness_python_sdk.models.feature_response_metadata_details_pipeline_metadata.FeatureResponseMetadataDetailsPipelineMetadata()  # noqa: E501
         pass
 
 

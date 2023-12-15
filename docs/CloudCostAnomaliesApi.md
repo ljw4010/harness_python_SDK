@@ -1,4 +1,4 @@
-# swagger_client.CloudCostAnomaliesApi
+# harness_python_sdk.CloudCostAnomaliesApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -21,18 +21,18 @@ Returns the list of distinct values for all the specified Anomaly fields.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAnomaliesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostAnomaliesApi(harness_python_sdk.ApiClient(configuration))
 body = ['body_example'] # list[str] | List of Anomaly columns whose unique values will be fetched
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
@@ -77,20 +77,20 @@ Fetch the result of anomaly query
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAnomaliesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostAnomaliesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.AnomalyFilterProperties() # AnomalyFilterProperties | Anomaly Filter Properties (optional)
+body = harness_python_sdk.AnomalyFilterProperties() # AnomalyFilterProperties | Anomaly Filter Properties (optional)
 
 try:
     # List Anomalies
@@ -133,20 +133,20 @@ Fetch the list of anomalies reported according to the filters applied
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAnomaliesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostAnomaliesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.AnomalyFilterProperties() # AnomalyFilterProperties | Anomaly Filter Properties (optional)
+body = harness_python_sdk.AnomalyFilterProperties() # AnomalyFilterProperties | Anomaly Filter Properties (optional)
 
 try:
     # List Anomalies
@@ -189,19 +189,19 @@ Fetch anomalies for perspective
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAnomaliesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.PerspectiveQueryDTO() # PerspectiveQueryDTO | Perspective Query
+api_instance = harness_python_sdk.CloudCostAnomaliesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.PerspectiveQueryDTO() # PerspectiveQueryDTO | Perspective Query
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 perspective_id = 'perspective_id_example' # str | Unique identifier for perspective
 
@@ -247,19 +247,19 @@ Mark an anomaly as true/false anomaly
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAnomaliesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AnomalyFeedback() # AnomalyFeedback | Feedback
+api_instance = harness_python_sdk.CloudCostAnomaliesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.AnomalyFeedback() # AnomalyFeedback | Feedback
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 anomaly_id = 'anomaly_id_example' # str | Unique identifier for perspective
 

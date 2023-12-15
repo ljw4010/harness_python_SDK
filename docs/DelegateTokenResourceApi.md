@@ -1,4 +1,4 @@
-# swagger_client.DelegateTokenResourceApi
+# harness_python_sdk.DelegateTokenResourceApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -18,18 +18,18 @@ Creates Delegate Token.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateTokenResourceApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.DelegateTokenResourceApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 token_name = 'token_name_example' # str | Delegate Token name
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -78,18 +78,18 @@ Lists delegate groups that are using the specified delegate token.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateTokenResourceApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.DelegateTokenResourceApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -136,18 +136,18 @@ Retrieves Delegate Tokens by Account, Organization, Project and status.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateTokenResourceApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.DelegateTokenResourceApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 name = 'name_example' # str | Name of Delegate Token (ACTIVE or REVOKED). (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -196,18 +196,18 @@ Revokes Delegate Token.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DelegateTokenResourceApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.DelegateTokenResourceApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 token_name = 'token_name_example' # str | Delegate Token name
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)

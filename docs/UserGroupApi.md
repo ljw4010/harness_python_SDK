@@ -1,4 +1,4 @@
-# swagger_client.UserGroupApi
+# harness_python_sdk.UserGroupApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -34,19 +34,19 @@ Copy a User Group in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.Scope1()] # list[Scope1] | List of scopes
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
+body = [harness_python_sdk.Scope1()] # list[Scope1] | List of scopes
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 group_identifier = 'group_identifier_example' # str | groupIdentifier
 
@@ -92,18 +92,18 @@ Remove a user from the user group in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Identifier of the user group
 user_identifier = 'user_identifier_example' # str | Identifier of the user
@@ -154,18 +154,18 @@ Delete User Group
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Identifier of the user group
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -214,19 +214,19 @@ List the User Groups selected by a filter in an account/org/project. This api su
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UserGroupFilter() # UserGroupFilter | User Group Filter
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.UserGroupFilter() # UserGroupFilter | User Group Filter
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -270,23 +270,23 @@ List the User Groups selected by a filter in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UserGroupFilter() # UserGroupFilter | User Group Filter
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.UserGroupFilter() # UserGroupFilter | User Group Filter
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -334,18 +334,18 @@ List the Child Scopes inheriting this User Group
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Identifier of the user group
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -394,18 +394,18 @@ Check if the user is part of the user group in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Identifier of the user group
 user_identifier = 'user_identifier_example' # str | Identifier of the user
@@ -456,18 +456,18 @@ Get a User Group in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Identifier of the user group
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -516,18 +516,18 @@ List User Groups
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -535,7 +535,7 @@ search_term = 'search_term_example' # str | Search filter which matches by user 
 filter_type = 'EXCLUDE_INHERITED_GROUPS' # str |  (optional) (default to EXCLUDE_INHERITED_GROUPS)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -586,26 +586,26 @@ List the users in a User Group in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Identifier of the user group
-body = swagger_client.UserFilter() # UserFilter | Filter users based on multiple parameters (optional)
+body = harness_python_sdk.UserFilter() # UserFilter | Filter users based on multiple parameters (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -654,19 +654,19 @@ Link LDAP Group to the User Group to an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LdapLinkGroupRequest() # LdapLinkGroupRequest | LDAP Link Group Request
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.LdapLinkGroupRequest() # LdapLinkGroupRequest | LDAP Link Group Request
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 user_group_id = 'user_group_id_example' # str | Identifier of the user group
 ldap_id = 'ldap_id_example' # str | LDAP entity identifier
@@ -716,19 +716,19 @@ Link SAML Group to the User Group in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SamlLinkGroupRequest() # SamlLinkGroupRequest | Saml Link Group Request
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.SamlLinkGroupRequest() # SamlLinkGroupRequest | Saml Link Group Request
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 user_group_id = 'user_group_id_example' # str | Identifier of the user group
 saml_id = 'saml_id_example' # str | Saml Group entity identifier
@@ -780,19 +780,19 @@ Create a User Group in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UserGroup() # UserGroup | User Group entity to be created
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.UserGroup() # UserGroup | User Group entity to be created
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -840,19 +840,19 @@ Create a User Group in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UserGroupRequestV2() # UserGroupRequestV2 | User Group entity to be created
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.UserGroupRequestV2() # UserGroupRequestV2 | User Group entity to be created
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -900,18 +900,18 @@ Add a user to the user group in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Identifier of the user group
 user_identifier = 'user_identifier_example' # str | Identifier of the user
@@ -962,19 +962,19 @@ Update a User Group in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UserGroup() # UserGroup | User Group entity with the updates
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.UserGroup() # UserGroup | User Group entity with the updates
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -1022,19 +1022,19 @@ Update a User Group in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UserGroupRequestV2() # UserGroupRequestV2 | User Group entity with the updates
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.UserGroupRequestV2() # UserGroupRequestV2 | User Group entity with the updates
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -1080,18 +1080,18 @@ Unlink SSO Group from the User Group in an account/org/project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserGroupApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UserGroupApi(harness_python_sdk.ApiClient(configuration))
 user_group_id = 'user_group_id_example' # str | Identifier of the user group
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 retain_members = true # bool | Retain currently synced members of the user group (optional)

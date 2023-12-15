@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dto_git_full_sync_config import ResponseDTOGitFullSyncConfig  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dto_git_full_sync_config import ResponseDTOGitFullSyncConfig  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTOGitFullSyncConfig(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTOGitFullSyncConfig(unittest.TestCase):
     def testResponseDTOGitFullSyncConfig(self):
         """Test ResponseDTOGitFullSyncConfig"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dto_git_full_sync_config.ResponseDTOGitFullSyncConfig()  # noqa: E501
+        # model = harness_python_sdk.models.response_dto_git_full_sync_config.ResponseDTOGitFullSyncConfig()  # noqa: E501
         pass
 
 

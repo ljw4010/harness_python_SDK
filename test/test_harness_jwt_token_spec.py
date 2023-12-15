@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.harness_jwt_token_spec import HarnessJWTTokenSpec  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.harness_jwt_token_spec import HarnessJWTTokenSpec  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestHarnessJWTTokenSpec(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestHarnessJWTTokenSpec(unittest.TestCase):
     def testHarnessJWTTokenSpec(self):
         """Test HarnessJWTTokenSpec"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.harness_jwt_token_spec.HarnessJWTTokenSpec()  # noqa: E501
+        # model = harness_python_sdk.models.harness_jwt_token_spec.HarnessJWTTokenSpec()  # noqa: E501
         pass
 
 

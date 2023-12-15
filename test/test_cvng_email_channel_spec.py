@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.cvng_email_channel_spec import CVNGEmailChannelSpec  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.cvng_email_channel_spec import CVNGEmailChannelSpec  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestCVNGEmailChannelSpec(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCVNGEmailChannelSpec(unittest.TestCase):
     def testCVNGEmailChannelSpec(self):
         """Test CVNGEmailChannelSpec"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.cvng_email_channel_spec.CVNGEmailChannelSpec()  # noqa: E501
+        # model = harness_python_sdk.models.cvng_email_channel_spec.CVNGEmailChannelSpec()  # noqa: E501
         pass
 
 

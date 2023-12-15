@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dto_resource_group_v2_response import ResponseDTOResourceGroupV2Response  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dto_resource_group_v2_response import ResponseDTOResourceGroupV2Response  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTOResourceGroupV2Response(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTOResourceGroupV2Response(unittest.TestCase):
     def testResponseDTOResourceGroupV2Response(self):
         """Test ResponseDTOResourceGroupV2Response"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dto_resource_group_v2_response.ResponseDTOResourceGroupV2Response()  # noqa: E501
+        # model = harness_python_sdk.models.response_dto_resource_group_v2_response.ResponseDTOResourceGroupV2Response()  # noqa: E501
         pass
 
 

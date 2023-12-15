@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.templates_api import TemplatesApi  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.api.templates_api import TemplatesApi  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestTemplatesApi(unittest.TestCase):

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.repositories_repo_app_details_query import RepositoriesRepoAppDetailsQuery  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.repositories_repo_app_details_query import RepositoriesRepoAppDetailsQuery  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestRepositoriesRepoAppDetailsQuery(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRepositoriesRepoAppDetailsQuery(unittest.TestCase):
     def testRepositoriesRepoAppDetailsQuery(self):
         """Test RepositoriesRepoAppDetailsQuery"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.repositories_repo_app_details_query.RepositoriesRepoAppDetailsQuery()  # noqa: E501
+        # model = harness_python_sdk.models.repositories_repo_app_details_query.RepositoriesRepoAppDetailsQuery()  # noqa: E501
         pass
 
 

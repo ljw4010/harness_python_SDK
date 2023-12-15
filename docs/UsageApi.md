@@ -1,4 +1,4 @@
-# swagger_client.UsageApi
+# harness_python_sdk.UsageApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -27,18 +27,18 @@ Download CSV Active Services report
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
 timestamp = 0 # int |  (optional) (default to 0)
 
@@ -80,18 +80,18 @@ Gets License Usage By Module, Timestamp, and Account Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account id to get the license usage. (optional)
 timestamp = 789 # int |  (optional)
 
@@ -134,18 +134,18 @@ Gets License Usage By Module, Timestamp, and Account Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account id to get the license usage. (optional)
 timestamp = 789 # int |  (optional)
 
@@ -188,18 +188,18 @@ Gets License Usage By Module, Timestamp, and Account Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
 module = 'module_example' # str | A Harness platform module.
 account_identifier = 'account_identifier_example' # str | Account id to get the license usage. (optional)
 timestamp = 789 # int |  (optional)
@@ -246,18 +246,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 timestamp = 789 # int |  (optional)
 
@@ -299,18 +299,18 @@ Download CSV Active Monitored Services report
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
 timestamp = 0 # int |  (optional) (default to 0)
 
@@ -352,18 +352,18 @@ Download CSV Active Services report
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
 timestamp = 0 # int |  (optional) (default to 0)
 
@@ -405,18 +405,18 @@ Download CSV Active Services Monitored report
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
 timestamp = 0 # int |  (optional) (default to 0)
 
@@ -458,18 +458,18 @@ Gets License Usage By Module, Timestamp, and Account Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account id to get the license usage. (optional)
 timestamp = 789 # int |  (optional)
 
@@ -512,18 +512,18 @@ Gets License Usage By Module, Timestamp, and Account Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account id to get the license usage. (optional)
 timestamp = 789 # int |  (optional)
 
@@ -566,18 +566,18 @@ Gets License Usage By Module, Timestamp, and Account Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
 module = 'module_example' # str | A Harness platform module.
 account_identifier = 'account_identifier_example' # str | Account id to get the license usage. (optional)
 timestamp = 789 # int |  (optional)
@@ -624,18 +624,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 timestamp = 789 # int |  (optional)
 
@@ -677,19 +677,19 @@ Returns a List of active monitored services along with identifier,Active Monitor
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ActiveServiceMonitoredFilterParams() # ActiveServiceMonitoredFilterParams | Details of the Active Services Monitored Filter (optional)
+api_instance = harness_python_sdk.UsageApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ActiveServiceMonitoredFilterParams() # ActiveServiceMonitoredFilterParams | Details of the Active Services Monitored Filter (optional)
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
 page = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 size = 20 # int | Results per page (optional) (default to 20)

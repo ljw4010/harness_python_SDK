@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.parser_trigger_reference_proto_dto import ParserTriggerReferenceProtoDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.parser_trigger_reference_proto_dto import ParserTriggerReferenceProtoDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestParserTriggerReferenceProtoDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestParserTriggerReferenceProtoDTO(unittest.TestCase):
     def testParserTriggerReferenceProtoDTO(self):
         """Test ParserTriggerReferenceProtoDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.parser_trigger_reference_proto_dto.ParserTriggerReferenceProtoDTO()  # noqa: E501
+        # model = harness_python_sdk.models.parser_trigger_reference_proto_dto.ParserTriggerReferenceProtoDTO()  # noqa: E501
         pass
 
 

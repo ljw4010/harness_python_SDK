@@ -1,4 +1,4 @@
-# swagger_client.RepositoriesApi
+# harness_python_sdk.RepositoriesApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -28,19 +28,19 @@ CreateRepository creates a new repository configuration.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RepositoriesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.RepositoriesRepoCreateRequest() # RepositoriesRepoCreateRequest | 
+api_instance = harness_python_sdk.RepositoriesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.RepositoriesRepoCreateRequest() # RepositoriesRepoCreateRequest | 
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -94,18 +94,18 @@ DeleteRepository deletes a repository from the configuration.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RepositoriesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RepositoriesApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 identifier = 'identifier_example' # str | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
@@ -162,18 +162,18 @@ Get returns a repository or its credentials.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RepositoriesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RepositoriesApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 identifier = 'identifier_example' # str | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
@@ -230,18 +230,18 @@ GetAppDetails returns application details by given path.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RepositoriesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RepositoriesApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 identifier = 'identifier_example' # str | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
@@ -338,18 +338,18 @@ GetHelmCharts returns list of helm charts in the specified repository.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RepositoriesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RepositoriesApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 identifier = 'identifier_example' # str | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
@@ -406,18 +406,18 @@ ListApps returns list of apps in the repo.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RepositoriesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RepositoriesApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 identifier = 'identifier_example' # str | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
@@ -476,18 +476,18 @@ Returns a list of refs (e.g. branches and tags) in the repo.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RepositoriesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RepositoriesApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 identifier = 'identifier_example' # str | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
@@ -544,18 +544,18 @@ ListRepositories gets a list of all configured repositories.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RepositoriesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RepositoriesApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -612,19 +612,19 @@ UpdateRepository updates a repository configuration.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RepositoriesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.RepositoriesRepoUpdateRequest() # RepositoriesRepoUpdateRequest | 
+api_instance = harness_python_sdk.RepositoriesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.RepositoriesRepoUpdateRequest() # RepositoriesRepoUpdateRequest | 
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 identifier = 'identifier_example' # str | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
@@ -676,19 +676,19 @@ ValidateAccess gets connection state for a repository.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RepositoriesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.RepositoriesRepoAccessQuery() # RepositoriesRepoAccessQuery | 
+api_instance = harness_python_sdk.RepositoriesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.RepositoriesRepoAccessQuery() # RepositoriesRepoAccessQuery | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -740,18 +740,18 @@ Checks whether a repository with the given name exists.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RepositoriesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.RepositoriesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -802,19 +802,19 @@ List returns list of Repositories
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RepositoriesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.V1RepositoryQuery() # V1RepositoryQuery | 
+api_instance = harness_python_sdk.RepositoriesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.V1RepositoryQuery() # V1RepositoryQuery | 
 
 try:
     # List returns list of Repositories

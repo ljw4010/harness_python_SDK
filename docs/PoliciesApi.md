@@ -1,4 +1,4 @@
-# swagger_client.PoliciesApi
+# harness_python_sdk.PoliciesApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -21,19 +21,19 @@ Create a policy
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PoliciesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CreateRequestBody() # CreateRequestBody | 
+api_instance = harness_python_sdk.PoliciesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CreateRequestBody() # CreateRequestBody | 
 x_api_key = 'x_api_key_example' # str | Harness PAT key used to perform authorization (optional)
 account_identifier = '' # str | Harness account ID (optional)
 org_identifier = '' # str | Harness organization ID (optional)
@@ -92,18 +92,18 @@ Delete a policy by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PoliciesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PoliciesApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Identifier of the policy
 account_identifier = '' # str | Harness account ID (optional)
 org_identifier = '' # str | Harness organization ID (optional)
@@ -152,18 +152,18 @@ Find a policy by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PoliciesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PoliciesApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Identifier of the policy to retrieve
 account_identifier = '' # str | Harness account ID (optional)
 org_identifier = '' # str | Harness organization ID (optional)
@@ -217,18 +217,18 @@ List all policies
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PoliciesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PoliciesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = '' # str | Harness account ID (optional)
 org_identifier = '' # str | Harness organization ID (optional)
 project_identifier = '' # str | Harness project ID (optional)
@@ -284,19 +284,19 @@ Update a policy by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PoliciesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UpdateRequestBody() # UpdateRequestBody | 
+api_instance = harness_python_sdk.PoliciesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.UpdateRequestBody() # UpdateRequestBody | 
 identifier = 'identifier_example' # str | Identifier of the policy
 x_api_key = 'x_api_key_example' # str | Harness PAT key used to perform authorization (optional)
 git_commit_msg = 'git_commit_msg_example' # str | The commit message used in git when creating the policy (optional)

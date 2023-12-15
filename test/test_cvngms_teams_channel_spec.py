@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.cvngms_teams_channel_spec import CVNGMSTeamsChannelSpec  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.cvngms_teams_channel_spec import CVNGMSTeamsChannelSpec  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestCVNGMSTeamsChannelSpec(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCVNGMSTeamsChannelSpec(unittest.TestCase):
     def testCVNGMSTeamsChannelSpec(self):
         """Test CVNGMSTeamsChannelSpec"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.cvngms_teams_channel_spec.CVNGMSTeamsChannelSpec()  # noqa: E501
+        # model = harness_python_sdk.models.cvngms_teams_channel_spec.CVNGMSTeamsChannelSpec()  # noqa: E501
         pass
 
 

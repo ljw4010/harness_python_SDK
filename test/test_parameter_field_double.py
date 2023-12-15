@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.parameter_field_double import ParameterFieldDouble  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.parameter_field_double import ParameterFieldDouble  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestParameterFieldDouble(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestParameterFieldDouble(unittest.TestCase):
     def testParameterFieldDouble(self):
         """Test ParameterFieldDouble"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.parameter_field_double.ParameterFieldDouble()  # noqa: E501
+        # model = harness_python_sdk.models.parameter_field_double.ParameterFieldDouble()  # noqa: E501
         pass
 
 

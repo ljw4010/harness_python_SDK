@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.post_execution_rollback_info_or_builder import PostExecutionRollbackInfoOrBuilder  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.post_execution_rollback_info_or_builder import PostExecutionRollbackInfoOrBuilder  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestPostExecutionRollbackInfoOrBuilder(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPostExecutionRollbackInfoOrBuilder(unittest.TestCase):
     def testPostExecutionRollbackInfoOrBuilder(self):
         """Test PostExecutionRollbackInfoOrBuilder"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.post_execution_rollback_info_or_builder.PostExecutionRollbackInfoOrBuilder()  # noqa: E501
+        # model = harness_python_sdk.models.post_execution_rollback_info_or_builder.PostExecutionRollbackInfoOrBuilder()  # noqa: E501
         pass
 
 

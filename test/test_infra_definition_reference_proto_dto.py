@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.infra_definition_reference_proto_dto import InfraDefinitionReferenceProtoDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.infra_definition_reference_proto_dto import InfraDefinitionReferenceProtoDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestInfraDefinitionReferenceProtoDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInfraDefinitionReferenceProtoDTO(unittest.TestCase):
     def testInfraDefinitionReferenceProtoDTO(self):
         """Test InfraDefinitionReferenceProtoDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.infra_definition_reference_proto_dto.InfraDefinitionReferenceProtoDTO()  # noqa: E501
+        # model = harness_python_sdk.models.infra_definition_reference_proto_dto.InfraDefinitionReferenceProtoDTO()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.aws_code_commit_credentials import AwsCodeCommitCredentials  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.aws_code_commit_credentials import AwsCodeCommitCredentials  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAwsCodeCommitCredentials(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAwsCodeCommitCredentials(unittest.TestCase):
     def testAwsCodeCommitCredentials(self):
         """Test AwsCodeCommitCredentials"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.aws_code_commit_credentials.AwsCodeCommitCredentials()  # noqa: E501
+        # model = harness_python_sdk.models.aws_code_commit_credentials.AwsCodeCommitCredentials()  # noqa: E501
         pass
 
 

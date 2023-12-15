@@ -1,4 +1,4 @@
-# swagger_client.TasApi
+# harness_python_sdk.TasApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -17,18 +17,18 @@ Return the Tas organizations
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TasApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TasApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 connector_ref = 'connector_ref_example' # str | Identifier for tas connector (optional)
 org_identifier = 'org_identifier_example' # str |  (optional)
@@ -79,18 +79,18 @@ Return the Tas spaces
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TasApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TasApi(harness_python_sdk.ApiClient(configuration))
 connector_ref = 'connector_ref_example' # str | Identifier for tas connector
 organization = 'organization_example' # str | organization for tas
 account_identifier = 'account_identifier_example' # str | 
@@ -139,18 +139,18 @@ Return the Tas spaces
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TasApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TasApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 env_id = 'env_id_example' # str | Environment Identifier for the Entity.
 infra_definition_id = 'infra_definition_id_example' # str | Infrastructure Definition Identifier for the Entity.

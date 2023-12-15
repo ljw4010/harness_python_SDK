@@ -1,4 +1,4 @@
-# swagger_client.AuthenticationSettingsApi
+# harness_python_sdk.AuthenticationSettingsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -38,19 +38,19 @@ Creates Ldap settings along with the user, group queries.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LDAPSettings() # LDAPSettings | Create LdapSettings request body. Values for connection settings are needed, user and group settings can also be provided
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.LDAPSettings() # LDAPSettings | Create LdapSettings request body. Values for connection settings are needed, user and group settings can also be provided
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -94,18 +94,18 @@ Delete configured Ldap settings on this account.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -148,18 +148,18 @@ Deletes SAML metadata for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -202,18 +202,18 @@ Deletes SAML metadata for the given Account and SAML sso id
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 saml_ssoid = 'saml_ssoid_example' # str | Saml Settings Identifier
 
@@ -258,18 +258,18 @@ Updates if authentication is enabled or not for given SAML setting in Account ID
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 enable = true # bool |  (default to true)
 saml_ssoid = 'saml_ssoid_example' # str | Saml Settings Identifier
@@ -316,18 +316,18 @@ Gets authentication settings for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -370,18 +370,18 @@ Gets authentication settings version 2 for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -424,18 +424,18 @@ Returns configured Ldap settings and its details for the account.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -478,18 +478,18 @@ Gets password strength for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -532,18 +532,18 @@ Tests SAML connectivity for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 
 try:
@@ -586,18 +586,18 @@ Tests SAML connectivity for the given Account ID and SAML setting.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 saml_ssoid = 'saml_ssoid_example' # str | Saml Settings Identifier
 
@@ -642,18 +642,18 @@ Deletes OAuth settings for a given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -696,18 +696,18 @@ Enable/disable public access for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 body = True # bool | Information about the session timeout for all users of this account in minutes.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
@@ -752,19 +752,19 @@ Sets session timeout of all users for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SessionTimeoutSettings() # SessionTimeoutSettings | Information about the session timeout for all users of this account in minutes.
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.SessionTimeoutSettings() # SessionTimeoutSettings | Information about the session timeout for all users of this account in minutes.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -808,19 +808,19 @@ Sets Two-Factor authorization for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.TwoFactorAdminOverrideSettings() # TwoFactorAdminOverrideSettings | Boolean that specify whether or not to override two factor enabled setting
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.TwoFactorAdminOverrideSettings() # TwoFactorAdminOverrideSettings | Boolean that specify whether or not to override two factor enabled setting
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -864,18 +864,18 @@ Updates the authentication mechanism for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 authentication_mechanism = 'authentication_mechanism_example' # str | Type of Authentication Mechanism SSO or NON_SSO (optional)
 
@@ -920,19 +920,19 @@ Updates configured Ldap settings along with the user, group queries.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LDAPSettings() # LDAPSettings | This is the updated LdapSettings. Values for all fields is needed, not just the fields you are updating
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.LDAPSettings() # LDAPSettings | This is the updated LdapSettings. Values for all fields is needed, not just the fields you are updating
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -976,19 +976,19 @@ Updates OAuth providers for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.OAuthSettings() # OAuthSettings | This is the updated OAuthSettings. Please provide values for all fields, not just the fields you are updating
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.OAuthSettings() # OAuthSettings | This is the updated OAuthSettings. Please provide values for all fields, not just the fields you are updating
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -1032,21 +1032,21 @@ Updates SAML metadata of the SAML configuration configured for an account
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 file = NULL # object |  (optional)
-file_metadata = swagger_client.FormDataContentDisposition() # FormDataContentDisposition |  (optional)
+file_metadata = harness_python_sdk.FormDataContentDisposition() # FormDataContentDisposition |  (optional)
 display_name = 'display_name_example' # str |  (optional)
 group_membership_attr = 'group_membership_attr_example' # str |  (optional)
 authorization_enabled = true # bool |  (optional)
@@ -1112,22 +1112,22 @@ Updates SAML metadata of the SAML configuration with given SSO Id, configured fo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 saml_ssoid = 'saml_ssoid_example' # str | Saml Settings Identifier
 file = NULL # object |  (optional)
-file_metadata = swagger_client.FormDataContentDisposition() # FormDataContentDisposition |  (optional)
+file_metadata = harness_python_sdk.FormDataContentDisposition() # FormDataContentDisposition |  (optional)
 display_name = 'display_name_example' # str |  (optional)
 group_membership_attr = 'group_membership_attr_example' # str |  (optional)
 authorization_enabled = true # bool |  (optional)
@@ -1196,18 +1196,18 @@ Updates whitelisted domains configured for an account.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 body = ['body_example'] # list[str] | Set of whitelisted domains and IPs for the account (optional)
 
@@ -1252,21 +1252,21 @@ Updates the SAML metadata for the given Account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationSettingsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AuthenticationSettingsApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 file = NULL # object |  (optional)
-file_metadata = swagger_client.FormDataContentDisposition() # FormDataContentDisposition |  (optional)
+file_metadata = harness_python_sdk.FormDataContentDisposition() # FormDataContentDisposition |  (optional)
 display_name = 'display_name_example' # str |  (optional)
 group_membership_attr = 'group_membership_attr_example' # str |  (optional)
 authorization_enabled = true # bool |  (optional)

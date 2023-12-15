@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.datadog_log_health_source import DatadogLogHealthSource  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.datadog_log_health_source import DatadogLogHealthSource  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestDatadogLogHealthSource(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDatadogLogHealthSource(unittest.TestCase):
     def testDatadogLogHealthSource(self):
         """Test DatadogLogHealthSource"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.datadog_log_health_source.DatadogLogHealthSource()  # noqa: E501
+        # model = harness_python_sdk.models.datadog_log_health_source.DatadogLogHealthSource()  # noqa: E501
         pass
 
 

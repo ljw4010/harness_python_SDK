@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dto_list_setting_response_dto import ResponseDTOListSettingResponseDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dto_list_setting_response_dto import ResponseDTOListSettingResponseDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTOListSettingResponseDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTOListSettingResponseDTO(unittest.TestCase):
     def testResponseDTOListSettingResponseDTO(self):
         """Test ResponseDTOListSettingResponseDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dto_list_setting_response_dto.ResponseDTOListSettingResponseDTO()  # noqa: E501
+        # model = harness_python_sdk.models.response_dto_list_setting_response_dto.ResponseDTOListSettingResponseDTO()  # noqa: E501
         pass
 
 

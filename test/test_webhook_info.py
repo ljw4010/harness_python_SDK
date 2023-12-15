@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.webhook_info import WebhookInfo  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.webhook_info import WebhookInfo  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestWebhookInfo(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestWebhookInfo(unittest.TestCase):
     def testWebhookInfo(self):
         """Test WebhookInfo"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.webhook_info.WebhookInfo()  # noqa: E501
+        # model = harness_python_sdk.models.webhook_info.WebhookInfo()  # noqa: E501
         pass
 
 

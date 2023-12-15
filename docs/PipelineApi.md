@@ -1,4 +1,4 @@
-# swagger_client.PipelineApi
+# harness_python_sdk.PipelineApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -26,18 +26,18 @@ Deletes a Pipeline by Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -100,18 +100,18 @@ Returns a Pipeline by Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -174,22 +174,22 @@ Returns List of Pipelines in the Given Project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
-body = swagger_client.PipelineFilterProperties() # PipelineFilterProperties | This is the body for the filter properties for listing pipelines. (optional)
+body = harness_python_sdk.PipelineFilterProperties() # PipelineFilterProperties | This is the body for the filter properties for listing pipelines. (optional)
 page = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 size = 25 # int | Results per page (optional) (default to 25)
 sort = ['sort_example'] # list[str] | Sort criteria for the elements. (optional)
@@ -254,18 +254,18 @@ Returns Pipeline Summary by Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -322,23 +322,23 @@ Import and Create Pipeline from Git Repository
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
 pipeline_identifier = 'pipeline_identifier_example' # str | Pipeline Identifier
-body = swagger_client.PipelineImportRequest() # PipelineImportRequest |  (optional)
+body = harness_python_sdk.PipelineImportRequest() # PipelineImportRequest |  (optional)
 connector_ref = 'connector_ref_example' # str | Identifier of Connector needed for CRUD operations on the respective Entity (optional)
 repo_name = 'repo_name_example' # str | Name of the repository. (optional)
 branch = 'branch_example' # str | Name of the branch. (optional)
@@ -394,18 +394,18 @@ Creates a Pipeline
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | Pipeline YAML
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -474,18 +474,18 @@ Creates a Pipeline
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineApi(harness_python_sdk.ApiClient(configuration))
 body = '{   \"summary\" : \"Sample Create Pipeline YAML\",   \"description\" : \"Sample Pipeline YAML with One Build Stage and One Deploy Stage\",   \"value\" : \"pipeline:\\n    name: Sample Pipeline\\n    identifier: Sample_Pipeline\\n    allowStageExecutions: false\\n    projectIdentifier: Temp\\n    orgIdentifier: default\\n    tags: {}\\n    stages:\\n        - stage:\\n              name: Sample Stage\\n              identifier: Sample_Stage\\n              description: \\\"\\\"\\n              type: Approval\\n              spec:\\n                  execution:\\n                      steps:\\n                          - step:\\n                                name: Approval Step\\n                                identifier: Approval_Step\\n                                type: HarnessApproval\\n                                timeout: 1d\\n                                spec:\\n                                    approvalMessage: |-\\n                                        Please review the following information\\n                                        and approve the pipeline progression\\n                                    includePipelineExecutionHistory: true\\n                                    approvers:\\n                                        minimumCount: 1\\n                                        disallowPipelineExecutor: false\\n                                        userGroups: <+input>\\n                                    approverInputs: []\\n                          - step:\\n                                type: ShellScript\\n                                name: ShellScript Step\\n                                identifier: ShellScript_Step\\n                                spec:\\n                                    shell: Bash\\n                                    onDelegate: true\\n                                    source:\\n                                        type: Inline\\n                                        spec:\\n                                            script: <+input>\\n                                    environmentVariables: []\\n                                    outputVariables: []\\n                                    executionTarget: {}\\n                                timeout: 10m\\n              tags: {}\\n        - stage:\\n              name: Sample Deploy Stage\\n              identifier: Sample_Deploy_Stage\\n              description: \\\"\\\"\\n              type: Deployment\\n              spec:\\n                  serviceConfig:\\n                      serviceRef: <+input>\\n                      serviceDefinition:\\n                          spec:\\n                              variables: []\\n                          type: Kubernetes\\n                  infrastructure:\\n                      environmentRef: <+input>\\n                      infrastructureDefinition:\\n                          type: KubernetesDirect\\n                          spec:\\n                              connectorRef: <+input>\\n                              namespace: <+input>\\n                              releaseName: release-<+INFRA_KEY>\\n                      allowSimultaneousDeployments: false\\n                  execution:\\n                      steps:\\n                          - step:\\n                                name: Rollout Deployment\\n                                identifier: rolloutDeployment\\n                                type: K8sRollingDeploy\\n                                timeout: 10m\\n                                spec:\\n                                    skipDryRun: false\\n                      rollbackSteps:\\n                          - step:\\n                                name: Rollback Rollout Deployment\\n                                identifier: rollbackRolloutDeployment\\n                                type: K8sRollingRollback\\n                                timeout: 10m\\n                                spec: {}\\n              tags: {}\\n              failureStrategies:\\n                  - onFailure:\\n                        errors:\\n                            - AllErrors\\n                        action:\\n                            type: StageRollback\\n\" }' # str | Pipeline YAML
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -556,18 +556,18 @@ Updates a Pipeline by Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | Pipeline YAML to be updated
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -640,18 +640,18 @@ Update git-metadata in remote pipeline and returns the identifier of updated pip
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -706,18 +706,18 @@ Updates a Pipeline by Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineApi(harness_python_sdk.ApiClient(configuration))
 body = '{   \"summary\" : \"Sample Update Pipeline YAML\",   \"description\" : \"Sample Pipeline YAML with One Build Stage and One Deploy Stage\",   \"value\" : \"pipeline:\\n    name: Sample Pipeline\\n    identifier: Sample_Pipeline\\n    allowStageExecutions: false\\n    projectIdentifier: Temp\\n    orgIdentifier: default\\n    tags: {}\\n    stages:\\n        - stage:\\n              name: Sample Stage\\n              identifier: Sample_Stage\\n              description: \\\"\\\"\\n              type: Approval\\n              spec:\\n                  execution:\\n                      steps:\\n                          - step:\\n                                name: Approval Step\\n                                identifier: Approval_Step\\n                                type: HarnessApproval\\n                                timeout: 1d\\n                                spec:\\n                                    approvalMessage: |-\\n                                        Please review the following information\\n                                        and approve the pipeline progression\\n                                    includePipelineExecutionHistory: true\\n                                    approvers:\\n                                        minimumCount: 1\\n                                        disallowPipelineExecutor: false\\n                                        userGroups: <+input>\\n                                    approverInputs: []\\n                          - step:\\n                                type: ShellScript\\n                                name: ShellScript Step\\n                                identifier: ShellScript_Step\\n                                spec:\\n                                    shell: Bash\\n                                    onDelegate: true\\n                                    source:\\n                                        type: Inline\\n                                        spec:\\n                                            script: <+input>\\n                                    environmentVariables: []\\n                                    outputVariables: []\\n                                    executionTarget: {}\\n                                timeout: 10m\\n              tags: {}\\n        - stage:\\n              name: Sample Deploy Stage\\n              identifier: Sample_Deploy_Stage\\n              description: \\\"\\\"\\n              type: Deployment\\n              spec:\\n                  serviceConfig:\\n                      serviceRef: <+input>\\n                      serviceDefinition:\\n                          spec:\\n                              variables: []\\n                          type: Kubernetes\\n                  infrastructure:\\n                      environmentRef: <+input>\\n                      infrastructureDefinition:\\n                          type: KubernetesDirect\\n                          spec:\\n                              connectorRef: <+input>\\n                              namespace: <+input>\\n                              releaseName: release-<+INFRA_KEY>\\n                      allowSimultaneousDeployments: false\\n                  execution:\\n                      steps:\\n                          - step:\\n                                name: Rollout Deployment\\n                                identifier: rolloutDeployment\\n                                type: K8sRollingDeploy\\n                                timeout: 10m\\n                                spec:\\n                                    skipDryRun: false\\n                      rollbackSteps:\\n                          - step:\\n                                name: Rollback Rollout Deployment\\n                                identifier: rollbackRolloutDeployment\\n                                type: K8sRollingRollback\\n                                timeout: 10m\\n                                spec: {}\\n              tags: {}\\n              failureStrategies:\\n                  - onFailure:\\n                        errors:\\n                            - AllErrors\\n                        action:\\n                            type: StageRollback\\n\" }' # str | Pipeline YAML to be updated
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.

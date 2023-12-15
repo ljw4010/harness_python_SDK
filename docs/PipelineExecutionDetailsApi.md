@@ -1,4 +1,4 @@
-# swagger_client.PipelineExecutionDetailsApi
+# harness_python_sdk.PipelineExecutionDetailsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -24,18 +24,18 @@ Returns the Pipeline Execution Details for a Given PlanExecution ID
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineExecutionDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineExecutionDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -88,18 +88,18 @@ Returns the Pipeline Execution Details for a Given PlanExecution ID
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineExecutionDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineExecutionDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -156,18 +156,18 @@ Returns the Pipeline Execution SubGraph for a Given NodeExecution ID
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineExecutionDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineExecutionDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -216,18 +216,18 @@ Get the Input Set YAML used for given Plan Execution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineExecutionDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineExecutionDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -280,18 +280,18 @@ Returns a List of Pipeline Executions Identifier with Specific Filter
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineExecutionDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineExecutionDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -350,22 +350,22 @@ Returns a List of Pipeline Executions with Specific Filter
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineExecutionDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineExecutionDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
-body = swagger_client.FilterProperties() # FilterProperties | Returns a List of Pipeline Executions with Specific Filters (optional)
+body = harness_python_sdk.FilterProperties() # FilterProperties | Returns a List of Pipeline Executions with Specific Filters (optional)
 search_term = 'search_term_example' # str | Search term to filter out pipelines based on pipeline name, identifier, tags. (optional)
 pipeline_identifier = 'pipeline_identifier_example' # str | Pipeline Identifier filter if exact pipelines needs to be filtered. (optional)
 page = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
@@ -434,18 +434,18 @@ Get Notes for a pipelineExecution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineExecutionDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineExecutionDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 plan_execution_id = 'plan_execution_id_example' # str | ExecutionId of the execution for which we want to get notes
 
@@ -488,18 +488,18 @@ Updates Notes for a pipelineExecution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineExecutionDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineExecutionDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.

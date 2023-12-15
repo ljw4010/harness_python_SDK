@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.infrastructure_response import InfrastructureResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.infrastructure_response import InfrastructureResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestInfrastructureResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInfrastructureResponse(unittest.TestCase):
     def testInfrastructureResponse(self):
         """Test InfrastructureResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.infrastructure_response.InfrastructureResponse()  # noqa: E501
+        # model = harness_python_sdk.models.infrastructure_response.InfrastructureResponse()  # noqa: E501
         pass
 
 

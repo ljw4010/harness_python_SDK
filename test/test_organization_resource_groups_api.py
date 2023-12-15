@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.organization_resource_groups_api import OrganizationResourceGroupsApi  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.api.organization_resource_groups_api import OrganizationResourceGroupsApi  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestOrganizationResourceGroupsApi(unittest.TestCase):

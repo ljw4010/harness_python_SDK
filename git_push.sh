@@ -2,7 +2,7 @@
 # ref: https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 #
 # Usage example: /bin/sh ./git_push.sh wing328 swagger-petstore-perl "minor update"
-export GIT_TOKEN=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
+
 git_user_id=$1
 git_repo_id=$2
 release_note=$3

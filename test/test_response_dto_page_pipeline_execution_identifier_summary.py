@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dto_page_pipeline_execution_identifier_summary import ResponseDTOPagePipelineExecutionIdentifierSummary  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dto_page_pipeline_execution_identifier_summary import ResponseDTOPagePipelineExecutionIdentifierSummary  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTOPagePipelineExecutionIdentifierSummary(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTOPagePipelineExecutionIdentifierSummary(unittest.TestCase):
     def testResponseDTOPagePipelineExecutionIdentifierSummary(self):
         """Test ResponseDTOPagePipelineExecutionIdentifierSummary"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dto_page_pipeline_execution_identifier_summary.ResponseDTOPagePipelineExecutionIdentifierSummary()  # noqa: E501
+        # model = harness_python_sdk.models.response_dto_page_pipeline_execution_identifier_summary.ResponseDTOPagePipelineExecutionIdentifierSummary()  # noqa: E501
         pass
 
 

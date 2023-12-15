@@ -1,4 +1,4 @@
-# swagger_client.CommitmentOrchestratorSetupAPIsApi
+# harness_python_sdk.CommitmentOrchestratorSetupAPIsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -19,18 +19,18 @@ Lists master accounts available for commitment orchestrator setup
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CommitmentOrchestratorSetupAPIsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CommitmentOrchestratorSetupAPIsApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity
 
@@ -75,18 +75,18 @@ Lists setups available for commitment orchestrator
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CommitmentOrchestratorSetupAPIsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CommitmentOrchestratorSetupAPIsApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity
 
@@ -131,22 +131,22 @@ Obtains maximum allowed configuration values for Savings Plans given a target to
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CommitmentOrchestratorSetupAPIsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CommitmentOrchestratorSetupAPIsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity
 cloud_account_id = 'cloud_account_id_example' # str | 
 account_id = 'account_id_example' # str | Account Identifier for the Entity
-body = swagger_client.AutoCUDConfig() # AutoCUDConfig | Configured setup values (optional)
+body = harness_python_sdk.AutoCUDConfig() # AutoCUDConfig | Configured setup values (optional)
 
 try:
     # Validate commitment Setup

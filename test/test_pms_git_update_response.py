@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.pms_git_update_response import PMSGitUpdateResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.pms_git_update_response import PMSGitUpdateResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestPMSGitUpdateResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPMSGitUpdateResponse(unittest.TestCase):
     def testPMSGitUpdateResponse(self):
         """Test PMSGitUpdateResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.pms_git_update_response.PMSGitUpdateResponse()  # noqa: E501
+        # model = harness_python_sdk.models.pms_git_update_response.PMSGitUpdateResponse()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# swagger_client.FilterResourceGroupsApi
+# harness_python_sdk.FilterResourceGroupsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -17,19 +17,19 @@ Returns a list of Resource Groups based on filter criteria.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FilterResourceGroupsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ResourceGroupFilterRequestBody() # ResourceGroupFilterRequestBody | Filter Resource Group request body
+api_instance = harness_python_sdk.FilterResourceGroupsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ResourceGroupFilterRequestBody() # ResourceGroupFilterRequestBody | Filter Resource Group request body
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 page = 0 # int | Pagination page number strategy: Specify the page number within the paginated collection related to the number of items on each page. (optional) (default to 0)
 limit = 30 # int | Pagination: Number of items to return. (optional) (default to 30)

@@ -1,4 +1,4 @@
-# swagger_client.PipelineInputSetApi
+# harness_python_sdk.PipelineInputSetApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -26,18 +26,18 @@ Deletes the Input Set by Identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineInputSetApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineInputSetApi(harness_python_sdk.ApiClient(configuration))
 input_set_identifier = 'input_set_identifier_example' # str | Identifier of the Input Set that should be deleted.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -102,18 +102,18 @@ Returns Input Set for a Given Identifier (Throws an Error if no Input Set Exists
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineInputSetApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineInputSetApi(harness_python_sdk.ApiClient(configuration))
 input_set_identifier = 'input_set_identifier_example' # str | Identifier for the Input Set
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -176,18 +176,18 @@ Gets an Overlay Input Set by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineInputSetApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineInputSetApi(harness_python_sdk.ApiClient(configuration))
 input_set_identifier = 'input_set_identifier_example' # str | Identifier for the Overlay Input Set
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -252,18 +252,18 @@ Lists all Input Sets for a Pipeline
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineInputSetApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineInputSetApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -328,18 +328,18 @@ Creates an Input Set for a Pipeline
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineInputSetApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineInputSetApi(harness_python_sdk.ApiClient(configuration))
 body = '{   \"summary\" : \"Sample Input Set YAML\",   \"description\" : \"Sample Input Set YAML\",   \"value\" : \"inputSet:\\n    name: Sample Input Set\\n    tags: {}\\n    identifier: Sample_Input_Set\\n    orgIdentifier: default\\n    projectIdentifier: MISC\\n    pipeline:\\n        identifier: Sample_Pipeline\\n        stages:\\n            - stage:\\n                  identifier: Sample_Stage\\n                  type: Approval\\n                  spec:\\n                      execution:\\n                          steps:\\n                              - step:\\n                                    identifier: Approval_Step\\n                                    type: HarnessApproval\\n                                    spec:\\n                                        approvers:\\n                                            userGroups:\\n                                                - account.Admins\\n                              - step:\\n                                    identifier: Shellscript_Step\\n                                    type: ShellScript\\n                                    spec:\\n                                        source:\\n                                            type: Inline\\n                                            spec:\\n                                                script: echo \\\"ShellScript\\\"\\n            - stage:\\n                  identifier: Sample_Deploy_Stage\\n                  type: Deployment\\n                  spec:\\n                      serviceConfig:\\n                          serviceRef: Service1\\n                      infrastructure:\\n                          environmentRef: Env1\\n                          infrastructureDefinition:\\n                              type: KubernetesDirect\\n                              spec:\\n                                  connectorRef: account.harnessciplatform\\n                                  namespace: sample\\n\" }' # str | Input set YAML to be created. The Account, Org, Project, and Pipeline identifiers inside the YAML should match the query parameters.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -412,18 +412,18 @@ Create an Overlay Input Set for a pipeline
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineInputSetApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineInputSetApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | Overlay Input Set YAML to be created. The Account, Org, Project, and Pipeline identifiers inside the YAML should match the query parameters
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -494,18 +494,18 @@ Updates the Input Set for a Pipeline
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineInputSetApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineInputSetApi(harness_python_sdk.ApiClient(configuration))
 body = '{   \"summary\" : \"Sample Input Set YAML\",   \"description\" : \"Sample Input Set YAML\",   \"value\" : \"inputSet:\\n    name: Sample Input Set\\n    tags: {}\\n    identifier: Sample_Input_Set\\n    orgIdentifier: default\\n    projectIdentifier: MISC\\n    pipeline:\\n        identifier: Sample_Pipeline\\n        stages:\\n            - stage:\\n                  identifier: Sample_Stage\\n                  type: Approval\\n                  spec:\\n                      execution:\\n                          steps:\\n                              - step:\\n                                    identifier: Approval_Step\\n                                    type: HarnessApproval\\n                                    spec:\\n                                        approvers:\\n                                            userGroups:\\n                                                - account.Admins\\n                              - step:\\n                                    identifier: Shellscript_Step\\n                                    type: ShellScript\\n                                    spec:\\n                                        source:\\n                                            type: Inline\\n                                            spec:\\n                                                script: echo \\\"ShellScript\\\"\\n            - stage:\\n                  identifier: Sample_Deploy_Stage\\n                  type: Deployment\\n                  spec:\\n                      serviceConfig:\\n                          serviceRef: Service1\\n                      infrastructure:\\n                          environmentRef: Env1\\n                          infrastructureDefinition:\\n                              type: KubernetesDirect\\n                              spec:\\n                                  connectorRef: account.harnessciplatform\\n                                  namespace: sample\\n\" }' # str | Input set YAML to be updated. The query parameters should match the Account, Org, Project, and Pipeline Ids in the YAML.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -582,18 +582,18 @@ Update an Overlay Input Set for a pipeline
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineInputSetApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineInputSetApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | Overlay Input Set YAML to be updated. The Account, Org, Project, and Pipeline identifiers inside the YAML should match the query parameters, and the Overlay Input Set identifier cannot be changed.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -668,23 +668,23 @@ Returns Runtime Input Template for a Pipeline
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineInputSetApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineInputSetApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
 pipeline_identifier = 'pipeline_identifier_example' # str | Pipeline identifier for which we need the Runtime Input Template.
-body = swagger_client.InputSetTemplateRequest() # InputSetTemplateRequest |  (optional)
+body = harness_python_sdk.InputSetTemplateRequest() # InputSetTemplateRequest |  (optional)
 load_from_cache = 'false' # str |  (optional) (default to false)
 branch = 'branch_example' # str | Name of the branch. (optional)
 repo_identifier = 'repo_identifier_example' # str | Git Sync Config Id. (optional)
@@ -738,18 +738,18 @@ Update git-metadata in remote input-set and return the updated input-set
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineInputSetApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelineInputSetApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.

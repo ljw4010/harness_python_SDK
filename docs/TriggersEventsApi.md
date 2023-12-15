@@ -1,4 +1,4 @@
-# swagger_client.TriggersEventsApi
+# harness_python_sdk.TriggersEventsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -21,18 +21,18 @@ Get all the polled response for a given trigger
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersEventsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersEventsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str | 
 project_identifier = 'project_identifier_example' # str | 
@@ -83,18 +83,18 @@ Get artifact and manifest trigger event history based on build source type
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersEventsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersEventsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str |  (optional)
 project_identifier = 'project_identifier_example' # str |  (optional)
@@ -153,18 +153,18 @@ Get event history for a trigger
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersEventsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersEventsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str | 
 project_identifier = 'project_identifier_example' # str | 
@@ -223,18 +223,18 @@ Get Trigger history event correlation
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersEventsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersEventsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 event_correlation_id = 'event_correlation_id_example' # str | 
 page = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
@@ -285,18 +285,18 @@ Get Trigger history event correlation V2
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersEventsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.TriggersEventsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 event_correlation_id = 'event_correlation_id_example' # str | 
 page = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)

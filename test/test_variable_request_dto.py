@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.variable_request_dto import VariableRequestDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.variable_request_dto import VariableRequestDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestVariableRequestDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestVariableRequestDTO(unittest.TestCase):
     def testVariableRequestDTO(self):
         """Test VariableRequestDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.variable_request_dto.VariableRequestDTO()  # noqa: E501
+        # model = harness_python_sdk.models.variable_request_dto.VariableRequestDTO()  # noqa: E501
         pass
 
 

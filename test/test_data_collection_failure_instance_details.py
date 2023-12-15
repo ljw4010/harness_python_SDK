@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.data_collection_failure_instance_details import DataCollectionFailureInstanceDetails  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.data_collection_failure_instance_details import DataCollectionFailureInstanceDetails  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestDataCollectionFailureInstanceDetails(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDataCollectionFailureInstanceDetails(unittest.TestCase):
     def testDataCollectionFailureInstanceDetails(self):
         """Test DataCollectionFailureInstanceDetails"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.data_collection_failure_instance_details.DataCollectionFailureInstanceDetails()  # noqa: E501
+        # model = harness_python_sdk.models.data_collection_failure_instance_details.DataCollectionFailureInstanceDetails()  # noqa: E501
         pass
 
 

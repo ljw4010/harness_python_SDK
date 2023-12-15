@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.live_monitoring_dto import LiveMonitoringDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.live_monitoring_dto import LiveMonitoringDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestLiveMonitoringDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestLiveMonitoringDTO(unittest.TestCase):
     def testLiveMonitoringDTO(self):
         """Test LiveMonitoringDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.live_monitoring_dto.LiveMonitoringDTO()  # noqa: E501
+        # model = harness_python_sdk.models.live_monitoring_dto.LiveMonitoringDTO()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# swagger_client.OIDCApi
+# harness_python_sdk.OIDCApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -16,18 +16,18 @@ Get the openid configuration for Harness
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OIDCApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OIDCApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | This is the accountIdentifier for the account for which the JWKS public key needs to be exposed.
 
 try:
@@ -68,18 +68,18 @@ Get the openid configuration for Harness
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OIDCApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OIDCApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | This is the accountIdentifier for the account for which the JWKS public key needs to be exposed.
 
 try:

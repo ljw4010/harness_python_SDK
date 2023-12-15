@@ -1,4 +1,4 @@
-# swagger_client.CustomDeploymentApi
+# harness_python_sdk.CustomDeploymentApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -19,19 +19,19 @@ Gets Custom Deployment Entity References
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomDeploymentApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CustomDeploymentYamlRequestDTO() # CustomDeploymentYamlRequestDTO | Custom Deployment Yaml Request DTO containing entityYaml
+api_instance = harness_python_sdk.CustomDeploymentApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CustomDeploymentYamlRequestDTO() # CustomDeploymentYamlRequestDTO | Custom Deployment Yaml Request DTO containing entityYaml
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -77,19 +77,19 @@ Gets Custom Deployment Expression Variables
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomDeploymentApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CustomDeploymentYamlRequestDTO() # CustomDeploymentYamlRequestDTO | Custom Deployment Yaml Request DTO containing entityYaml
+api_instance = harness_python_sdk.CustomDeploymentApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CustomDeploymentYamlRequestDTO() # CustomDeploymentYamlRequestDTO | Custom Deployment Yaml Request DTO containing entityYaml
 
 try:
     # Gets Custom Deployment Expression Variables
@@ -129,18 +129,18 @@ Gets Infra Variables from a Custom Deployment Template by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomDeploymentApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CustomDeploymentApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 template_identifier = 'template_identifier_example' # str | Custom Deployment Identifier for the entity
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -191,19 +191,19 @@ Return the updated yaml for infrastructure based on Deployment template
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomDeploymentApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CustomDeploymentYamlDTO() # CustomDeploymentYamlDTO | YAML
+api_instance = harness_python_sdk.CustomDeploymentApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CustomDeploymentYamlDTO() # CustomDeploymentYamlDTO | YAML
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 infra_identifier = 'infra_identifier_example' # str | Infrastructure Identifier for the entity
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -251,18 +251,18 @@ This validates whether Infrastructure is valid or not
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomDeploymentApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CustomDeploymentApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 infra_identifier = 'infra_identifier_example' # str | Infrastructure Identifier for the entity
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)

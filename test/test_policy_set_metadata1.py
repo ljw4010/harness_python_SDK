@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.policy_set_metadata1 import PolicySetMetadata1  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.policy_set_metadata1 import PolicySetMetadata1  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestPolicySetMetadata1(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPolicySetMetadata1(unittest.TestCase):
     def testPolicySetMetadata1(self):
         """Test PolicySetMetadata1"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.policy_set_metadata1.PolicySetMetadata1()  # noqa: E501
+        # model = harness_python_sdk.models.policy_set_metadata1.PolicySetMetadata1()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.ldap_group_response import LdapGroupResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.ldap_group_response import LdapGroupResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestLdapGroupResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestLdapGroupResponse(unittest.TestCase):
     def testLdapGroupResponse(self):
         """Test LdapGroupResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.ldap_group_response.LdapGroupResponse()  # noqa: E501
+        # model = harness_python_sdk.models.ldap_group_response.LdapGroupResponse()  # noqa: E501
         pass
 
 

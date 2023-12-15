@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.git_details import GitDetails  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.git_details import GitDetails  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestGitDetails(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGitDetails(unittest.TestCase):
     def testGitDetails(self):
         """Test GitDetails"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.git_details.GitDetails()  # noqa: E501
+        # model = harness_python_sdk.models.git_details.GitDetails()  # noqa: E501
         pass
 
 

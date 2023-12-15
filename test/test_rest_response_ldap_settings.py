@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.rest_response_ldap_settings import RestResponseLDAPSettings  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.rest_response_ldap_settings import RestResponseLDAPSettings  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestRestResponseLDAPSettings(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRestResponseLDAPSettings(unittest.TestCase):
     def testRestResponseLDAPSettings(self):
         """Test RestResponseLDAPSettings"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.rest_response_ldap_settings.RestResponseLDAPSettings()  # noqa: E501
+        # model = harness_python_sdk.models.rest_response_ldap_settings.RestResponseLDAPSettings()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.tgt_generation_spec_dto import TGTGenerationSpecDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.tgt_generation_spec_dto import TGTGenerationSpecDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestTGTGenerationSpecDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTGTGenerationSpecDTO(unittest.TestCase):
     def testTGTGenerationSpecDTO(self):
         """Test TGTGenerationSpecDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.tgt_generation_spec_dto.TGTGenerationSpecDTO()  # noqa: E501
+        # model = harness_python_sdk.models.tgt_generation_spec_dto.TGTGenerationSpecDTO()  # noqa: E501
         pass
 
 

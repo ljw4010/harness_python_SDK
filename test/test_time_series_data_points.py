@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.time_series_data_points import TimeSeriesDataPoints  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.time_series_data_points import TimeSeriesDataPoints  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestTimeSeriesDataPoints(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTimeSeriesDataPoints(unittest.TestCase):
     def testTimeSeriesDataPoints(self):
         """Test TimeSeriesDataPoints"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.time_series_data_points.TimeSeriesDataPoints()  # noqa: E501
+        # model = harness_python_sdk.models.time_series_data_points.TimeSeriesDataPoints()  # noqa: E501
         pass
 
 

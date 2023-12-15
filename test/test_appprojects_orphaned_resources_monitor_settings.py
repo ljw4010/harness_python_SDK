@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.appprojects_orphaned_resources_monitor_settings import AppprojectsOrphanedResourcesMonitorSettings  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.appprojects_orphaned_resources_monitor_settings import AppprojectsOrphanedResourcesMonitorSettings  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAppprojectsOrphanedResourcesMonitorSettings(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAppprojectsOrphanedResourcesMonitorSettings(unittest.TestCase):
     def testAppprojectsOrphanedResourcesMonitorSettings(self):
         """Test AppprojectsOrphanedResourcesMonitorSettings"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.appprojects_orphaned_resources_monitor_settings.AppprojectsOrphanedResourcesMonitorSettings()  # noqa: E501
+        # model = harness_python_sdk.models.appprojects_orphaned_resources_monitor_settings.AppprojectsOrphanedResourcesMonitorSettings()  # noqa: E501
         pass
 
 

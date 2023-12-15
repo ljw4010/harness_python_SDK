@@ -12,8 +12,8 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "swagger-client"
-VERSION = "1.0.0"
+NAME = "harness_python_sdk"
+VERSION = "v1.0.0"
 # To install the library, run the following
 #
 # python setup.py install

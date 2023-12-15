@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.artifactory_username_password_auth import ArtifactoryUsernamePasswordAuth  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.artifactory_username_password_auth import ArtifactoryUsernamePasswordAuth  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestArtifactoryUsernamePasswordAuth(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestArtifactoryUsernamePasswordAuth(unittest.TestCase):
     def testArtifactoryUsernamePasswordAuth(self):
         """Test ArtifactoryUsernamePasswordAuth"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.artifactory_username_password_auth.ArtifactoryUsernamePasswordAuth()  # noqa: E501
+        # model = harness_python_sdk.models.artifactory_username_password_auth.ArtifactoryUsernamePasswordAuth()  # noqa: E501
         pass
 
 

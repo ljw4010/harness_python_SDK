@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dto_refresh_response import ResponseDTORefreshResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dto_refresh_response import ResponseDTORefreshResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTORefreshResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTORefreshResponse(unittest.TestCase):
     def testResponseDTORefreshResponse(self):
         """Test ResponseDTORefreshResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dto_refresh_response.ResponseDTORefreshResponse()  # noqa: E501
+        # model = harness_python_sdk.models.response_dto_refresh_response.ResponseDTORefreshResponse()  # noqa: E501
         pass
 
 

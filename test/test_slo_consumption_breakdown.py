@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.slo_consumption_breakdown import SLOConsumptionBreakdown  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.slo_consumption_breakdown import SLOConsumptionBreakdown  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestSLOConsumptionBreakdown(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSLOConsumptionBreakdown(unittest.TestCase):
     def testSLOConsumptionBreakdown(self):
         """Test SLOConsumptionBreakdown"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.slo_consumption_breakdown.SLOConsumptionBreakdown()  # noqa: E501
+        # model = harness_python_sdk.models.slo_consumption_breakdown.SLOConsumptionBreakdown()  # noqa: E501
         pass
 
 

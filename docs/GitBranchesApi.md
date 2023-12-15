@@ -1,4 +1,4 @@
-# swagger_client.GitBranchesApi
+# harness_python_sdk.GitBranchesApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -16,18 +16,18 @@ Lists branches with their status(Synced, Unsynced) by Git Sync Config Id for the
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.GitBranchesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.GitBranchesApi(harness_python_sdk.ApiClient(configuration))
 yaml_git_config_identifier = 'yaml_git_config_identifier_example' # str | Git Sync Config Id.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -82,18 +82,18 @@ Sync the content of new Git Branch into harness with Git Sync Config Id
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.GitBranchesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.GitBranchesApi(harness_python_sdk.ApiClient(configuration))
 repo_identifier = 'repo_identifier_example' # str | Git Sync Config Id.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)

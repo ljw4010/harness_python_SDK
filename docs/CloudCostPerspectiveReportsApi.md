@@ -1,4 +1,4 @@
-# swagger_client.CloudCostPerspectiveReportsApi
+# harness_python_sdk.CloudCostPerspectiveReportsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -20,19 +20,19 @@ Create a report schedule for the given Report ID or a Perspective ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectiveReportsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CEReportSchedule() # CEReportSchedule | CEReportSchedule object to be saved
+api_instance = harness_python_sdk.CloudCostPerspectiveReportsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CEReportSchedule() # CEReportSchedule | CEReportSchedule object to be saved
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -76,18 +76,18 @@ Delete cost Perspective Report for the given Report ID or a Perspective ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectiveReportsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostPerspectiveReportsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 report_id = 'report_id_example' # str | Unique identifier for the Report (optional)
 perspective_id = 'perspective_id_example' # str | Unique identifier for the Perspective (optional)
@@ -134,18 +134,18 @@ Fetch cost Report details for the given Report ID or a Perspective ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectiveReportsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostPerspectiveReportsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 perspective_id = 'perspective_id_example' # str | Unique identifier for the Perspective (optional)
 report_id = 'report_id_example' # str | Unique identifier for the Report (optional)
@@ -192,19 +192,19 @@ Update cost Perspective Reports.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectiveReportsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CEReportSchedule() # CEReportSchedule | CEReportSchedule object to be updated
+api_instance = harness_python_sdk.CloudCostPerspectiveReportsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CEReportSchedule() # CEReportSchedule | CEReportSchedule object to be updated
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.template_wrapper_response import TemplateWrapperResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.template_wrapper_response import TemplateWrapperResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestTemplateWrapperResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTemplateWrapperResponse(unittest.TestCase):
     def testTemplateWrapperResponse(self):
         """Test TemplateWrapperResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.template_wrapper_response.TemplateWrapperResponse()  # noqa: E501
+        # model = harness_python_sdk.models.template_wrapper_response.TemplateWrapperResponse()  # noqa: E501
         pass
 
 

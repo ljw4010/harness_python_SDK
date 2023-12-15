@@ -1,4 +1,4 @@
-# swagger_client.CloudCostRecommendationsDetailsApi
+# harness_python_sdk.CloudCostRecommendationsDetailsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -21,18 +21,18 @@ Returns Azure VM Recommendation details for the given Recommendation identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostRecommendationsDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostRecommendationsDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 id = 'id_example' # str | Azure VM Recommendation identifier.
 
@@ -77,18 +77,18 @@ Returns EC2 Recommendation details for the given Recommendation identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostRecommendationsDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostRecommendationsDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 id = 'id_example' # str | EC2 Recommendation identifier.
 
@@ -133,18 +133,18 @@ Returns ECS Recommendation details for the given Recommendation identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostRecommendationsDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostRecommendationsDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 id = 'id_example' # str | ECS Recommendation identifier.
 _from = '_from_example' # str | Should use org.joda.time.DateTime parsable format. Example, '2022-01-31', '2022-01-31T07:54Z' or '2022-01-31T07:54:51.264Z' Defaults to Today-7days (optional)
@@ -195,18 +195,18 @@ Returns node pool Recommendation details for the given identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostRecommendationsDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostRecommendationsDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 id = 'id_example' # str | Node pool Recommendation identifier
 
@@ -251,18 +251,18 @@ Returns workload Recommendation details for the given Recommendation identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostRecommendationsDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostRecommendationsDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 id = 'id_example' # str | Workload Recommendation identifier.
 _from = '_from_example' # str | Should use org.joda.time.DateTime parsable format. Example, '2022-01-31', '2022-01-31T07:54Z' or '2022-01-31T07:54:51.264Z' Defaults to Today-7days (optional)

@@ -1,4 +1,4 @@
-# swagger_client.SMTPApi
+# harness_python_sdk.SMTPApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -20,19 +20,19 @@ Creates SMTP config
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SMTPApi(swagger_client.ApiClient(configuration))
-body = swagger_client.NgSmtp() # NgSmtp | 
+api_instance = harness_python_sdk.SMTPApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.NgSmtp() # NgSmtp | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -74,18 +74,18 @@ Delete Smtp Config by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SMTPApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SMTPApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Config identifier
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
@@ -128,18 +128,18 @@ Gets Smtp config by accountId
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SMTPApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SMTPApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity. (optional)
 
 try:
@@ -180,19 +180,19 @@ Updates the Smtp Config
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SMTPApi(swagger_client.ApiClient(configuration))
-body = swagger_client.NgSmtp() # NgSmtp | 
+api_instance = harness_python_sdk.SMTPApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.NgSmtp() # NgSmtp | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -234,18 +234,18 @@ Tests the config's connectivity by sending a test email
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SMTPApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SMTPApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Attribute uuid
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 to = 'to_example' # str | 
@@ -294,18 +294,18 @@ Checks whether other connectors exist with the same name
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SMTPApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SMTPApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity.
 name = 'name_example' # str | The name of Config (optional)
 

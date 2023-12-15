@@ -1,4 +1,4 @@
-# swagger_client.ProjectsApi
+# harness_python_sdk.ProjectsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -21,19 +21,19 @@ Create a new project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ProjectsProjectCreateRequest() # ProjectsProjectCreateRequest | 
+api_instance = harness_python_sdk.ProjectsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ProjectsProjectCreateRequest() # ProjectsProjectCreateRequest | 
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -83,18 +83,18 @@ Delete deletes a project.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProjectsApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 query_name = 'query_name_example' # str | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
@@ -145,18 +145,18 @@ Get returns an argo project by name.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProjectsApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 query_name = 'query_name_example' # str | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
@@ -207,18 +207,18 @@ Lists lists argo projects.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProjectsApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -269,19 +269,19 @@ Update updates a project.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ProjectsProjectUpdateRequest() # ProjectsProjectUpdateRequest | 
+api_instance = harness_python_sdk.ProjectsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ProjectsProjectUpdateRequest() # ProjectsProjectUpdateRequest | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 request_project_metadata_name = 'request_project_metadata_name_example' # str | Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names +optional

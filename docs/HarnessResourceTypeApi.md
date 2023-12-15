@@ -1,4 +1,4 @@
-# swagger_client.HarnessResourceTypeApi
+# harness_python_sdk.HarnessResourceTypeApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -15,18 +15,18 @@ Gets all resource types available at this scope
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.HarnessResourceTypeApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.HarnessResourceTypeApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)

@@ -1,4 +1,4 @@
-# swagger_client.OrgRancherInfrastructureApi
+# harness_python_sdk.OrgRancherInfrastructureApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -18,18 +18,18 @@ List rancher clusters using the given org level rancher connector
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgRancherInfrastructureApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgRancherInfrastructureApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
 connector = 'connector_example' # str | Identifier field of the scoped connector entity to be used for this operation.
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
@@ -84,18 +84,18 @@ List rancher clusters using the given org level environment and infrastructure d
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgRancherInfrastructureApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgRancherInfrastructureApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
 environment = 'environment_example' # str | Identifier field of the scoped environment entity to be used for the selected operation.
 infrastructure_definition = 'infrastructure_definition_example' # str | Identifier field of the scoped infrastructure definition entity to be used in the selected operation.

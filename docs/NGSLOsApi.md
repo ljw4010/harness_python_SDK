@@ -1,4 +1,4 @@
-# swagger_client.NGSLOsApi
+# harness_python_sdk.NGSLOsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -21,18 +21,18 @@ Delete SLO data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.NGSLOsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.NGSLOsApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Identifier for the Entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -79,19 +79,19 @@ Get onBoarding graph for composite slo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.NGSLOsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CompositeServiceLevelObjectiveSpec() # CompositeServiceLevelObjectiveSpec | Composite SLO spec which consists of list of SLO details
+api_instance = harness_python_sdk.NGSLOsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CompositeServiceLevelObjectiveSpec() # CompositeServiceLevelObjectiveSpec | Composite SLO spec which consists of list of SLO details
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -137,18 +137,18 @@ Get SLO data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.NGSLOsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.NGSLOsApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Identifier for the Entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -195,18 +195,18 @@ Get all SLOs
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.NGSLOsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.NGSLOsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -263,22 +263,22 @@ Get SLO list view
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.NGSLOsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.NGSLOsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
-body = swagger_client.SLODashboardApiFilter() # SLODashboardApiFilter |  (optional)
+body = harness_python_sdk.SLODashboardApiFilter() # SLODashboardApiFilter |  (optional)
 page_number = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 10 # int | Results per page (optional) (default to 10)
 
@@ -325,19 +325,19 @@ Saves SLO data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.NGSLOsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AbstractServiceLevelObjective() # AbstractServiceLevelObjective | Details of the SLO to be saved
+api_instance = harness_python_sdk.NGSLOsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.AbstractServiceLevelObjective() # AbstractServiceLevelObjective | Details of the SLO to be saved
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity.
@@ -383,19 +383,19 @@ Update SLO data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.NGSLOsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AbstractServiceLevelObjective() # AbstractServiceLevelObjective | Details of the SLO to be updated
+api_instance = harness_python_sdk.NGSLOsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.AbstractServiceLevelObjective() # AbstractServiceLevelObjective | Details of the SLO to be updated
 identifier = 'identifier_example' # str | Identifier for the Entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.

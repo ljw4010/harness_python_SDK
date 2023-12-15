@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.ec2_instance_dto import EC2InstanceDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.ec2_instance_dto import EC2InstanceDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestEC2InstanceDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestEC2InstanceDTO(unittest.TestCase):
     def testEC2InstanceDTO(self):
         """Test EC2InstanceDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.ec2_instance_dto.EC2InstanceDTO()  # noqa: E501
+        # model = harness_python_sdk.models.ec2_instance_dto.EC2InstanceDTO()  # noqa: E501
         pass
 
 

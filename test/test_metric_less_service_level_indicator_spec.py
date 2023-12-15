@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.metric_less_service_level_indicator_spec import MetricLessServiceLevelIndicatorSpec  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.metric_less_service_level_indicator_spec import MetricLessServiceLevelIndicatorSpec  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestMetricLessServiceLevelIndicatorSpec(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestMetricLessServiceLevelIndicatorSpec(unittest.TestCase):
     def testMetricLessServiceLevelIndicatorSpec(self):
         """Test MetricLessServiceLevelIndicatorSpec"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.metric_less_service_level_indicator_spec.MetricLessServiceLevelIndicatorSpec()  # noqa: E501
+        # model = harness_python_sdk.models.metric_less_service_level_indicator_spec.MetricLessServiceLevelIndicatorSpec()  # noqa: E501
         pass
 
 

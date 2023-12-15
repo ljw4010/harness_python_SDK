@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.update_organization_request import UpdateOrganizationRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.update_organization_request import UpdateOrganizationRequest  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestUpdateOrganizationRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestUpdateOrganizationRequest(unittest.TestCase):
     def testUpdateOrganizationRequest(self):
         """Test UpdateOrganizationRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.update_organization_request.UpdateOrganizationRequest()  # noqa: E501
+        # model = harness_python_sdk.models.update_organization_request.UpdateOrganizationRequest()  # noqa: E501
         pass
 
 

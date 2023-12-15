@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.template_template_metadata_summary_response import TemplateTemplateMetadataSummaryResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.template_template_metadata_summary_response import TemplateTemplateMetadataSummaryResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestTemplateTemplateMetadataSummaryResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTemplateTemplateMetadataSummaryResponse(unittest.TestCase):
     def testTemplateTemplateMetadataSummaryResponse(self):
         """Test TemplateTemplateMetadataSummaryResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.template_template_metadata_summary_response.TemplateTemplateMetadataSummaryResponse()  # noqa: E501
+        # model = harness_python_sdk.models.template_template_metadata_summary_response.TemplateTemplateMetadataSummaryResponse()  # noqa: E501
         pass
 
 

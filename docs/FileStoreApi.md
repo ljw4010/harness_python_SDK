@@ -1,4 +1,4 @@
-# swagger_client.FileStoreApi
+# harness_python_sdk.FileStoreApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -28,18 +28,18 @@ Create Folder or File including content
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 tags = 'tags_example' # str |  (optional)
 content = NULL # object |  (optional)
@@ -51,8 +51,8 @@ parent_identifier = 'parent_identifier_example' # str |  (optional)
 description = 'description_example' # str |  (optional)
 mime_type = 'mime_type_example' # str |  (optional)
 path = 'path_example' # str |  (optional)
-created_by = swagger_client.EmbeddedUserDetailsDTO() # EmbeddedUserDetailsDTO |  (optional)
-last_modified_by = swagger_client.EmbeddedUserDetailsDTO() # EmbeddedUserDetailsDTO |  (optional)
+created_by = harness_python_sdk.EmbeddedUserDetailsDTO() # EmbeddedUserDetailsDTO |  (optional)
+last_modified_by = harness_python_sdk.EmbeddedUserDetailsDTO() # EmbeddedUserDetailsDTO |  (optional)
 last_modified_at = 789 # int |  (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -110,19 +110,19 @@ Creates File or Folder metadata via YAML
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
-body = swagger_client.FileStoreRequest() # FileStoreRequest | YAML definition of File or Folder
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.FileStoreRequest() # FileStoreRequest | YAML definition of File or Folder
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -168,18 +168,18 @@ Delete File or Folder by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | The file identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -228,18 +228,18 @@ Download File
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | The file identifier
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -285,18 +285,18 @@ Get list of created by user details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -341,18 +341,18 @@ Get the list of supported entity types for files
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -393,18 +393,18 @@ Get the Folder or File metadata
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | The file identifier
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -451,18 +451,18 @@ Get file content of scopedFilePath
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
 scoped_file_path = 'scoped_file_path_example' # str | The scoped file path reference
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -509,19 +509,19 @@ Get folder nodes at first level, not including sub-nodes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
-body = swagger_client.FolderNode() # FolderNode | Folder node for which to return the list of nodes
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.FolderNode() # FolderNode | Folder node for which to return the list of nodes
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -569,18 +569,18 @@ Get list of entities where file is referenced by queried entity type
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | The file identifier
 page_index = 0 # int | Page number of navigation. The default value is 0 (optional) (default to 0)
@@ -635,18 +635,18 @@ List Files and Folders metadata
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -654,7 +654,7 @@ identifiers = ['identifiers_example'] # list[str] | This is the list of File IDs
 search_term = 'search_term_example' # str | This will be used to filter files or folders. Any file or folder having the specified search term in its Name or Identifier will be filtered (optional)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -703,22 +703,22 @@ Get filtered list of Files or Folders
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
-body = swagger_client.FilesFilterPropertiesDTO() # FilesFilterPropertiesDTO | Details of the File filter properties to be applied (optional)
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.FilesFilterPropertiesDTO() # FilesFilterPropertiesDTO | Details of the File filter properties to be applied (optional)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -773,18 +773,18 @@ Update Folder or File including content
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | The file identifier
 tags = 'tags_example' # str |  (optional)
@@ -796,8 +796,8 @@ parent_identifier = 'parent_identifier_example' # str |  (optional)
 description = 'description_example' # str |  (optional)
 mime_type = 'mime_type_example' # str |  (optional)
 path = 'path_example' # str |  (optional)
-created_by = swagger_client.EmbeddedUserDetailsDTO() # EmbeddedUserDetailsDTO |  (optional)
-last_modified_by = swagger_client.EmbeddedUserDetailsDTO() # EmbeddedUserDetailsDTO |  (optional)
+created_by = harness_python_sdk.EmbeddedUserDetailsDTO() # EmbeddedUserDetailsDTO |  (optional)
+last_modified_by = harness_python_sdk.EmbeddedUserDetailsDTO() # EmbeddedUserDetailsDTO |  (optional)
 last_modified_at = 789 # int |  (optional)
 content = NULL # object |  (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -857,19 +857,19 @@ Update File or Folder metadata via YAML
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.FileStoreApi(swagger_client.ApiClient(configuration))
-body = swagger_client.FileStoreRequest() # FileStoreRequest | YAML definition of File or Folder
+api_instance = harness_python_sdk.FileStoreApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.FileStoreRequest() # FileStoreRequest | YAML definition of File or Folder
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | The file identifier
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)

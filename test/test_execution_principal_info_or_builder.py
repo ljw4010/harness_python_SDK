@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.execution_principal_info_or_builder import ExecutionPrincipalInfoOrBuilder  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.execution_principal_info_or_builder import ExecutionPrincipalInfoOrBuilder  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestExecutionPrincipalInfoOrBuilder(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestExecutionPrincipalInfoOrBuilder(unittest.TestCase):
     def testExecutionPrincipalInfoOrBuilder(self):
         """Test ExecutionPrincipalInfoOrBuilder"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.execution_principal_info_or_builder.ExecutionPrincipalInfoOrBuilder()  # noqa: E501
+        # model = harness_python_sdk.models.execution_principal_info_or_builder.ExecutionPrincipalInfoOrBuilder()  # noqa: E501
         pass
 
 

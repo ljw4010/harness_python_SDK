@@ -1,4 +1,4 @@
-# swagger_client.ReconcilerApi
+# harness_python_sdk.ReconcilerApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -18,19 +18,19 @@ Returns number of entities that exist in the cluster on the agent. Filter can be
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ReconcilerApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Servicev1ReconcilerFilter() # Servicev1ReconcilerFilter | 
+api_instance = harness_python_sdk.ReconcilerApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Servicev1ReconcilerFilter() # Servicev1ReconcilerFilter | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -80,19 +80,19 @@ Imports data from cluster via agent. There must be at least one project mapping 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ReconcilerApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Servicev1ReconcilerFilter() # Servicev1ReconcilerFilter | 
+api_instance = harness_python_sdk.ReconcilerApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Servicev1ReconcilerFilter() # Servicev1ReconcilerFilter | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)

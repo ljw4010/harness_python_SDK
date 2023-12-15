@@ -1,4 +1,4 @@
-# swagger_client.CloudCostAutoStoppingRulesV2Api
+# harness_python_sdk.CloudCostAutoStoppingRulesV2Api
 
 All URIs are relative to *https://app.harness.io*
 
@@ -18,19 +18,19 @@ Creates a new AutoStopping Rule.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAutoStoppingRulesV2Api(swagger_client.ApiClient(configuration))
-body = swagger_client.SaveServiceRequestV2() # SaveServiceRequestV2 | Service definition of an AutoStopping rule
+api_instance = harness_python_sdk.CloudCostAutoStoppingRulesV2Api(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.SaveServiceRequestV2() # SaveServiceRequestV2 | Service definition of an AutoStopping rule
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity
 account_id = 'account_id_example' # str | Account Identifier for the Entity
 
@@ -76,19 +76,19 @@ Updates an existing AutoStopping Rule.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAutoStoppingRulesV2Api(swagger_client.ApiClient(configuration))
-body = swagger_client.SaveServiceRequestV2() # SaveServiceRequestV2 | Service definition of an AutoStopping rule
+api_instance = harness_python_sdk.CloudCostAutoStoppingRulesV2Api(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.SaveServiceRequestV2() # SaveServiceRequestV2 | Service definition of an AutoStopping rule
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity
 account_id = 'account_id_example' # str | Account Identifier for the Entity
 rule_id = 'rule_id_example' # str | ID of the AutoStopping rule to be enabled/disabled

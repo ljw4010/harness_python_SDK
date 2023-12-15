@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.rest_response_list_health_source_dto import RestResponseListHealthSourceDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.rest_response_list_health_source_dto import RestResponseListHealthSourceDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestRestResponseListHealthSourceDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRestResponseListHealthSourceDTO(unittest.TestCase):
     def testRestResponseListHealthSourceDTO(self):
         """Test RestResponseListHealthSourceDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.rest_response_list_health_source_dto.RestResponseListHealthSourceDTO()  # noqa: E501
+        # model = harness_python_sdk.models.rest_response_list_health_source_dto.RestResponseListHealthSourceDTO()  # noqa: E501
         pass
 
 

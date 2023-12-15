@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.k8s_label import K8sLabel  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.k8s_label import K8sLabel  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestK8sLabel(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestK8sLabel(unittest.TestCase):
     def testK8sLabel(self):
         """Test K8sLabel"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.k8s_label.K8sLabel()  # noqa: E501
+        # model = harness_python_sdk.models.k8s_label.K8sLabel()  # noqa: E501
         pass
 
 

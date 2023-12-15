@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.reserved_range import ReservedRange  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.reserved_range import ReservedRange  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestReservedRange(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestReservedRange(unittest.TestCase):
     def testReservedRange(self):
         """Test ReservedRange"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.reserved_range.ReservedRange()  # noqa: E501
+        # model = harness_python_sdk.models.reserved_range.ReservedRange()  # noqa: E501
         pass
 
 

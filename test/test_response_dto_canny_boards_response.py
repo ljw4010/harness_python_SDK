@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dto_canny_boards_response import ResponseDTOCannyBoardsResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dto_canny_boards_response import ResponseDTOCannyBoardsResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTOCannyBoardsResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTOCannyBoardsResponse(unittest.TestCase):
     def testResponseDTOCannyBoardsResponse(self):
         """Test ResponseDTOCannyBoardsResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dto_canny_boards_response.ResponseDTOCannyBoardsResponse()  # noqa: E501
+        # model = harness_python_sdk.models.response_dto_canny_boards_response.ResponseDTOCannyBoardsResponse()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.name_value_pair_with_default import NameValuePairWithDefault  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.name_value_pair_with_default import NameValuePairWithDefault  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestNameValuePairWithDefault(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestNameValuePairWithDefault(unittest.TestCase):
     def testNameValuePairWithDefault(self):
         """Test NameValuePairWithDefault"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.name_value_pair_with_default.NameValuePairWithDefault()  # noqa: E501
+        # model = harness_python_sdk.models.name_value_pair_with_default.NameValuePairWithDefault()  # noqa: E501
         pass
 
 

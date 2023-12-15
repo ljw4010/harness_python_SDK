@@ -1,4 +1,4 @@
-# swagger_client.IPAllowlistApi
+# harness_python_sdk.IPAllowlistApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -23,19 +23,19 @@ Creates a new IP Allowlist config
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.IPAllowlistApi(swagger_client.ApiClient(configuration))
-body = swagger_client.IPAllowlistConfigRequest() # IPAllowlistConfigRequest |  (optional)
+api_instance = harness_python_sdk.IPAllowlistApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.IPAllowlistConfigRequest() # IPAllowlistConfigRequest |  (optional)
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
 try:
@@ -79,18 +79,18 @@ Deletes the specified IP Allowlist config
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.IPAllowlistApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.IPAllowlistApi(harness_python_sdk.ApiClient(configuration))
 ip_config_identifier = 'ip_config_identifier_example' # str | 
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
@@ -134,18 +134,18 @@ Retrieves the specified IP Allowlist config
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.IPAllowlistApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.IPAllowlistApi(harness_python_sdk.ApiClient(configuration))
 ip_config_identifier = 'ip_config_identifier_example' # str | 
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
@@ -190,18 +190,18 @@ Retrieves the information of the IP Allowlist Config
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.IPAllowlistApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.IPAllowlistApi(harness_python_sdk.ApiClient(configuration))
 search_term = 'search_term_example' # str | This would be used to filter resources having attributes matching with search term. (optional)
 page = 0 # int | Pagination page number strategy: Specify the page number within the paginated collection related to the number of items in each page  (optional) (default to 0)
 limit = 30 # int | Number of items to return per page. (optional) (default to 30)
@@ -256,20 +256,20 @@ Updates the specified IP Allowlist config
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.IPAllowlistApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.IPAllowlistApi(harness_python_sdk.ApiClient(configuration))
 ip_config_identifier = 'ip_config_identifier_example' # str | 
-body = swagger_client.IPAllowlistConfigRequest() # IPAllowlistConfigRequest |  (optional)
+body = harness_python_sdk.IPAllowlistConfigRequest() # IPAllowlistConfigRequest |  (optional)
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
 try:
@@ -314,18 +314,18 @@ Checks whether the IP address is allowed or not. It also supports checking again
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.IPAllowlistApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.IPAllowlistApi(harness_python_sdk.ApiClient(configuration))
 ip_address = 'ip_address_example' # str | This is the IP address that needs to be checked if allowed or not
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 custom_ip_address_block = 'custom_ip_address_block_example' # str | This is the IP address or block of IP address against which we need to verify if a given IP address is allowed or not. If not passed we do the validation against the IP configs within Harness. (optional)
@@ -372,18 +372,18 @@ Checks whether the IP Allowlist config identifier is unique or not
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.IPAllowlistApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.IPAllowlistApi(harness_python_sdk.ApiClient(configuration))
 ip_config_identifier = 'ip_config_identifier_example' # str | 
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 

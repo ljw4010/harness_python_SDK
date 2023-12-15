@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.certificate_repository_certificate_create_request import CertificateRepositoryCertificateCreateRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.certificate_repository_certificate_create_request import CertificateRepositoryCertificateCreateRequest  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestCertificateRepositoryCertificateCreateRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCertificateRepositoryCertificateCreateRequest(unittest.TestCase):
     def testCertificateRepositoryCertificateCreateRequest(self):
         """Test CertificateRepositoryCertificateCreateRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.certificate_repository_certificate_create_request.CertificateRepositoryCertificateCreateRequest()  # noqa: E501
+        # model = harness_python_sdk.models.certificate_repository_certificate_create_request.CertificateRepositoryCertificateCreateRequest()  # noqa: E501
         pass
 
 

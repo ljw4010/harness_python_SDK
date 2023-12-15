@@ -1,4 +1,4 @@
-# swagger_client.RuleEnforcementApi
+# harness_python_sdk.RuleEnforcementApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -18,19 +18,19 @@ Add a new rule Enforcement
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RuleEnforcementApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CreateRuleEnforcementDTO() # CreateRuleEnforcementDTO | Request body containing Rule Enforcement object
+api_instance = harness_python_sdk.RuleEnforcementApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CreateRuleEnforcementDTO() # CreateRuleEnforcementDTO | Request body containing Rule Enforcement object
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -74,19 +74,19 @@ execution Detail
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RuleEnforcementApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ExecutionDetailDTO() # ExecutionDetailDTO | Request body containing  Execution detail object
+api_instance = harness_python_sdk.RuleEnforcementApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ExecutionDetailDTO() # ExecutionDetailDTO | Request body containing  Execution detail object
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -130,19 +130,19 @@ Fetch Rule Enforcement
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RuleEnforcementApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CreateRuleEnforcementDTO() # CreateRuleEnforcementDTO | Request body containing  Rule Enforcement  object
+api_instance = harness_python_sdk.RuleEnforcementApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CreateRuleEnforcementDTO() # CreateRuleEnforcementDTO | Request body containing  Rule Enforcement  object
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -186,19 +186,19 @@ Fetch Rule Enforcement count
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RuleEnforcementApi(swagger_client.ApiClient(configuration))
-body = swagger_client.EnforcementCountDTO() # EnforcementCountDTO | Request body containing  Rule Enforcement count object
+api_instance = harness_python_sdk.RuleEnforcementApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.EnforcementCountDTO() # EnforcementCountDTO | Request body containing  Rule Enforcement count object
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:

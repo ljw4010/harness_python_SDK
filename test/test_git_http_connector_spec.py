@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.git_http_connector_spec import GitHttpConnectorSpec  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.git_http_connector_spec import GitHttpConnectorSpec  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestGitHttpConnectorSpec(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGitHttpConnectorSpec(unittest.TestCase):
     def testGitHttpConnectorSpec(self):
         """Test GitHttpConnectorSpec"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.git_http_connector_spec.GitHttpConnectorSpec()  # noqa: E501
+        # model = harness_python_sdk.models.git_http_connector_spec.GitHttpConnectorSpec()  # noqa: E501
         pass
 
 

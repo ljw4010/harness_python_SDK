@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.k8s_recommendation_filter_properties import K8sRecommendationFilterProperties  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.k8s_recommendation_filter_properties import K8sRecommendationFilterProperties  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestK8sRecommendationFilterProperties(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestK8sRecommendationFilterProperties(unittest.TestCase):
     def testK8sRecommendationFilterProperties(self):
         """Test K8sRecommendationFilterProperties"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.k8s_recommendation_filter_properties.K8sRecommendationFilterProperties()  # noqa: E501
+        # model = harness_python_sdk.models.k8s_recommendation_filter_properties.K8sRecommendationFilterProperties()  # noqa: E501
         pass
 
 

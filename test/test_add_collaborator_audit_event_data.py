@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.add_collaborator_audit_event_data import AddCollaboratorAuditEventData  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.add_collaborator_audit_event_data import AddCollaboratorAuditEventData  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAddCollaboratorAuditEventData(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAddCollaboratorAuditEventData(unittest.TestCase):
     def testAddCollaboratorAuditEventData(self):
         """Test AddCollaboratorAuditEventData"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.add_collaborator_audit_event_data.AddCollaboratorAuditEventData()  # noqa: E501
+        # model = harness_python_sdk.models.add_collaborator_audit_event_data.AddCollaboratorAuditEventData()  # noqa: E501
         pass
 
 

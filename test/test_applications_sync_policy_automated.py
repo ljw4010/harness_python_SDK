@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.applications_sync_policy_automated import ApplicationsSyncPolicyAutomated  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.applications_sync_policy_automated import ApplicationsSyncPolicyAutomated  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestApplicationsSyncPolicyAutomated(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestApplicationsSyncPolicyAutomated(unittest.TestCase):
     def testApplicationsSyncPolicyAutomated(self):
         """Test ApplicationsSyncPolicyAutomated"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.applications_sync_policy_automated.ApplicationsSyncPolicyAutomated()  # noqa: E501
+        # model = harness_python_sdk.models.applications_sync_policy_automated.ApplicationsSyncPolicyAutomated()  # noqa: E501
         pass
 
 

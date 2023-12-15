@@ -1,4 +1,4 @@
-# swagger_client.ServiceLevelObjectiveApi
+# harness_python_sdk.ServiceLevelObjectiveApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -18,18 +18,18 @@ Get Underlying Metrics Graph for SLO
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ServiceLevelObjectiveApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ServiceLevelObjectiveApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization identifier
 project = 'project_example' # str | Project identifier
 slo_identifier = 'slo_identifier_example' # str | SLO identifier.
@@ -82,18 +82,18 @@ Returns a list of Service Level Objectives
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ServiceLevelObjectiveApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ServiceLevelObjectiveApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization identifier
 project = 'project_example' # str | Project identifier
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)

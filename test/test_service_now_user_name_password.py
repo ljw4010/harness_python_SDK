@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.service_now_user_name_password import ServiceNowUserNamePassword  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.service_now_user_name_password import ServiceNowUserNamePassword  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestServiceNowUserNamePassword(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestServiceNowUserNamePassword(unittest.TestCase):
     def testServiceNowUserNamePassword(self):
         """Test ServiceNowUserNamePassword"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.service_now_user_name_password.ServiceNowUserNamePassword()  # noqa: E501
+        # model = harness_python_sdk.models.service_now_user_name_password.ServiceNowUserNamePassword()  # noqa: E501
         pass
 
 

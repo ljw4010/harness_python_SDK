@@ -1,4 +1,4 @@
-# swagger_client.AiEngineApi
+# harness_python_sdk.AiEngineApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -18,18 +18,18 @@ Get supported prompt resources for a given cloud provider
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AiEngineApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AiEngineApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 cloud_provider = 'cloud_provider_example' # str | Cloud Provider
 
@@ -74,18 +74,18 @@ Get sample prompt rules for given cloud provider and resource type
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AiEngineApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.AiEngineApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 cloud_provider = 'cloud_provider_example' # str | Cloud Provider
 resource_type = 'resource_type_example' # str | Resource Type (optional)

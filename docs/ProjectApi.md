@@ -1,4 +1,4 @@
-# swagger_client.ProjectApi
+# harness_python_sdk.ProjectApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -22,18 +22,18 @@ Deletes a Project corresponding to the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProjectApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Project Identifier for the Entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 if_match = 'if_match_example' # str | Version number of Project (optional)
@@ -82,18 +82,18 @@ Lists a Project's details for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProjectApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Project Identifier for the Entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'default' # str | Organization identifier for the project. If left empty, Default Organization is assumed (optional) (default to default)
@@ -140,18 +140,18 @@ Lists all Projects the user is a member of by using the user's API key token.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProjectApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 has_module = true # bool | This boolean specifies whether to Filter Projects which has the Module of type passed in the module type parameter or to Filter Projects which does not has the Module of type passed in the module type parameter (optional) (default to true)
@@ -161,7 +161,7 @@ search_term = 'search_term_example' # str | This would be used to filter Project
 only_favorites = false # bool |  (optional) (default to false)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -212,18 +212,18 @@ List user's project with support to filter by multiple organizations
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProjectApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifiers = ['org_identifiers_example'] # list[str] | List of Organization Identifiers for the Entities. (optional)
 has_module = true # bool | This boolean specifies whether to Filter Projects which has the Module of type passed in the module type parameter or to Filter Projects which does not has the Module of type passed in the module type parameter (optional) (default to true)
@@ -233,7 +233,7 @@ search_term = 'search_term_example' # str | Filter Projects by searching for thi
 only_favorites = false # bool |  (optional) (default to false)
 page_index = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
 page_size = 50 # int | Results per page(max 100)Default Value: 50 (optional) (default to 50)
-sort_orders = [swagger_client.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
+sort_orders = [harness_python_sdk.SortOrder()] # list[SortOrder] | Sort criteria for the elements. (optional)
 page_token = 'page_token_example' # str | Page Token of the next results to fetch.Default Value: '' (optional)
 
 try:
@@ -286,19 +286,19 @@ Creates a new Harness Project.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ProjectRequest1() # ProjectRequest1 | Details of the Project to create
+api_instance = harness_python_sdk.ProjectApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ProjectRequest1() # ProjectRequest1 | Details of the Project to create
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'default' # str | Organization identifier for the Project. If left empty, the Project is created under Default Organization (optional) (default to default)
 
@@ -344,19 +344,19 @@ Updates Project details for the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ProjectRequest1() # ProjectRequest1 | This is the updated Project. Please provide values for all fields, not just the fields you are updating
+api_instance = harness_python_sdk.ProjectApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ProjectRequest1() # ProjectRequest1 | This is the updated Project. Please provide values for all fields, not just the fields you are updating
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 identifier = 'identifier_example' # str | Project Identifier for the Entity.
 if_match = 'if_match_example' # str | Version number of Project (optional)

@@ -1,4 +1,4 @@
-# swagger_client.ProxyApi
+# harness_python_sdk.ProxyApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -22,18 +22,18 @@ Creates a Proxy Key in the account & org
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProxyApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProxyApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 body = NULL # object |  (optional)
 
@@ -78,18 +78,18 @@ Deletes a ProxyKey
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProxyApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProxyApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
 
@@ -133,18 +133,18 @@ Returns a ProxyKey
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProxyApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProxyApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
 
@@ -189,18 +189,18 @@ Returns all the Proxy keys in an account
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProxyApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProxyApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 name = 'name_example' # str | Name of the field (optional)
 sort_order = 'sort_order_example' # str | SortOrder (optional)
@@ -253,21 +253,21 @@ Operation is currently used (but not limited to) to rotate ProxyKey
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProxyApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProxyApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
-body = swagger_client.ProxyKeyInstruction() # ProxyKeyInstruction |  (optional)
+body = harness_python_sdk.ProxyKeyInstruction() # ProxyKeyInstruction |  (optional)
 
 try:
     # Updates a Proxy Key in the account & org
@@ -311,18 +311,18 @@ This operation is used to modify which environments a ProxyKey has access to. Th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProxyApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ProxyApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier
 identifier = 'identifier_example' # str | Unique identifier for the object in the API.
 body = NULL # object |  (optional)

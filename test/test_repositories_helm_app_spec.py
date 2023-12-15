@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.repositories_helm_app_spec import RepositoriesHelmAppSpec  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.repositories_helm_app_spec import RepositoriesHelmAppSpec  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestRepositoriesHelmAppSpec(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRepositoriesHelmAppSpec(unittest.TestCase):
     def testRepositoriesHelmAppSpec(self):
         """Test RepositoriesHelmAppSpec"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.repositories_helm_app_spec.RepositoriesHelmAppSpec()  # noqa: E501
+        # model = harness_python_sdk.models.repositories_helm_app_spec.RepositoriesHelmAppSpec()  # noqa: E501
         pass
 
 

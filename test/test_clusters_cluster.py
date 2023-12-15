@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.clusters_cluster import ClustersCluster  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.clusters_cluster import ClustersCluster  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestClustersCluster(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestClustersCluster(unittest.TestCase):
     def testClustersCluster(self):
         """Test ClustersCluster"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.clusters_cluster.ClustersCluster()  # noqa: E501
+        # model = harness_python_sdk.models.clusters_cluster.ClustersCluster()  # noqa: E501
         pass
 
 

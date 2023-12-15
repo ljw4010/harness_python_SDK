@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.public_access_request import PublicAccessRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.public_access_request import PublicAccessRequest  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestPublicAccessRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPublicAccessRequest(unittest.TestCase):
     def testPublicAccessRequest(self):
         """Test PublicAccessRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.public_access_request.PublicAccessRequest()  # noqa: E501
+        # model = harness_python_sdk.models.public_access_request.PublicAccessRequest()  # noqa: E501
         pass
 
 

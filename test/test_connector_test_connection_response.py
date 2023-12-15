@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.connector_test_connection_response import ConnectorTestConnectionResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.connector_test_connection_response import ConnectorTestConnectionResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestConnectorTestConnectionResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestConnectorTestConnectionResponse(unittest.TestCase):
     def testConnectorTestConnectionResponse(self):
         """Test ConnectorTestConnectionResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.connector_test_connection_response.ConnectorTestConnectionResponse()  # noqa: E501
+        # model = harness_python_sdk.models.connector_test_connection_response.ConnectorTestConnectionResponse()  # noqa: E501
         pass
 
 

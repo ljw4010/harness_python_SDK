@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dto_page_pms_pipeline_summary_response import ResponseDTOPagePMSPipelineSummaryResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dto_page_pms_pipeline_summary_response import ResponseDTOPagePMSPipelineSummaryResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTOPagePMSPipelineSummaryResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTOPagePMSPipelineSummaryResponse(unittest.TestCase):
     def testResponseDTOPagePMSPipelineSummaryResponse(self):
         """Test ResponseDTOPagePMSPipelineSummaryResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dto_page_pms_pipeline_summary_response.ResponseDTOPagePMSPipelineSummaryResponse()  # noqa: E501
+        # model = harness_python_sdk.models.response_dto_page_pms_pipeline_summary_response.ResponseDTOPagePMSPipelineSummaryResponse()  # noqa: E501
         pass
 
 

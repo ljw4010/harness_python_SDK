@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.account_secret_api import AccountSecretApi  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.api.account_secret_api import AccountSecretApi  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAccountSecretApi(unittest.TestCase):

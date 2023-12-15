@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.cloud_cost_k8_s_connectors_metadata_api import CloudCostK8SConnectorsMetadataApi  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.api.cloud_cost_k8_s_connectors_metadata_api import CloudCostK8SConnectorsMetadataApi  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestCloudCostK8SConnectorsMetadataApi(unittest.TestCase):

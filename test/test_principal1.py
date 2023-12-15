@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.principal1 import Principal1  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.principal1 import Principal1  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestPrincipal1(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPrincipal1(unittest.TestCase):
     def testPrincipal1(self):
         """Test Principal1"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.principal1.Principal1()  # noqa: E501
+        # model = harness_python_sdk.models.principal1.Principal1()  # noqa: E501
         pass
 
 

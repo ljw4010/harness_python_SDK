@@ -1,4 +1,4 @@
-# swagger_client.ClustersApi
+# harness_python_sdk.ClustersApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -30,19 +30,19 @@ Create clusters.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ClustersClusterCreateRequest() # ClustersClusterCreateRequest | 
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ClustersClusterCreateRequest() # ClustersClusterCreateRequest | 
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -94,18 +94,18 @@ Delete cluster.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 identifier = 'identifier_example' # str | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
@@ -166,18 +166,18 @@ Get cluster.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 identifier = 'identifier_example' # str | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
@@ -238,18 +238,18 @@ List clusters.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -310,19 +310,19 @@ Update cluster.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ClustersClusterUpdateRequest() # ClustersClusterUpdateRequest | 
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ClustersClusterUpdateRequest() # ClustersClusterUpdateRequest | 
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 identifier = 'identifier_example' # str | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity. (optional)
@@ -374,18 +374,18 @@ List all available repository certificates.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
 agent_identifier = 'agent_identifier_example' # str | Agent identifier for entity.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
@@ -436,18 +436,18 @@ Checks for whether the cluster exists
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity. (optional)
 project_identifier = 'project_identifier_example' # str | Project Identifier for the Entity. (optional)
@@ -498,19 +498,19 @@ List returns list of Clusters
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Servicev1ClusterQuery() # Servicev1ClusterQuery | 
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.Servicev1ClusterQuery() # Servicev1ClusterQuery | 
 
 try:
     # List returns list of Clusters
@@ -550,18 +550,18 @@ Delete a Cluster by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Cluster Identifier for the entity
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 environment_identifier = 'environment_identifier_example' # str | environmentIdentifier
@@ -612,18 +612,18 @@ Gets a Cluster by identifier
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Cluster Identifier for the entity
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 environment_identifier = 'environment_identifier_example' # str | environmentIdentifier
@@ -674,18 +674,18 @@ Gets cluster list
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 environment_identifier = 'environment_identifier_example' # str | Environment Identifier of the clusters
 page = 0 # int | Page Index of the results to fetch.Default Value: 0 (optional) (default to 0)
@@ -742,20 +742,20 @@ link a Cluster
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.ClusterRequest() # ClusterRequest | Details of the createCluster to be linked (optional)
+body = harness_python_sdk.ClusterRequest() # ClusterRequest | Details of the createCluster to be linked (optional)
 
 try:
     # link a Cluster
@@ -796,20 +796,20 @@ Link Clusters
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.ClusterBatchRequest() # ClusterBatchRequest | Details of the createCluster to be created (optional)
+body = harness_python_sdk.ClusterBatchRequest() # ClusterBatchRequest | Details of the createCluster to be created (optional)
 
 try:
     # Link Clusters
@@ -850,20 +850,20 @@ Unlink Clusters
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClustersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.ClustersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
-body = swagger_client.ClusterBatchRequest() # ClusterBatchRequest | Details of the createCluster to be created (optional)
+body = harness_python_sdk.ClusterBatchRequest() # ClusterBatchRequest | Details of the createCluster to be created (optional)
 
 try:
     # Unlink Clusters

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.secret_text_spec_additional_metadata import SecretTextSpecAdditionalMetadata  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.secret_text_spec_additional_metadata import SecretTextSpecAdditionalMetadata  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestSecretTextSpecAdditionalMetadata(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSecretTextSpecAdditionalMetadata(unittest.TestCase):
     def testSecretTextSpecAdditionalMetadata(self):
         """Test SecretTextSpecAdditionalMetadata"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.secret_text_spec_additional_metadata.SecretTextSpecAdditionalMetadata()  # noqa: E501
+        # model = harness_python_sdk.models.secret_text_spec_additional_metadata.SecretTextSpecAdditionalMetadata()  # noqa: E501
         pass
 
 

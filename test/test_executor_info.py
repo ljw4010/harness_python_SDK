@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.executor_info import ExecutorInfo  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.executor_info import ExecutorInfo  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestExecutorInfo(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestExecutorInfo(unittest.TestCase):
     def testExecutorInfo(self):
         """Test ExecutorInfo"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.executor_info.ExecutorInfo()  # noqa: E501
+        # model = harness_python_sdk.models.executor_info.ExecutorInfo()  # noqa: E501
         pass
 
 

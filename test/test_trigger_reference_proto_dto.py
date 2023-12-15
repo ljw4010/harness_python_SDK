@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.trigger_reference_proto_dto import TriggerReferenceProtoDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.trigger_reference_proto_dto import TriggerReferenceProtoDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestTriggerReferenceProtoDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTriggerReferenceProtoDTO(unittest.TestCase):
     def testTriggerReferenceProtoDTO(self):
         """Test TriggerReferenceProtoDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.trigger_reference_proto_dto.TriggerReferenceProtoDTO()  # noqa: E501
+        # model = harness_python_sdk.models.trigger_reference_proto_dto.TriggerReferenceProtoDTO()  # noqa: E501
         pass
 
 

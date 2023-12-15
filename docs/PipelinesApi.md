@@ -1,4 +1,4 @@
-# swagger_client.PipelinesApi
+# harness_python_sdk.PipelinesApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -24,19 +24,19 @@ Creates a Pipeline.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelinesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.PipelineCreateRequestBody() # PipelineCreateRequestBody | Pipeline request body
+api_instance = harness_python_sdk.PipelinesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.PipelineCreateRequestBody() # PipelineCreateRequestBody | Pipeline request body
 org = 'org_example' # str | Organization identifier
 project = 'project_example' # str | Project identifier
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
@@ -84,18 +84,18 @@ Deletes a Pipeline.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelinesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelinesApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization identifier
 project = 'project_example' # str | Project identifier
 pipeline = 'pipeline_example' # str | Pipeline identifier
@@ -143,18 +143,18 @@ Retrieves a Pipeline.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelinesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelinesApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization identifier
 project = 'project_example' # str | Project identifier
 pipeline = 'pipeline_example' # str | Pipeline identifier
@@ -217,22 +217,22 @@ Fetches Pipeline YAML from Git Repository and saves a record for it in Harness
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelinesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelinesApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization identifier
 project = 'project_example' # str | Project identifier
 pipeline = 'pipeline_example' # str | Pipeline identifier
-body = swagger_client.PipelineImportRequestBody() # PipelineImportRequestBody | Pipeline import request body (optional)
+body = harness_python_sdk.PipelineImportRequestBody() # PipelineImportRequestBody | Pipeline import request body (optional)
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
 try:
@@ -279,18 +279,18 @@ Returns a list of Pipelines.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelinesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelinesApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization identifier
 project = 'project_example' # str | Project identifier
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
@@ -367,22 +367,22 @@ Creates a remote entity by fetching pipeline YAML from Harness.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelinesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelinesApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization identifier
 project = 'project_example' # str | Project identifier
 pipeline = 'pipeline_example' # str | Pipeline identifier
-body = swagger_client.PipelineMoveConfigRequestBody() # PipelineMoveConfigRequestBody |  (optional)
+body = harness_python_sdk.PipelineMoveConfigRequestBody() # PipelineMoveConfigRequestBody |  (optional)
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
 try:
@@ -429,19 +429,19 @@ Updates a Pipeline.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelinesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.PipelineUpdateRequestBody() # PipelineUpdateRequestBody | Pipeline request body
+api_instance = harness_python_sdk.PipelinesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.PipelineUpdateRequestBody() # PipelineUpdateRequestBody | Pipeline request body
 org = 'org_example' # str | Organization identifier
 project = 'project_example' # str | Project identifier
 pipeline = 'pipeline_example' # str | Pipeline identifier
@@ -491,22 +491,22 @@ Update git-metadata in remote pipeline
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PipelinesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.PipelinesApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Organization identifier
 project = 'project_example' # str | Project identifier
 pipeline = 'pipeline_example' # str | Pipeline identifier
-body = swagger_client.GitMetadataUpdateRequestBody() # GitMetadataUpdateRequestBody |  (optional)
+body = harness_python_sdk.GitMetadataUpdateRequestBody() # GitMetadataUpdateRequestBody |  (optional)
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
 try:

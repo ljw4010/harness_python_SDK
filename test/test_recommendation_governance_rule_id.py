@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.recommendation_governance_rule_id import RecommendationGovernanceRuleId  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.recommendation_governance_rule_id import RecommendationGovernanceRuleId  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestRecommendationGovernanceRuleId(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRecommendationGovernanceRuleId(unittest.TestCase):
     def testRecommendationGovernanceRuleId(self):
         """Test RecommendationGovernanceRuleId"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.recommendation_governance_rule_id.RecommendationGovernanceRuleId()  # noqa: E501
+        # model = harness_python_sdk.models.recommendation_governance_rule_id.RecommendationGovernanceRuleId()  # noqa: E501
         pass
 
 

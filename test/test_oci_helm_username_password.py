@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.oci_helm_username_password import OciHelmUsernamePassword  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.oci_helm_username_password import OciHelmUsernamePassword  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestOciHelmUsernamePassword(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestOciHelmUsernamePassword(unittest.TestCase):
     def testOciHelmUsernamePassword(self):
         """Test OciHelmUsernamePassword"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.oci_helm_username_password.OciHelmUsernamePassword()  # noqa: E501
+        # model = harness_python_sdk.models.oci_helm_username_password.OciHelmUsernamePassword()  # noqa: E501
         pass
 
 

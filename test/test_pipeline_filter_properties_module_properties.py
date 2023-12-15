@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.pipeline_filter_properties_module_properties import PipelineFilterPropertiesModuleProperties  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.pipeline_filter_properties_module_properties import PipelineFilterPropertiesModuleProperties  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestPipelineFilterPropertiesModuleProperties(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPipelineFilterPropertiesModuleProperties(unittest.TestCase):
     def testPipelineFilterPropertiesModuleProperties(self):
         """Test PipelineFilterPropertiesModuleProperties"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.pipeline_filter_properties_module_properties.PipelineFilterPropertiesModuleProperties()  # noqa: E501
+        # model = harness_python_sdk.models.pipeline_filter_properties_module_properties.PipelineFilterPropertiesModuleProperties()  # noqa: E501
         pass
 
 

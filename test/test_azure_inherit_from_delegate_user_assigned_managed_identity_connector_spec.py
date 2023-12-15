@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.azure_inherit_from_delegate_user_assigned_managed_identity_connector_spec import AzureInheritFromDelegateUserAssignedManagedIdentityConnectorSpec  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.azure_inherit_from_delegate_user_assigned_managed_identity_connector_spec import AzureInheritFromDelegateUserAssignedManagedIdentityConnectorSpec  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAzureInheritFromDelegateUserAssignedManagedIdentityConnectorSpec(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAzureInheritFromDelegateUserAssignedManagedIdentityConnectorSpec(unitt
     def testAzureInheritFromDelegateUserAssignedManagedIdentityConnectorSpec(self):
         """Test AzureInheritFromDelegateUserAssignedManagedIdentityConnectorSpec"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.azure_inherit_from_delegate_user_assigned_managed_identity_connector_spec.AzureInheritFromDelegateUserAssignedManagedIdentityConnectorSpec()  # noqa: E501
+        # model = harness_python_sdk.models.azure_inherit_from_delegate_user_assigned_managed_identity_connector_spec.AzureInheritFromDelegateUserAssignedManagedIdentityConnectorSpec()  # noqa: E501
         pass
 
 

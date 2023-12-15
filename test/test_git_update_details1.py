@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.git_update_details1 import GitUpdateDetails1  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.git_update_details1 import GitUpdateDetails1  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestGitUpdateDetails1(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGitUpdateDetails1(unittest.TestCase):
     def testGitUpdateDetails1(self):
         """Test GitUpdateDetails1"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.git_update_details1.GitUpdateDetails1()  # noqa: E501
+        # model = harness_python_sdk.models.git_update_details1.GitUpdateDetails1()  # noqa: E501
         pass
 
 

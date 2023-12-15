@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.reserved_range_or_builder import ReservedRangeOrBuilder  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.reserved_range_or_builder import ReservedRangeOrBuilder  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestReservedRangeOrBuilder(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestReservedRangeOrBuilder(unittest.TestCase):
     def testReservedRangeOrBuilder(self):
         """Test ReservedRangeOrBuilder"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.reserved_range_or_builder.ReservedRangeOrBuilder()  # noqa: E501
+        # model = harness_python_sdk.models.reserved_range_or_builder.ReservedRangeOrBuilder()  # noqa: E501
         pass
 
 

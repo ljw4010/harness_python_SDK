@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.kerberos_win_rm_config_dto import KerberosWinRmConfigDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.kerberos_win_rm_config_dto import KerberosWinRmConfigDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestKerberosWinRmConfigDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestKerberosWinRmConfigDTO(unittest.TestCase):
     def testKerberosWinRmConfigDTO(self):
         """Test KerberosWinRmConfigDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.kerberos_win_rm_config_dto.KerberosWinRmConfigDTO()  # noqa: E501
+        # model = harness_python_sdk.models.kerberos_win_rm_config_dto.KerberosWinRmConfigDTO()  # noqa: E501
         pass
 
 

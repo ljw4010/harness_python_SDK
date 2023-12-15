@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dtoccm_service_now_details import ResponseDTOCCMServiceNowDetails  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dtoccm_service_now_details import ResponseDTOCCMServiceNowDetails  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTOCCMServiceNowDetails(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTOCCMServiceNowDetails(unittest.TestCase):
     def testResponseDTOCCMServiceNowDetails(self):
         """Test ResponseDTOCCMServiceNowDetails"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dtoccm_service_now_details.ResponseDTOCCMServiceNowDetails()  # noqa: E501
+        # model = harness_python_sdk.models.response_dtoccm_service_now_details.ResponseDTOCCMServiceNowDetails()  # noqa: E501
         pass
 
 

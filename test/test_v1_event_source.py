@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.v1_event_source import V1EventSource  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.v1_event_source import V1EventSource  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestV1EventSource(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestV1EventSource(unittest.TestCase):
     def testV1EventSource(self):
         """Test V1EventSource"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.v1_event_source.V1EventSource()  # noqa: E501
+        # model = harness_python_sdk.models.v1_event_source.V1EventSource()  # noqa: E501
         pass
 
 

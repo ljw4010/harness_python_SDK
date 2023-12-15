@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.signal_fx_connector_dto import SignalFXConnectorDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.signal_fx_connector_dto import SignalFXConnectorDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestSignalFXConnectorDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSignalFXConnectorDTO(unittest.TestCase):
     def testSignalFXConnectorDTO(self):
         """Test SignalFXConnectorDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.signal_fx_connector_dto.SignalFXConnectorDTO()  # noqa: E501
+        # model = harness_python_sdk.models.signal_fx_connector_dto.SignalFXConnectorDTO()  # noqa: E501
         pass
 
 

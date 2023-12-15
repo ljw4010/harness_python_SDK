@@ -1,4 +1,4 @@
-# swagger_client.CloudCostDetailsApi
+# harness_python_sdk.CloudCostDetailsApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -20,19 +20,19 @@ Returns cluster data based on the specified query parameters.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostDetailsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ClusterCostDetailsQueryParams() # ClusterCostDetailsQueryParams | Cost details query parameters.
+api_instance = harness_python_sdk.CloudCostDetailsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ClusterCostDetailsQueryParams() # ClusterCostDetailsQueryParams | Cost details query parameters.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 start_time = 'start_time_example' # str | Start time of the cost details. Should use org.joda.time.DateTime parsable format. Example, '2022-01-31', '2022-01-31T07:54Z' or '2022-01-31T07:54:51.264Z'.  Defaults to Today - 7days (optional)
 end_time = 'end_time_example' # str | End time of the cost details. Should use org.joda.time.DateTime parsable format. Example, '2022-01-31', '2022-01-31T07:54Z' or '2022-01-31T07:54:51.264Z'.  Defaults to Today (optional)
@@ -80,21 +80,21 @@ Returns total cost, cost trend, and the time period based on the specified query
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostDetailsApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostDetailsApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 perspective_id = 'perspective_id_example' # str | Perspective identifier of the cost details
-body = swagger_client.CostDetailsQueryParams() # CostDetailsQueryParams | Cost details query parameters. (optional)
+body = harness_python_sdk.CostDetailsQueryParams() # CostDetailsQueryParams | Cost details query parameters. (optional)
 start_time = 'start_time_example' # str | Start time of the cost details. Should use org.joda.time.DateTime parsable format. Example, '2022-01-31', '2022-01-31T07:54Z' or '2022-01-31T07:54:51.264Z'.  Defaults to Today - 7days (optional)
 end_time = 'end_time_example' # str | End time of the cost details. Should use org.joda.time.DateTime parsable format. Example, '2022-01-31', '2022-01-31T07:54Z' or '2022-01-31T07:54:51.264Z'.  Defaults to Today (optional)
 
@@ -142,19 +142,19 @@ Returns cost details in a tabular format based on the specified query parameters
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostDetailsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CostDetailsQueryParams() # CostDetailsQueryParams | Cost details query parameters.
+api_instance = harness_python_sdk.CloudCostDetailsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CostDetailsQueryParams() # CostDetailsQueryParams | Cost details query parameters.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 perspective_id = 'perspective_id_example' # str | Perspective identifier of the cost details
 start_time = 'start_time_example' # str | Start time of the cost details. Should use org.joda.time.DateTime parsable format. Example, '2022-01-31', '2022-01-31T07:54Z' or '2022-01-31T07:54:51.264Z'.  Defaults to Today - 7days (optional)
@@ -204,19 +204,19 @@ Returns cost details in a time series format based on the specified query parame
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostDetailsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CostDetailsQueryParams() # CostDetailsQueryParams | Cost details query parameters.
+api_instance = harness_python_sdk.CloudCostDetailsApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CostDetailsQueryParams() # CostDetailsQueryParams | Cost details query parameters.
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 perspective_id = 'perspective_id_example' # str | Perspective identifier of the cost details
 start_time = 'start_time_example' # str | Start time of the cost details. Should use org.joda.time.DateTime parsable format. Example, '2022-01-31', '2022-01-31T07:54Z' or '2022-01-31T07:54:51.264Z'.  Defaults to Today - 7days (optional)

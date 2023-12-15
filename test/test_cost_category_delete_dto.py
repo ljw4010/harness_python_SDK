@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.cost_category_delete_dto import CostCategoryDeleteDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.cost_category_delete_dto import CostCategoryDeleteDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestCostCategoryDeleteDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCostCategoryDeleteDTO(unittest.TestCase):
     def testCostCategoryDeleteDTO(self):
         """Test CostCategoryDeleteDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.cost_category_delete_dto.CostCategoryDeleteDTO()  # noqa: E501
+        # model = harness_python_sdk.models.cost_category_delete_dto.CostCategoryDeleteDTO()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# swagger_client.NextgenLdapApi
+# harness_python_sdk.NextgenLdapApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -18,18 +18,18 @@ Tests LDAP authentication for the given Account ID, with a valid test email and 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.NextgenLdapApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.NextgenLdapApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 email = 'email_example' # str |  (optional)
 password = 'password_example' # str |  (optional)
@@ -80,18 +80,18 @@ Returns all userGroups for the configured Ldap in the account matching a given n
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.NextgenLdapApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.NextgenLdapApi(harness_python_sdk.ApiClient(configuration))
 ldap_id = 'ldap_id_example' # str | Ldap setting id
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 name = 'name_example' # str | 

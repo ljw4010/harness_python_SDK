@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.resource_group_scope import ResourceGroupScope  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.resource_group_scope import ResourceGroupScope  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResourceGroupScope(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResourceGroupScope(unittest.TestCase):
     def testResourceGroupScope(self):
         """Test ResourceGroupScope"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.resource_group_scope.ResourceGroupScope()  # noqa: E501
+        # model = harness_python_sdk.models.resource_group_scope.ResourceGroupScope()  # noqa: E501
         pass
 
 

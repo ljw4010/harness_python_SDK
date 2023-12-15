@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.azure_client_key_cert import AzureClientKeyCert  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.azure_client_key_cert import AzureClientKeyCert  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAzureClientKeyCert(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAzureClientKeyCert(unittest.TestCase):
     def testAzureClientKeyCert(self):
         """Test AzureClientKeyCert"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.azure_client_key_cert.AzureClientKeyCert()  # noqa: E501
+        # model = harness_python_sdk.models.azure_client_key_cert.AzureClientKeyCert()  # noqa: E501
         pass
 
 

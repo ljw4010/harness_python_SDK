@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dto_custom_deployment_refresh_yaml_dto import ResponseDTOCustomDeploymentRefreshYamlDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dto_custom_deployment_refresh_yaml_dto import ResponseDTOCustomDeploymentRefreshYamlDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTOCustomDeploymentRefreshYamlDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTOCustomDeploymentRefreshYamlDTO(unittest.TestCase):
     def testResponseDTOCustomDeploymentRefreshYamlDTO(self):
         """Test ResponseDTOCustomDeploymentRefreshYamlDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dto_custom_deployment_refresh_yaml_dto.ResponseDTOCustomDeploymentRefreshYamlDTO()  # noqa: E501
+        # model = harness_python_sdk.models.response_dto_custom_deployment_refresh_yaml_dto.ResponseDTOCustomDeploymentRefreshYamlDTO()  # noqa: E501
         pass
 
 

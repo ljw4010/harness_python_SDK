@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.slack_config_dto import SlackConfigDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.slack_config_dto import SlackConfigDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestSlackConfigDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSlackConfigDTO(unittest.TestCase):
     def testSlackConfigDTO(self):
         """Test SlackConfigDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.slack_config_dto.SlackConfigDTO()  # noqa: E501
+        # model = harness_python_sdk.models.slack_config_dto.SlackConfigDTO()  # noqa: E501
         pass
 
 

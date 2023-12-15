@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.parser_entity_git_metadata import ParserEntityGitMetadata  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.parser_entity_git_metadata import ParserEntityGitMetadata  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestParserEntityGitMetadata(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestParserEntityGitMetadata(unittest.TestCase):
     def testParserEntityGitMetadata(self):
         """Test ParserEntityGitMetadata"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.parser_entity_git_metadata.ParserEntityGitMetadata()  # noqa: E501
+        # model = harness_python_sdk.models.parser_entity_git_metadata.ParserEntityGitMetadata()  # noqa: E501
         pass
 
 

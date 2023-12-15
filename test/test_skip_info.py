@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.skip_info import SkipInfo  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.skip_info import SkipInfo  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestSkipInfo(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSkipInfo(unittest.TestCase):
     def testSkipInfo(self):
         """Test SkipInfo"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.skip_info.SkipInfo()  # noqa: E501
+        # model = harness_python_sdk.models.skip_info.SkipInfo()  # noqa: E501
         pass
 
 

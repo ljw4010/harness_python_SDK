@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.service_dep_tree import ServiceDepTree  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.service_dep_tree import ServiceDepTree  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestServiceDepTree(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestServiceDepTree(unittest.TestCase):
     def testServiceDepTree(self):
         """Test ServiceDepTree"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.service_dep_tree.ServiceDepTree()  # noqa: E501
+        # model = harness_python_sdk.models.service_dep_tree.ServiceDepTree()  # noqa: E501
         pass
 
 

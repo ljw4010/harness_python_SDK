@@ -1,4 +1,4 @@
-# swagger_client.CloudCostPerspectivesFoldersApi
+# harness_python_sdk.CloudCostPerspectivesFoldersApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -22,19 +22,19 @@ Create a Perspective Folder.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesFoldersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CreatePerspectiveFolderDTO() # CreatePerspectiveFolderDTO | Request body containing Perspective's CEViewFolder object
+api_instance = harness_python_sdk.CloudCostPerspectivesFoldersApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CreatePerspectiveFolderDTO() # CreatePerspectiveFolderDTO | Request body containing Perspective's CEViewFolder object
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -78,18 +78,18 @@ Delete a Folder for the given Folder ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesFoldersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostPerspectivesFoldersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 folder_id = 'folder_id_example' # str | Unique identifier for the Perspective folder
 
@@ -134,18 +134,18 @@ Return details of all the Perspectives for the given account ID and folder
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesFoldersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostPerspectivesFoldersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 folder_id = 'folder_id_example' # str | Unique identifier for folder
 
@@ -190,18 +190,18 @@ Fetch folders given an accountId
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesFoldersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostPerspectivesFoldersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 folder_name_pattern = 'folder_name_pattern_example' # str | Search by folder name pattern (optional)
 
@@ -246,19 +246,19 @@ Move a perspective from a folder to another.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesFoldersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.MovePerspectiveDTO() # MovePerspectiveDTO | Request body containing perspectiveIds to be moved and newFolderId
+api_instance = harness_python_sdk.CloudCostPerspectivesFoldersApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.MovePerspectiveDTO() # MovePerspectiveDTO | Request body containing perspectiveIds to be moved and newFolderId
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -302,19 +302,19 @@ Update a folder
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostPerspectivesFoldersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CEViewFolder() # CEViewFolder | Request body containing ceViewFolder object
+api_instance = harness_python_sdk.CloudCostPerspectivesFoldersApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.CEViewFolder() # CEViewFolder | Request body containing ceViewFolder object
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:

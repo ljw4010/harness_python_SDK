@@ -1,4 +1,4 @@
-# swagger_client.SourceCodeManagerApi
+# harness_python_sdk.SourceCodeManagerApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -18,19 +18,19 @@ Creates Source Code Manager
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SourceCodeManagerApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SourceCodeManager() # SourceCodeManager | This contains details of Source Code Manager (optional)
+api_instance = harness_python_sdk.SourceCodeManagerApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.SourceCodeManager() # SourceCodeManager | This contains details of Source Code Manager (optional)
 
 try:
     # Creates Source Code Manager
@@ -70,18 +70,18 @@ Deletes the Source Code Manager corresponding to the specified Source Code Manag
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SourceCodeManagerApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SourceCodeManagerApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Source Code manager Identifier
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
@@ -124,18 +124,18 @@ Lists Source Code Managers for the given account
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SourceCodeManagerApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SourceCodeManagerApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 
 try:
@@ -176,20 +176,20 @@ Updates Source Code Manager Details with the given Source Code Manager Id
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SourceCodeManagerApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.SourceCodeManagerApi(harness_python_sdk.ApiClient(configuration))
 identifier = 'identifier_example' # str | Source Code manager Identifier
-body = swagger_client.SourceCodeManager() # SourceCodeManager | This contains details of Source Code Manager (optional)
+body = harness_python_sdk.SourceCodeManager() # SourceCodeManager | This contains details of Source Code Manager (optional)
 
 try:
     # Updates Source Code Manager Details with the given Source Code Manager Id

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_dto_page_response_ms_dropdown_response import ResponseDTOPageResponseMSDropdownResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.response_dto_page_response_ms_dropdown_response import ResponseDTOPageResponseMSDropdownResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestResponseDTOPageResponseMSDropdownResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponseDTOPageResponseMSDropdownResponse(unittest.TestCase):
     def testResponseDTOPageResponseMSDropdownResponse(self):
         """Test ResponseDTOPageResponseMSDropdownResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_dto_page_response_ms_dropdown_response.ResponseDTOPageResponseMSDropdownResponse()  # noqa: E501
+        # model = harness_python_sdk.models.response_dto_page_response_ms_dropdown_response.ResponseDTOPageResponseMSDropdownResponse()  # noqa: E501
         pass
 
 

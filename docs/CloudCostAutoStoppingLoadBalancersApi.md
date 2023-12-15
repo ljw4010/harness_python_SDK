@@ -1,4 +1,4 @@
-# swagger_client.CloudCostAutoStoppingLoadBalancersApi
+# harness_python_sdk.CloudCostAutoStoppingLoadBalancersApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -23,18 +23,18 @@ Returns all the AutoStopping Rules for the given load balancer identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAutoStoppingLoadBalancersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostAutoStoppingLoadBalancersApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity
 lb_id = 'lb_id_example' # str | ID of the load balancer for which you want to fetch the list of AutoStopping Rules
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity
@@ -81,19 +81,19 @@ Creates a load balancer.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAutoStoppingLoadBalancersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AccessPoint() # AccessPoint | 
+api_instance = harness_python_sdk.CloudCostAutoStoppingLoadBalancersApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.AccessPoint() # AccessPoint | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity
 account_id = 'account_id_example' # str | Account Identifier for the Entity
 
@@ -139,19 +139,19 @@ Deletes load balancers and the associated resources for the given identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAutoStoppingLoadBalancersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DeleteAccessPointPayload() # DeleteAccessPointPayload | 
+api_instance = harness_python_sdk.CloudCostAutoStoppingLoadBalancersApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.DeleteAccessPointPayload() # DeleteAccessPointPayload | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity
 account_id = 'account_id_example' # str | Account Identifier for the Entity
 
@@ -196,18 +196,18 @@ Retuns details of a load balancer for the given identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAutoStoppingLoadBalancersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostAutoStoppingLoadBalancersApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity
 lb_id = 'lb_id_example' # str | ID of the load balancer for which you want to fetch the details
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity
@@ -254,19 +254,19 @@ Updates a load balancer for the given identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAutoStoppingLoadBalancersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AccessPoint() # AccessPoint | 
+api_instance = harness_python_sdk.CloudCostAutoStoppingLoadBalancersApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.AccessPoint() # AccessPoint | 
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity
 account_id = 'account_id_example' # str | Account Identifier for the Entity
 
@@ -312,18 +312,18 @@ Returns all the load balancers for the given identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAutoStoppingLoadBalancersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostAutoStoppingLoadBalancersApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity
 cloud_account_id = 'cloud_account_id_example' # str | Connector ID
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity
@@ -374,18 +374,18 @@ Returns the last activity details for the given load balancer identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostAutoStoppingLoadBalancersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostAutoStoppingLoadBalancersApi(harness_python_sdk.ApiClient(configuration))
 account_id = 'account_id_example' # str | Account Identifier for the Entity
 lb_id = 'lb_id_example' # str | ID of the load balancer for which you want to fetch the most recent activity details
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity

@@ -1,4 +1,4 @@
-# swagger_client.WebhookTriggersApi
+# harness_python_sdk.WebhookTriggersApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -20,18 +20,18 @@ Gets webhook event processing details for input eventId.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.WebhookTriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.WebhookTriggersApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 event_id = 'event_id_example' # str | 
 
@@ -74,18 +74,18 @@ Gets webhook event processing details for input eventId.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.WebhookTriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.WebhookTriggersApi(harness_python_sdk.ApiClient(configuration))
 event_id = 'event_id_example' # str | 
 account_identifier = 'account_identifier_example' # str | 
 
@@ -128,18 +128,18 @@ Handles event payload for webhook triggers.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.WebhookTriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.WebhookTriggersApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | 
 account_identifier = 'account_identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str |  (optional)
@@ -186,18 +186,18 @@ Handles event payload for custom webhook triggers.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.WebhookTriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.WebhookTriggersApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | 
 account_identifier = 'account_identifier_example' # str | 
 org_identifier = 'org_identifier_example' # str | 
@@ -248,18 +248,18 @@ Handles event payload for custom webhook triggers.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.WebhookTriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.WebhookTriggersApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | Trigger Payload
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.
@@ -310,18 +310,18 @@ Handles event payload for custom webhook triggers.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.WebhookTriggersApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.WebhookTriggersApi(harness_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | Trigger Payload
 account_identifier = 'account_identifier_example' # str | Account Identifier for the Entity.
 org_identifier = 'org_identifier_example' # str | Organization Identifier for the Entity.

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.authentication_settings_response import AuthenticationSettingsResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.authentication_settings_response import AuthenticationSettingsResponse  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAuthenticationSettingsResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAuthenticationSettingsResponse(unittest.TestCase):
     def testAuthenticationSettingsResponse(self):
         """Test AuthenticationSettingsResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.authentication_settings_response.AuthenticationSettingsResponse()  # noqa: E501
+        # model = harness_python_sdk.models.authentication_settings_response.AuthenticationSettingsResponse()  # noqa: E501
         pass
 
 

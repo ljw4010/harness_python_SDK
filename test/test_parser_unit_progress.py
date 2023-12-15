@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.parser_unit_progress import ParserUnitProgress  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.parser_unit_progress import ParserUnitProgress  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestParserUnitProgress(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestParserUnitProgress(unittest.TestCase):
     def testParserUnitProgress(self):
         """Test ParserUnitProgress"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.parser_unit_progress.ParserUnitProgress()  # noqa: E501
+        # model = harness_python_sdk.models.parser_unit_progress.ParserUnitProgress()  # noqa: E501
         pass
 
 

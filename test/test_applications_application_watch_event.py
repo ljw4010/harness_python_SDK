@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.applications_application_watch_event import ApplicationsApplicationWatchEvent  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.applications_application_watch_event import ApplicationsApplicationWatchEvent  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestApplicationsApplicationWatchEvent(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestApplicationsApplicationWatchEvent(unittest.TestCase):
     def testApplicationsApplicationWatchEvent(self):
         """Test ApplicationsApplicationWatchEvent"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.applications_application_watch_event.ApplicationsApplicationWatchEvent()  # noqa: E501
+        # model = harness_python_sdk.models.applications_application_watch_event.ApplicationsApplicationWatchEvent()  # noqa: E501
         pass
 
 

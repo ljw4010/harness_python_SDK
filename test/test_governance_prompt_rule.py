@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.governance_prompt_rule import GovernancePromptRule  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.governance_prompt_rule import GovernancePromptRule  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestGovernancePromptRule(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGovernancePromptRule(unittest.TestCase):
     def testGovernancePromptRule(self):
         """Test GovernancePromptRule"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.governance_prompt_rule.GovernancePromptRule()  # noqa: E501
+        # model = harness_python_sdk.models.governance_prompt_rule.GovernancePromptRule()  # noqa: E501
         pass
 
 

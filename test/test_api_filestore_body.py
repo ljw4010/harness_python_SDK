@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.api_filestore_body import ApiFilestoreBody  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.api_filestore_body import ApiFilestoreBody  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestApiFilestoreBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestApiFilestoreBody(unittest.TestCase):
     def testApiFilestoreBody(self):
         """Test ApiFilestoreBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.api_filestore_body.ApiFilestoreBody()  # noqa: E501
+        # model = harness_python_sdk.models.api_filestore_body.ApiFilestoreBody()  # noqa: E501
         pass
 
 

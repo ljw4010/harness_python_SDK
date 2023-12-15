@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.sli_evaluation_type import SLIEvaluationType  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.sli_evaluation_type import SLIEvaluationType  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestSLIEvaluationType(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSLIEvaluationType(unittest.TestCase):
     def testSLIEvaluationType(self):
         """Test SLIEvaluationType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.sli_evaluation_type.SLIEvaluationType()  # noqa: E501
+        # model = harness_python_sdk.models.sli_evaluation_type.SLIEvaluationType()  # noqa: E501
         pass
 
 

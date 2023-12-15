@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.service_now_adfs import ServiceNowADFS  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.service_now_adfs import ServiceNowADFS  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestServiceNowADFS(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestServiceNowADFS(unittest.TestCase):
     def testServiceNowADFS(self):
         """Test ServiceNowADFS"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.service_now_adfs.ServiceNowADFS()  # noqa: E501
+        # model = harness_python_sdk.models.service_now_adfs.ServiceNowADFS()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# swagger_client.OrgServicesApi
+# harness_python_sdk.OrgServicesApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -21,19 +21,19 @@ Creates a service
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgServicesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ServiceRequest() # ServiceRequest | Create Service request body
+api_instance = harness_python_sdk.OrgServicesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ServiceRequest() # ServiceRequest | Create Service request body
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
 
@@ -79,18 +79,18 @@ Deletes the requested service
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgServicesApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
 service = 'service_example' # str | Identifier field of the service the resource is scoped to
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
@@ -139,18 +139,18 @@ Retrieves the specified service
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgServicesApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
 service = 'service_example' # str | Identifier field of the service the resource is scoped to
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)
@@ -197,18 +197,18 @@ Returns a list of the services for which you have view permissions in the given 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgServicesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.OrgServicesApi(harness_python_sdk.ApiClient(configuration))
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
 page = 0 # int | Pagination page number strategy: Specify the page number within the paginated collection related to the number of items in each page  (optional) (default to 0)
 limit = 30 # int | Number of items to return per page. (optional) (default to 30)
@@ -271,19 +271,19 @@ Updates the specified service
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrgServicesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ServiceRequest() # ServiceRequest | Create Service request body
+api_instance = harness_python_sdk.OrgServicesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.ServiceRequest() # ServiceRequest | Create Service request body
 org = 'org_example' # str | Identifier field of the organization the resource is scoped to
 service = 'service_example' # str | Identifier field of the service the resource is scoped to
 harness_account = 'harness_account_example' # str | Identifier field of the account the resource is scoped to. This is required for Authorization methods other than the x-api-key header. If you are using the x-api-key header, this can be skipped. (optional)

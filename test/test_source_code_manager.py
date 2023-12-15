@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.source_code_manager import SourceCodeManager  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.source_code_manager import SourceCodeManager  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestSourceCodeManager(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSourceCodeManager(unittest.TestCase):
     def testSourceCodeManager(self):
         """Test SourceCodeManager"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.source_code_manager.SourceCodeManager()  # noqa: E501
+        # model = harness_python_sdk.models.source_code_manager.SourceCodeManager()  # noqa: E501
         pass
 
 

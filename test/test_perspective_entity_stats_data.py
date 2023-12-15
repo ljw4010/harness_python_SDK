@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.perspective_entity_stats_data import PerspectiveEntityStatsData  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.perspective_entity_stats_data import PerspectiveEntityStatsData  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestPerspectiveEntityStatsData(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPerspectiveEntityStatsData(unittest.TestCase):
     def testPerspectiveEntityStatsData(self):
         """Test PerspectiveEntityStatsData"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.perspective_entity_stats_data.PerspectiveEntityStatsData()  # noqa: E501
+        # model = harness_python_sdk.models.perspective_entity_stats_data.PerspectiveEntityStatsData()  # noqa: E501
         pass
 
 

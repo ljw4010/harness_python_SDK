@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.git_metadata_update_response_body import GitMetadataUpdateResponseBody  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.git_metadata_update_response_body import GitMetadataUpdateResponseBody  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestGitMetadataUpdateResponseBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGitMetadataUpdateResponseBody(unittest.TestCase):
     def testGitMetadataUpdateResponseBody(self):
         """Test GitMetadataUpdateResponseBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.git_metadata_update_response_body.GitMetadataUpdateResponseBody()  # noqa: E501
+        # model = harness_python_sdk.models.git_metadata_update_response_body.GitMetadataUpdateResponseBody()  # noqa: E501
         pass
 
 

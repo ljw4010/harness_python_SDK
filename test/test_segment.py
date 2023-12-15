@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.segment import Segment  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.segment import Segment  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestSegment(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSegment(unittest.TestCase):
     def testSegment(self):
         """Test Segment"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.segment.Segment()  # noqa: E501
+        # model = harness_python_sdk.models.segment.Segment()  # noqa: E501
         pass
 
 

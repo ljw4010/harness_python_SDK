@@ -1,4 +1,4 @@
-# swagger_client.CloudCostCostCategoriesApi
+# harness_python_sdk.CloudCostCostCategoriesApi
 
 All URIs are relative to *https://app.harness.io*
 
@@ -21,19 +21,19 @@ Create Cost category that allows you to categorize based on business requirement
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostCostCategoriesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.BusinessMapping() # BusinessMapping |  (optional)
+api_instance = harness_python_sdk.CloudCostCostCategoriesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.BusinessMapping() # BusinessMapping |  (optional)
 account_identifier = 'account_identifier_example' # str |  (optional)
 
 try:
@@ -77,18 +77,18 @@ Delete a Cost category for the given Cost category ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostCostCategoriesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostCostCategoriesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str | 
 id = 'id_example' # str | 
 
@@ -133,18 +133,18 @@ Fetch details of a Cost category for the given Cost category ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostCostCategoriesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostCostCategoriesApi(harness_python_sdk.ApiClient(configuration))
 id = 'id_example' # str | 
 account_identifier = 'account_identifier_example' # str |  (optional)
 
@@ -189,18 +189,18 @@ Return details of all the Cost categories for the given account ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostCostCategoriesApi(swagger_client.ApiClient(configuration))
+api_instance = harness_python_sdk.CloudCostCostCategoriesApi(harness_python_sdk.ApiClient(configuration))
 account_identifier = 'account_identifier_example' # str |  (optional)
 search_key = 'search_key_example' # str |  (optional)
 sort_type = 'sort_type_example' # str |  (optional)
@@ -253,19 +253,19 @@ Update a Cost category. It accepts a BusinessMapping object and upserts it using
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: x-api-key
-configuration = swagger_client.Configuration()
+configuration = harness_python_sdk.Configuration()
 configuration.api_key['x-api-key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-api-key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CloudCostCostCategoriesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.BusinessMapping() # BusinessMapping |  (optional)
+api_instance = harness_python_sdk.CloudCostCostCategoriesApi(harness_python_sdk.ApiClient(configuration))
+body = harness_python_sdk.BusinessMapping() # BusinessMapping |  (optional)
 account_identifier = 'account_identifier_example' # str |  (optional)
 
 try:

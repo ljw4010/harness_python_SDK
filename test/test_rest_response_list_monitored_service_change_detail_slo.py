@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.rest_response_list_monitored_service_change_detail_slo import RestResponseListMonitoredServiceChangeDetailSLO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.rest_response_list_monitored_service_change_detail_slo import RestResponseListMonitoredServiceChangeDetailSLO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestRestResponseListMonitoredServiceChangeDetailSLO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRestResponseListMonitoredServiceChangeDetailSLO(unittest.TestCase):
     def testRestResponseListMonitoredServiceChangeDetailSLO(self):
         """Test RestResponseListMonitoredServiceChangeDetailSLO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.rest_response_list_monitored_service_change_detail_slo.RestResponseListMonitoredServiceChangeDetailSLO()  # noqa: E501
+        # model = harness_python_sdk.models.rest_response_list_monitored_service_change_detail_slo.RestResponseListMonitoredServiceChangeDetailSLO()  # noqa: E501
         pass
 
 

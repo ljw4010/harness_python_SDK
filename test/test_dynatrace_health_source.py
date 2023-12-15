@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.dynatrace_health_source import DynatraceHealthSource  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.dynatrace_health_source import DynatraceHealthSource  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestDynatraceHealthSource(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDynatraceHealthSource(unittest.TestCase):
     def testDynatraceHealthSource(self):
         """Test DynatraceHealthSource"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.dynatrace_health_source.DynatraceHealthSource()  # noqa: E501
+        # model = harness_python_sdk.models.dynatrace_health_source.DynatraceHealthSource()  # noqa: E501
         pass
 
 

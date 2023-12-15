@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.agent_m_tls_endpoint_management_api import AgentMTLSEndpointManagementApi  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.api.agent_m_tls_endpoint_management_api import AgentMTLSEndpointManagementApi  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAgentMTLSEndpointManagementApi(unittest.TestCase):

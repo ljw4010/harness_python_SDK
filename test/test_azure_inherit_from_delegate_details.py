@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.azure_inherit_from_delegate_details import AzureInheritFromDelegateDetails  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.azure_inherit_from_delegate_details import AzureInheritFromDelegateDetails  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestAzureInheritFromDelegateDetails(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAzureInheritFromDelegateDetails(unittest.TestCase):
     def testAzureInheritFromDelegateDetails(self):
         """Test AzureInheritFromDelegateDetails"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.azure_inherit_from_delegate_details.AzureInheritFromDelegateDetails()  # noqa: E501
+        # model = harness_python_sdk.models.azure_inherit_from_delegate_details.AzureInheritFromDelegateDetails()  # noqa: E501
         pass
 
 

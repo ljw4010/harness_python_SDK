@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.instance_based_routing_data import InstanceBasedRoutingData  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.instance_based_routing_data import InstanceBasedRoutingData  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestInstanceBasedRoutingData(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInstanceBasedRoutingData(unittest.TestCase):
     def testInstanceBasedRoutingData(self):
         """Test InstanceBasedRoutingData"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.instance_based_routing_data.InstanceBasedRoutingData()  # noqa: E501
+        # model = harness_python_sdk.models.instance_based_routing_data.InstanceBasedRoutingData()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.yaml_schema_error_wrapper_dto import YamlSchemaErrorWrapperDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import harness_python_sdk
+from harness_python_sdk.models.yaml_schema_error_wrapper_dto import YamlSchemaErrorWrapperDTO  # noqa: E501
+from harness_python_sdk.rest import ApiException
 
 
 class TestYamlSchemaErrorWrapperDTO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestYamlSchemaErrorWrapperDTO(unittest.TestCase):
     def testYamlSchemaErrorWrapperDTO(self):
         """Test YamlSchemaErrorWrapperDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.yaml_schema_error_wrapper_dto.YamlSchemaErrorWrapperDTO()  # noqa: E501
+        # model = harness_python_sdk.models.yaml_schema_error_wrapper_dto.YamlSchemaErrorWrapperDTO()  # noqa: E501
         pass
 
 
