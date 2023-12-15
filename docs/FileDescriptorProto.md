@@ -1,0 +1,45 @@
+# FileDescriptorProto
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**unknown_fields** | [**UnknownFieldSet**](UnknownFieldSet.md) |  | [optional] 
+**name** | **str** |  | [optional] 
+**package** | **str** |  | [optional] 
+**initialized** | **bool** |  | [optional] 
+**options** | [**FileOptions**](FileOptions.md) |  | [optional] 
+**syntax** | **str** |  | [optional] 
+**serialized_size** | **int** |  | [optional] 
+**parser_for_type** | [**ParserFileDescriptorProto**](ParserFileDescriptorProto.md) |  | [optional] 
+**public_dependency_count** | **int** |  | [optional] 
+**dependency_count** | **int** |  | [optional] 
+**message_type_count** | **int** |  | [optional] 
+**enum_type_count** | **int** |  | [optional] 
+**service_count** | **int** |  | [optional] 
+**extension_count** | **int** |  | [optional] 
+**default_instance_for_type** | [**FileDescriptorProto**](FileDescriptorProto.md) |  | [optional] 
+**package_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**dependency_list** | **list[str]** |  | [optional] 
+**public_dependency_list** | **list[int]** |  | [optional] 
+**weak_dependency_list** | **list[int]** |  | [optional] 
+**weak_dependency_count** | **int** |  | [optional] 
+**message_type_list** | [**list[DescriptorProto]**](DescriptorProto.md) |  | [optional] 
+**message_type_or_builder_list** | [**list[DescriptorProtoOrBuilder]**](DescriptorProtoOrBuilder.md) |  | [optional] 
+**enum_type_list** | [**list[EnumDescriptorProto]**](EnumDescriptorProto.md) |  | [optional] 
+**enum_type_or_builder_list** | [**list[EnumDescriptorProtoOrBuilder]**](EnumDescriptorProtoOrBuilder.md) |  | [optional] 
+**service_list** | [**list[ServiceDescriptorProto]**](ServiceDescriptorProto.md) |  | [optional] 
+**service_or_builder_list** | [**list[ServiceDescriptorProtoOrBuilder]**](ServiceDescriptorProtoOrBuilder.md) |  | [optional] 
+**extension_list** | [**list[FieldDescriptorProto]**](FieldDescriptorProto.md) |  | [optional] 
+**extension_or_builder_list** | [**list[FieldDescriptorProtoOrBuilder]**](FieldDescriptorProtoOrBuilder.md) |  | [optional] 
+**options_or_builder** | [**FileOptionsOrBuilder**](FileOptionsOrBuilder.md) |  | [optional] 
+**source_code_info** | [**SourceCodeInfo**](SourceCodeInfo.md) |  | [optional] 
+**source_code_info_or_builder** | [**SourceCodeInfoOrBuilder**](SourceCodeInfoOrBuilder.md) |  | [optional] 
+**syntax_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**name_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**all_fields** | **dict(str, object)** |  | [optional] 
+**descriptor_for_type** | [**Descriptor**](Descriptor.md) |  | [optional] 
+**initialization_error_string** | **str** |  | [optional] 
+**memoized_serialized_size** | **int** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

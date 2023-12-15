@@ -1,0 +1,13 @@
+# ClustersExecProviderConfig
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**command** | **str** |  | [optional] 
+**args** | **list[str]** |  | [optional] 
+**env** | **dict(str, str)** |  | [optional] 
+**api_version** | **str** |  | [optional] 
+**install_hint** | **str** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

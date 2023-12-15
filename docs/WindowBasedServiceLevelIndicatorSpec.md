@@ -1,0 +1,11 @@
+# WindowBasedServiceLevelIndicatorSpec
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**spec** | [**SLIMetricSpec**](SLIMetricSpec.md) |  | 
+**sli_missing_data_type** | **str** |  | [optional] 
+**type** | **str** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

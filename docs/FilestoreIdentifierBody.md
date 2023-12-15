@@ -1,0 +1,21 @@
+# FilestoreIdentifierBody
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**tags** | **str** | The File or Folder tags | [optional] 
+**identifier** | **str** | Identifier of the File or Folder | [optional] 
+**name** | **str** | Name of the File or Folder | 
+**file_usage** | **str** | This specifies the file usage | [optional] 
+**type** | **str** | This specifies the type of the File | 
+**parent_identifier** | **str** | This specifies parent directory identifier. The value of Root directory identifier is Root. | 
+**description** | **str** | Description of the File or Folder | [optional] 
+**mime_type** | **str** | Mime type of the File | [optional] 
+**path** | **str** | The path of the File or Folder | [optional] 
+**created_by** | [**EmbeddedUserDetailsDTO**](EmbeddedUserDetailsDTO.md) |  | [optional] 
+**last_modified_by** | [**EmbeddedUserDetailsDTO**](EmbeddedUserDetailsDTO.md) |  | [optional] 
+**last_modified_at** | **int** | Last modified time for the File or Folder | [optional] 
+**content** | **object** | The content of the File as InputStream | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

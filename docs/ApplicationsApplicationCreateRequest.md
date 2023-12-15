@@ -1,0 +1,12 @@
+# ApplicationsApplicationCreateRequest
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**application** | [**ApplicationsApplication**](ApplicationsApplication.md) |  | [optional] 
+**upsert** | **bool** |  | [optional] 
+**validate** | **bool** |  | [optional] 
+**project** | **str** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

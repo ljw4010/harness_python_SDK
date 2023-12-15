@@ -1,0 +1,47 @@
+# FileOptionsOrBuilder
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**php_metadata_namespace_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**uninterpreted_option_count** | **int** |  | [optional] 
+**java_package** | **str** |  | [optional] 
+**java_package_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**java_outer_classname** | **str** |  | [optional] 
+**java_outer_classname_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**java_multiple_files** | **bool** |  | [optional] 
+**java_generate_equals_and_hash** | **bool** |  | [optional] 
+**java_string_check_utf8** | **bool** |  | [optional] 
+**optimize_for** | **str** |  | [optional] 
+**go_package** | **str** |  | [optional] 
+**go_package_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**cc_generic_services** | **bool** |  | [optional] 
+**java_generic_services** | **bool** |  | [optional] 
+**py_generic_services** | **bool** |  | [optional] 
+**php_generic_services** | **bool** |  | [optional] 
+**deprecated** | **bool** |  | [optional] 
+**cc_enable_arenas** | **bool** |  | [optional] 
+**objc_class_prefix** | **str** |  | [optional] 
+**objc_class_prefix_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**csharp_namespace** | **str** |  | [optional] 
+**csharp_namespace_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**swift_prefix** | **str** |  | [optional] 
+**swift_prefix_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**php_class_prefix** | **str** |  | [optional] 
+**php_class_prefix_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**php_namespace** | **str** |  | [optional] 
+**php_namespace_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**php_metadata_namespace** | **str** |  | [optional] 
+**ruby_package** | **str** |  | [optional] 
+**ruby_package_bytes** | [**ByteString**](ByteString.md) |  | [optional] 
+**uninterpreted_option_list** | [**list[UninterpretedOption]**](UninterpretedOption.md) |  | [optional] 
+**uninterpreted_option_or_builder_list** | [**list[UninterpretedOptionOrBuilder]**](UninterpretedOptionOrBuilder.md) |  | [optional] 
+**default_instance_for_type** | [**Message**](Message.md) |  | [optional] 
+**all_fields** | **dict(str, object)** |  | [optional] 
+**descriptor_for_type** | [**Descriptor**](Descriptor.md) |  | [optional] 
+**initialization_error_string** | **str** |  | [optional] 
+**unknown_fields** | [**UnknownFieldSet**](UnknownFieldSet.md) |  | [optional] 
+**initialized** | **bool** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
