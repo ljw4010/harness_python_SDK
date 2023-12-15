@@ -34,7 +34,36 @@ For example:   `x-api-key: YOUR_API_KEY_HERE`
 ## Requests and Responses    
 The structure for each request and response is outlined in the API documentation. We have examples in JSON and YAML for every request and response. You can use our online editor to test the examples.  
 ## Common Parameters [Beta]  
-| Field Name | Type    | Default | Description    | |------------|---------|---------|----------------| | identifier | string  | none    | URL-friendly version of the name, used to identify a resource within it's scope and so needs to be unique within the scope.                                                                                                            | | name       | string  | none    | Human-friendly name for the resource.                                                                                       | | org        | string  | none    | Limit to provided org identifiers.                                                                                                                     | | project    | string  | none    | Limit to provided project identifiers.                                                                                                                 | | description| string  | none    | More information about the specific resource.                                                                                    | | tags       | map[string]string  | none    | List of labels applied to the resource.                                                                                                                         | | order      | string  | desc    | Order to use when sorting the specified fields. Type: enum(asc,desc).                                                                                                                                     | | sort       | string  | none    | Fields on which to sort. Note: Specify the fields that you want to use for sorting. When doing so, consider the operational overhead of sorting fields. | | limit      | int     | 30      | Pagination: Number of items to return.                                                                                                                 | | page       | int     | 1       | Pagination page number strategy: Specify the page number within the paginated collection related to the number of items in each page.                  | | created    | int64   | none    | Unix timestamp that shows when the resource was created (in milliseconds).                                                               | | updated    | int64   | none    | Unix timestamp that shows when the resource was last edited (in milliseconds).                                                           |   ## Status Codes    Harness uses conventional HTTP status codes to indicate the status of an API request.    Generally, 2xx responses are reserved for success and 4xx status codes are reserved for failures. A 5xx response code indicates an error on the Harness server.    | Error Code  | Description |   |-------------|-------------|   | 200         |     OK      |   | 201         |   Created   |   | 202         |   Accepted  |   | 204         |  No Content |   | 400         | Bad Request |   | 401         | Unauthorized |   | 403         | Forbidden |   | 412         | Precondition Failed |   | 415         | Unsupported Media Type |   | 500         | Server Error |    To view our error response structures, go [here](#tag/Error-Response).  
+| Field Name | Type    | Default | Description    | 
+|------------|---------|---------|----------------| 
+| identifier | string  | none    | URL-friendly version of the name, used to identify a resource within it's scope and so needs to be unique within the scope. | 
+| name       | string  | none    | Human-friendly name for the resource.| 
+| org        | string  | none    | Limit to provided org identifiers. | 
+| project    | string  | none    | Limit to provided project identifiers.| 
+| description| string  | none    | More information about the specific resource.| 
+| tags       | map[string]string  | none    | List of labels applied to the resource.| 
+| order      | string  | desc    | Order to use when sorting the specified fields. Type: enum(asc,desc).| 
+| sort       | string  | none    | Fields on which to sort. Note: Specify the fields that you want to use for sorting. When doing so, consider the operational overhead of sorting fields. | 
+| limit      | int     | 30      | Pagination: Number of items to return.| 
+| page       | int     | 1       | Pagination page number strategy: Specify the page number within the paginated collection related to the number of items in each page.                  | 
+| created    | int64   | none    | Unix timestamp that shows when the resource was created (in milliseconds).                                                               | 
+| updated    | int64   | none    | Unix timestamp that shows when the resource was last edited (in milliseconds).                                                           |   
+## Status Codes    
+Harness uses conventional HTTP status codes to indicate the status of an API request.    Generally, 2xx responses are reserved for success and 4xx status codes are reserved for failures. A 5xx response code indicates an error on the Harness server.    
+| Error Code  | Description |   
+|-------------|-------------|   
+| 200         |     OK      |   
+| 201         |   Created   |   
+| 202         |   Accepted  |   
+| 204         |  No Content |   
+| 400         | Bad Request |   
+| 401         | Unauthorized |   
+| 403         | Forbidden |   | 412         
+| Precondition Failed |   
+| 415         | Unsupported Media Type |   
+| 500         | Server Error |   
+
+To view our error response structures, go [here](#tag/Error-Response).  
 ## Versioning [Beta]  
 ### Harness Version   
 The current version of our Beta APIs is yet to be announced. The version number will use the date-header format and will be valid only for our Beta APIs.  
