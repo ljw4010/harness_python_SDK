@@ -1,0 +1,18 @@
+[project]
+name = "harness_python_sdk"
+version = "1.0.0"
+authors = [
+  { name="ljw4010", email="ljw4010@sina.cn" },
+]
+description = "harness python sdk package"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ljw4010/harness_python_SDK"
+Issues = "https://github.com/ljw4010/harness_python_SDK/issues"
